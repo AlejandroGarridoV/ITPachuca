@@ -104,7 +104,7 @@ import { AvisoPrivacidad } from './componentes/footer/aviso-privacidad/aviso-pri
 import { CoordinacionTutorias } from './pages/departamentos/desarrollo-academico/coordinacion-tutorias/coordinacion-tutorias';
 import { Becas } from './pages/becas/becas';
 import { DirectorioTutores } from './pages/departamentos/desarrollo-academico/coordinacion-tutorias/directorio-tutores/directorio-tutores';
-import { VideoPromocional } from './componentes/video-promocional/video-promocional';
+
 
 
 
@@ -121,7 +121,7 @@ export const routes: Routes = [
   { path: 'directorio_inst', component: DirectorioInstitucional },
   { path: 'organigrama', component: Organigrama },
   { path: 'aviso_privacidad', component: AvisoPrivacidad },
-  { path: 'video_promocional', component: VideoPromocional },
+  
 
   // Subpáginas de Gestión
   { path: 'sgig', component: Sgig },
