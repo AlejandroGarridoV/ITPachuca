@@ -1,0 +1,301 @@
+/* Variables de color del TECNM */
+:root {
+  --tec-blue: #1B396A;
+  --tec-light-blue: #4facfe;
+  --tec-white: #FFFFFF;
+  --tec-red: #BF0310;
+  --tec-yellow: #FEEE00;
+  --tec-dark-gray: #343a40;
+  --gradient-primary: linear-gradient(135deg, #005baa 0%, #007bff 100%);
+  --shadow-soft: 0 5px 15px rgba(0, 0, 0, 0.08);
+  --shadow-strong: 0 10px 25px rgba(0, 91, 170, 0.15);
+  --border-color: rgba(0, 0, 0, 0.05);
+  --border-radius: 8px;
+  --transition: all 0.3s ease;
+}
+
+/* Contenedor principal */
+.baja-temporal-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+  font-family: 'Roboto', Arial, sans-serif;
+  color: var(--tec-dark-gray);
+  line-height: 1.7;
+  position: relative;
+}
+
+/* Encabezado */
+.baja-temporal-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.baja-temporal-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid var(--tec-light-blue);
+  display: inline-block;
+  position: relative;
+}
+
+.baja-temporal-title::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: var(--tec-yellow);
+}
+
+.baja-temporal-subheader .baja-temporal-alert--info {
+  background: var(--gradient-primary);
+  color: var(--tec-white);
+  border-radius: var(--border-radius);
+  padding: 1.25rem 2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.1rem;
+  box-shadow: var(--shadow-soft);
+}
+
+/* Contenido principal */
+.baja-temporal-content {
+  position: relative;
+  padding-bottom: 200px; /* Espacio para la tarjeta de contacto */
+}
+
+/* Tarjetas */
+.baja-temporal-card {
+  background: var(--tec-white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-soft);
+  padding: 2.5rem;
+  margin-bottom: 2.5rem;
+  transition: var(--transition);
+  border: 1px solid var(--border-color);
+}
+
+.baja-temporal-card:hover {
+  box-shadow: var(--shadow-strong);
+  transform: translateY(-5px);
+  border-color: var(--tec-light-blue);
+}
+
+.baja-temporal-card-title {
+  color: var(--tec-blue);
+  margin-bottom: 1.75rem;
+  font-size: 1.5rem;
+  border-bottom: 2px solid var(--tec-light-blue);
+  padding-bottom: 0.75rem;
+  display: inline-block;
+  font-weight: 600;
+}
+
+/* Lista de requisitos */
+.baja-temporal-requisitos {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.baja-temporal-requisito {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.baja-temporal-requisito-numero {
+  background: var(--tec-blue);
+  color: var(--tec-white);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  flex-shrink: 0;
+  font-size: 0.9rem;
+}
+
+.baja-temporal-requisito-texto {
+  flex-grow: 1;
+  line-height: 1.7;
+}
+
+/* Alertas y notificaciones */
+.baja-temporal-alert {
+  padding: 1.75rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.baja-temporal-alert--important {
+  background-color: rgba(0, 123, 255, 0.1);
+  border-left: 5px solid var(--tec-blue);
+}
+
+.baja-temporal-highlight {
+  background-color: rgba(0, 123, 255, 0.05);
+  border-left: 5px solid var(--tec-blue);
+  padding: 1.75rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 2.5rem;
+  font-weight: 500;
+  color: var(--tec-blue);
+}
+
+.baja-temporal-alert--note {
+  background-color: rgba(52, 73, 94, 0.05);
+  border-left: 5px solid var(--tec-blue);
+}
+
+.baja-temporal-alert h4 {
+  margin-top: 0;
+  color: var(--tec-blue);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.25rem;
+}
+
+/* Enlaces */
+.baja-temporal-link {
+  color: var(--tec-blue);
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 1px dotted currentColor;
+}
+
+.baja-temporal-link:hover {
+  color: var(--tec-red);
+  text-decoration: none;
+  border-bottom-style: solid;
+}
+
+/* Sección de contacto */
+.baja-temporal-contacto {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 500px;
+}
+
+.baja-temporal-contacto-card {
+  background: var(--tec-white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-soft);
+  padding: 2.5rem;
+  margin-top: 2.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.baja-temporal-contacto-card h4 {
+  color: var(--tec-blue);
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.3rem;
+}
+
+.baja-temporal-contacto-info {
+  line-height: 1.8;
+}
+
+.baja-temporal-contacto-info p {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.baja-temporal-contacto-info a {
+  color: var(--tec-blue);
+  text-decoration: none;
+  transition: var(--transition);
+  border-bottom: 1px dotted currentColor;
+}
+
+.baja-temporal-contacto-info a:hover {
+  color: var(--tec-red);
+  border-bottom-style: solid;
+}
+
+/* Iconos */
+.baja-temporal-container .fas {
+  color: var(--tec-blue);
+  font-size: 1.25rem;
+  width: 24px;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .baja-temporal-contacto {
+    position: static;
+    max-width: 100%;
+  }
+  
+  .baja-temporal-content {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .baja-temporal-title {
+    font-size: 2rem;
+  }
+  
+  .baja-temporal-subheader .baja-temporal-alert--info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 1.25rem;
+  }
+  
+  .baja-temporal-card {
+    padding: 1.75rem;
+  }
+  
+  .baja-temporal-contacto-card {
+    padding: 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .baja-temporal-title {
+    font-size: 1.8rem;
+    padding-bottom: 0.75rem;
+  }
+  
+  .baja-temporal-requisito {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .baja-temporal-requisito-numero {
+    width: 28px;
+    height: 28px;
+    font-size: 0.8rem;
+  }
+}

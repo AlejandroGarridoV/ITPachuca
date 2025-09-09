@@ -1,0 +1,392 @@
+<app-header></app-header>
+
+<div>
+    <section class="maestria-hero">
+        <div class="maestria-hero-image-wrapper">
+            <img src="ofertaeducativa/posgrado/maestria.png" alt="maestria en Mecanica" class="maestria-hero-img">
+            <div class="maestria-hero-overlay"></div>
+            <div class="maestria-hero-content">
+                <h1 class="maestria-hero-title">Maestría en Ingeniería Mecánica</h1>
+                <p class="maestria-hero-subtitle">Formando líderes en innovación tecnológica e investigación aplicada
+                    para la
+                    industria del futuro</p>
+                <hr class="maestria-hero-divider">
+                <a href="posgrado" class="hero-button">
+                    <span>Ir al área de posgrado</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <app-menu-maestria></app-menu-maestria>
+
+    <button class="scroll-to-top" [class.show]="showScrollButton" (click)="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div class="mim-container">
+        <!-- Introducción -->
+        <section class="mim-section">
+            <div class="mim-content-block">
+                <p class="mim-content-text">
+                    La <strong>Maestría en Ingeniería Mecánica</strong> del <strong>Instituto Tecnológico de
+                        Pachuca</strong> representa la excelencia académica en formación de posgrado. Nuestro programa
+                    se distingue por un enfoque integral que combina <strong>investigación aplicada</strong> y
+                    <strong>desarrollo tecnológico</strong> en áreas estratégicas como:
+                </p>
+
+                <div class="mim-feature-grid">
+                    <div class="mim-feature-column">
+                        <ul class="mim-feature-list">
+                            <li><i class="fas fa-cog mim-icon"></i>Manufactura avanzada e Industria 4.0</li>
+                            <li><i class="fas fa-robot mim-icon"></i>Robótica y automatización industrial</li>
+                            <li><i class="fas fa-tools mim-icon"></i>Diseño de maquinaria especializada</li>
+                        </ul>
+                    </div>
+                    <div class="mim-feature-column">
+                        <ul class="mim-feature-list">
+                            <li><i class="fas fa-solar-panel mim-icon"></i>Energías alternativas y sostenibilidad</li>
+                            <li><i class="fas fa-wind mim-icon"></i>Dinámica de fluidos computacional</li>
+                            <li><i class="fas fa-atom mim-icon"></i>Tribología y materiales avanzados</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Objetivo -->
+        <section class="mim-section mim-section-accent">
+            <div class="mim-content-block">
+                <h2 class="mim-section-title">Objetivo del Programa</h2>
+                <p class="mim-content-text">
+                    Nuestro programa tiene como <strong>objetivo fundamental</strong> formar <strong>investigadores y
+                        tecnólogos</strong> con capacidad para:
+                </p>
+                <ul class="mim-feature-list mim-feature-list-large">
+                    <li><i class="fas fa-search mim-icon"></i>Generar conocimiento original mediante investigación
+                        científica y tecnológica</li>
+                    <li><i class="fas fa-lightbulb mim-icon"></i>Desarrollar soluciones innovadoras para los desafíos de
+                        la industria</li>
+                    <li><i class="fas fa-users mim-icon"></i>Liderar equipos interdisciplinarios de investigación y
+                        desarrollo</li>
+                    <li><i class="fas fa-exchange-alt mim-icon"></i>Transferir tecnología a los sectores productivos
+                    </li>
+                    <li><i class="fas fa-graduation-cap mim-icon"></i>Contribuir a la formación de nuevos investigadores
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Perfil de Aspirante -->
+        <section class="mim-section">
+            <div class="mim-content-block">
+                <h2 class="mim-section-title">Perfil de Aspirante</h2>
+                <p class="mim-content-text">
+                    Este programa está diseñado para <strong>profesionales</strong> con título en:
+                </p>
+
+                <div class="mim-feature-grid">
+                    <div class="mim-feature-column">
+                        <ul class="mim-feature-list">
+                            <li><i class="fas fa-graduation-cap mim-icon"></i>Ingeniería Mecánica</li>
+                            <li><i class="fas fa-microchip mim-icon"></i>Ingeniería Mecatrónica</li>
+                            <li><i class="fas fa-industry mim-icon"></i>Ingeniería Industrial</li>
+                        </ul>
+                    </div>
+                    <div class="mim-feature-column">
+                        <ul class="mim-feature-list">
+                            <li><i class="fas fa-bolt mim-icon"></i>Ingeniería Electrónica</li>
+                            <li><i class="fas fa-cogs mim-icon"></i>Ingeniería en Automatización</li>
+                            <li><i class="fas fa-project-diagram mim-icon"></i>Áreas afines a las líneas de
+                                investigación</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p class="mim-content-text mim-content-highlight">
+                    Que busquen <strong>profundizar</strong> en el conocimiento teórico y metodológico para aplicarlo de
+                    manera <strong>innovadora</strong> en el ámbito profesional o de investigación.
+                </p>
+            </div>
+        </section>
+
+        <!-- Perfiles de Ingreso/Egreso -->
+        <section class="mim-section mim-profiles-section">
+            <div class="mim-profile-card">
+                <div class="mim-profile-header">
+                    <i class="fas fa-sign-in-alt mim-profile-icon"></i>
+                    <h3 class="mim-profile-title">Perfil de Ingreso</h3>
+                </div>
+                <p class="mim-profile-text">
+                    El aspirante ideal para este programa debe contar con:
+                </p>
+                <ul class="mim-profile-list">
+                    <li>Formación en ingeniería con enfoque en áreas mecánicas o afines</li>
+                    <li>Capacidad analítica para resolver problemas complejos</li>
+                    <li>Habilidades en métodos matemáticos y herramientas computacionales</li>
+                    <li>Competencia en lectura de literatura técnica en inglés</li>
+                    <li>Interés demostrado por la investigación aplicada</li>
+                    <li>Creatividad e iniciativa para proyectos innovadores</li>
+                    <li>Capacidad de trabajo en equipos multidisciplinarios</li>
+                </ul>
+            </div>
+
+            <div class="mim-profile-card mim-profile-card-accent">
+                <div class="mim-profile-header">
+                    <i class="fas fa-graduation-cap mim-profile-icon"></i>
+                    <h3 class="mim-profile-title">Perfil de Egreso</h3>
+                </div>
+                <p class="mim-profile-text">
+                    Nuestros egresados desarrollan competencias para:
+                </p>
+                <ul class="mim-profile-list">
+                    <li>Modelar y analizar sistemas mecánicos complejos</li>
+                    <li>Diseñar maquinaria y equipos con tecnología de punta</li>
+                    <li>Optimizar procesos industriales y sistemas térmicos</li>
+                    <li>Desarrollar proyectos de automatización avanzada</li>
+                    <li>Realizar investigación científica y desarrollo tecnológico</li>
+                    <li>Ejercer la docencia a nivel superior</li>
+                    <li>Liderar equipos de innovación en la industria</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Plan de Estudios -->
+        <section id="plan_maestria" class="mim-section">
+            <div class="mim-content-block">
+                <h2 class="mim-section-title">Plan de Estudios</h2>
+                <p class="mim-content-text">
+                    De acuerdo al Documento Normativo de Posgrado de la DGEST, el periodo para que el estudiante cubra
+                    la
+                    estructura académica, desarrolle y apruebe la tesis correspondiente será de <strong>dos
+                        años</strong>,
+                    contados a partir de la fecha en que inicie sus estudios.
+                </p>
+
+                <div class="mim-plan-estudios-grid">
+                    <div class="mim-plan-column">
+                        <h3 class="mim-plan-subtitle">Estructura Académica</h3>
+                        <div class="mim-plan-image">
+                            <img src="ofertaeducativa/posgrado/maestria/plan-estudios.png" alt="Plan de estudios"
+                                class="mim-img-responsive">
+                        </div>
+                    </div>
+                    <div class="mim-plan-column">
+                        <h3 class="mim-plan-subtitle">Materias Optativas</h3>
+                        <div class="mim-plan-image">
+                            <img src="ofertaeducativa/posgrado/maestria/materias-optativas.png" alt="Materias optativas"
+                                class="mim-img-responsive">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Admisión -->
+        <section id="admision_maestria" class="mim-section mim-section-accent">
+            <div class="mim-content-block">
+                <h2 class="mim-section-title">Proceso de Admisión</h2>
+
+                <div class="mim-admision-grid">
+                    <div class="mim-admision-step">
+                        <div class="mim-step-number">1</div>
+                        <h3 class="mim-step-title">Requisitos</h3>
+                        <ul class="mim-step-list">
+                            <li>Título profesional o acta de examen</li>
+                            <li>Promedio mínimo de 80/100</li>
+                            <li>Currículum vitae</li>
+                            <li>Carta de exposición de motivos</li>
+                            <li>2 cartas de recomendación</li>
+                            <li>Comprobante de inglés (TOEFL 450+)</li>
+                        </ul>
+                    </div>
+
+                    <div class="mim-admision-step">
+                        <div class="mim-step-number">2</div>
+                        <h3 class="mim-step-title">Proceso</h3>
+                        <ul class="mim-step-list">
+                            <li>Solicitud de admisión en línea</li>
+                            <li>Entrevista con el comité académico</li>
+                            <li>Examen de conocimientos básicos</li>
+                            <li>Evaluación de documentos</li>
+                            <li>Dictamen de admisión</li>
+                        </ul>
+                    </div>
+
+                    <div class="mim-admision-step">
+                        <div class="mim-step-number">3</div>
+                        <h3 class="mim-step-title">Fechas</h3>
+                        <ul class="mim-step-list">
+                            <li>Convocatoria: Enero y Agosto</li>
+                            <li>Registro: Febrero y Septiembre</li>
+                            <li>Inicio de clases: Marzo y Octubre</li>
+                        </ul>
+                        <div class="mim-admision-button">
+                            <a href="ofertaeducativa/posgrado/maestria/Admision_Mtria_2025_B.pdf" class="mim-button"
+                                target="_blank">Ver convocatoria actual</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Líneas de Investigación -->
+        <section id="LGAC_maestria" class="mim-section mim-section-accent">
+            <div class="mim-container">
+                <div class="mim-content-block">
+                    <h2 class="mim-section-title">Líneas de Generación y Aplicación del Conocimiento</h2>
+                    <div class="mim-text-content">
+                        <p class="mim-content-text mim-justified-text">
+                            Las líneas de investigación son el eje ordenador de las actividades que sustentan el
+                            quehacer
+                            científico del Consejo de Posgrado y se entiende como el conjunto de actividades realizadas
+                            por grupos de
+                            investigadores y estudiantes, encaminadas a generar el conocimiento y desarrollo científico
+                            en temas de un área
+                            específica.
+                        </p>
+                        <p class="mim-content-text mim-justified-text">
+                            Las líneas de investigación de este programa de posgrado son las de <strong>DISEÑO</strong>
+                            y <strong>TERMOFLUIDOS</strong>.
+                            Estas líneas de investigación dan respuesta a las demandas actuales de nuestro país ya que
+                            dentro de cada
+                            una de ellas se consideran aspectos de importancia fundamental en nuestros días tal como es
+                            el uso
+                            eficiente de los recursos y la energía, el aprovechamiento de fuentes no convencionales de
+                            energía,
+                            el desarrollo sustentable. La rama de la ingeniería mecánica ha probado ser una de las ramas
+                            esenciales de la ingeniería ya que con el paso del tiempo se hace más necesario
+                            especialistas en
+                            esta disciplina.
+                        </p>
+                    </div>
+
+                    <div class="mim-lineas-grid">
+                        <div class="mim-linea-card">
+                            <div class="mim-linea-header">
+                                <i class="fas fa-project-diagram mim-linea-icon"></i>
+                                <h3 class="mim-linea-title">Diseño Mecánico</h3>
+                            </div>
+                            <ul class="mim-linea-list mim-justified-list">
+                                <li>Transformaciones de fase en materiales de alto desempeño</li>
+                                <li>Desgaste por fricción en materiales para ingeniería</li>
+                                <li>Tribología y lubricación</li>
+                                <li>Mecánica computacional</li>
+                                <li>Modelado del comportamiento mecánico</li>
+                                <li>Dinámica de rotores y vibraciones mecánicas</li>
+                            </ul>
+                        </div>
+
+                        <div class="mim-linea-card mim-linea-card-accent">
+                            <div class="mim-linea-header">
+                                <i class="fas fa-fire mim-linea-icon"></i>
+                                <h3 class="mim-linea-title">Termofluidos</h3>
+                            </div>
+                            <ul class="mim-linea-list mim-justified-list">
+                                <li>Dinámica de gases en turbomaquinaria</li>
+                                <li>Desempeño de turbinas eólicas</li>
+                                <li>Fuentes alternas de energía</li>
+                                <li>Diseño de sistemas térmicos</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="mim-investigacion-cta mim-text-center">
+                        <p class="mim-cta-text">¿Interesado en desarrollar investigación en alguna de estas líneas?</p>
+                        <a href="#contacto_maestria" class="mim-button mim-button-large mim-button-gradient">
+                            Contáctanos para más información
+                            <i class="fas fa-arrow-right mim-button-icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto_maestria" class="mim-contact-section">
+            <div class="mim-contact-container">
+                <div class="mim-contact-header">
+                    <h2 class="mim-contact-main-title">Contáctanos</h2>
+                    <p class="mim-contact-intro">Estamos disponibles para resolver tus dudas sobre el programa de
+                        Maestría</p>
+                </div>
+
+                <div class="mim-contact-info-wrapper">
+                    <div class="mim-contact-card">
+                        <div class="mim-contact-card-header">
+                            <i class="fas fa-id-card mim-contact-card-icon"></i>
+                            <h3 class="mim-contact-title">Coordinación de la Maestría</h3>
+                        </div>
+
+                        <div class="mim-contact-content">
+                            <div class="mim-contact-person">
+                                <div class="mim-contact-avatar">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <div class="mim-contact-person-info">
+                                    <h4 class="mim-contact-subtitle">Dr. Luis Manuel Palacios Pineda</h4>
+                                    <p class="mim-contact-position">Coordinador del Programa</p>
+                                </div>
+                            </div>
+
+                            <div class="mim-contact-details">
+                                <div class="mim-contact-detail-item">
+                                    <i class="fas fa-building mim-contact-detail-icon"></i>
+                                    <div>
+                                        <p class="mim-contact-detail-label">Ubicación</p>
+                                        <p class="mim-contact-detail-text">Edificio de Posgrado, Instituto Tecnológico
+                                            de Pachuca</p>
+                                    </div>
+                                </div>
+
+                                <div class="mim-contact-detail-item">
+                                    <i class="fas fa-phone mim-contact-detail-icon"></i>
+                                    <div>
+                                        <p class="mim-contact-detail-label">Teléfonos</p>
+                                        <p class="mim-contact-detail-text">(771) 710 5251<br>170 0301, 170 0345, 170
+                                            0687<br>711 3140 Ext. 139</p>
+                                    </div>
+                                </div>
+
+                                <div class="mim-contact-detail-item">
+                                    <i class="fas fa-mobile-alt mim-contact-detail-icon"></i>
+                                    <div>
+                                        <p class="mim-contact-detail-label">Móvil</p>
+                                        <p class="mim-contact-detail-text">(771) 176 1668</p>
+                                    </div>
+                                </div>
+
+                                <div class="mim-contact-detail-item">
+                                    <i class="fas fa-envelope mim-contact-detail-icon"></i>
+                                    <div>
+                                        <p class="mim-contact-detail-label">Correo electrónico</p>
+                                        <a href="mailto:luis.pp@pachuca.tecnm.mx"
+                                            class="mim-contact-email">luis.pp&#64;pachuca.tecnm.mx</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mim-contact-schedule">
+                    <h3 class="mim-contact-schedule-title">
+                        <i class="fas fa-clock"></i> Horario de atención
+                    </h3>
+                    <div class="mim-schedule-times">
+                        <div class="mim-schedule-period">
+                            <span class="mim-schedule-days">Lunes a Viernes</span>
+                            <span class="mim-schedule-hours">9:00 - 14:00 hrs</span>
+                        </div>
+                        <div class="mim-schedule-period">
+                            <span class="mim-schedule-days">Lunes a Jueves</span>
+                            <span class="mim-schedule-hours">16:00 - 19:00 hrs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<app-footer></app-footer>

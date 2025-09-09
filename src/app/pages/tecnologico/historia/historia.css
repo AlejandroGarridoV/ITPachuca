@@ -1,0 +1,446 @@
+/* ===== ESTILOS PARA EL COMPONENTE HISTORIA ===== */
+.historia-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: var(--tec-white);
+  border-radius: 15px;
+  box-shadow: var(--shadow-strong);
+  position: relative;
+  overflow: hidden;
+}
+
+.historia-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: var(--gradient-primary);
+  z-index: 1;
+}
+
+/* ===== ENCABEZADO ===== */
+.historia-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+  padding: 2rem 0;
+}
+
+.historia-titulo {
+  font-size: 3.5rem;
+  color: var(--tec-blue);
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.historia-titulo::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 5px;
+  background: var(--gradient-primary);
+  border-radius: 3px;
+}
+
+.separador {
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--tec-gray), transparent);
+  margin: 2rem auto;
+  width: 80%;
+}
+
+/* ===== CONTENIDO ===== */
+.historia-content {
+  padding: 2rem;
+}
+
+.historia-article {
+  position: relative;
+}
+
+.historia-parrafo {
+  margin-bottom: 2.5rem;
+  text-align: justify;
+  font-size: 1.15rem;
+  position: relative;
+  padding: 1.5rem;
+  background: var(--gradient-tertiary);
+  border-radius: 10px;
+  transition: all 0.4s ease;
+  box-shadow: var(--shadow-soft);
+}
+
+.historia-parrafo:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-strong);
+}
+
+.letra-capital {
+  font-size: 5rem;
+  font-family: 'Times New Roman', serif;
+  color: var(--tec-blue);
+  float: left;
+  line-height: 0.8;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+  background: var(--gradient-primary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ===== TIMELINE MEJORADO ===== */
+.timeline {
+  position: relative;
+  margin: 4rem 0;
+  padding-left: 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  background: var(--gradient-primary);
+  border-radius: 3px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 4rem;
+  width: 45%;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-soft);
+  background: var(--tec-white);
+  transition: all 0.4s ease;
+}
+
+.timeline-item:nth-child(odd) {
+  margin-left: auto;
+  border-left: 5px solid var(--tec-blue);
+}
+
+.timeline-item:nth-child(even) {
+  margin-right: auto;
+  border-right: 5px solid var(--tec-red);
+}
+
+.timeline-item:hover {
+  transform: scale(1.03);
+  box-shadow: var(--shadow-strong);
+}
+
+.timeline-date {
+  font-weight: bold;
+  color: var(--tec-red);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background: rgba(191, 3, 16, 0.1);
+  border-radius: 30px;
+}
+
+.timeline-content h3 {
+  color: var(--tec-blue);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  border-bottom: 2px solid var(--tec-yellow);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+/* ===== GRID Y CARDS ===== */
+.historia-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  margin: 4rem 0;
+}
+
+.historia-card {
+  background: var(--tec-white);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  border-top: 5px solid var(--tec-blue);
+}
+
+.historia-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--gradient-tertiary);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+
+.historia-card:hover {
+  transform: translateY(-10px) rotate(1deg);
+  box-shadow: var(--shadow-strong);
+}
+
+.historia-card:hover::before {
+  opacity: 1;
+}
+
+.historia-card h3 {
+  color: var(--tec-blue);
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+  font-size: 1.4rem;
+}
+
+/* ===== LISTAS ===== */
+.historia-lista {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 1.5rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+.historia-lista li {
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 35px;
+  transition: all 0.3s ease;
+}
+
+.historia-lista li:hover {
+  transform: translateX(5px);
+}
+
+.historia-lista li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--tec-white);
+  background: var(--tec-blue);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+/* ===== DESTACADO ===== */
+.historia-destacado {
+  display: flex;
+  align-items: center;
+  background: var(--gradient-primary);
+  color: var(--tec-white);
+  padding: 3rem;
+  border-radius: 15px;
+  margin: 4rem 0;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-strong);
+}
+
+.historia-destacado::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: rotate(30deg);
+}
+
+.destacado-content {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.destacado-content h3 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.logo-itp {
+  width: 150px;
+  margin-left: 2rem;
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 0 10px rgba(0,0,0,0.3));
+  transition: all 0.5s ease;
+}
+
+.logo-itp:hover {
+  transform: rotate(5deg) scale(1.1);
+}
+
+/* ===== FOOTER ===== */
+.historia-footer {
+  text-align: center;
+  padding: 2rem;
+  background: var(--tec-blue);
+  color: var(--tec-white);
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-top: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.historia-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" opacity="0.05"><text x="50%" y="50%" font-size="20" text-anchor="middle" dominant-baseline="middle" fill="white">ITP</text></svg>');
+  background-size: 200px;
+  opacity: 0.1;
+}
+
+/* ===== ELEMENTOS INTERACTIVOS ===== */
+.floating-icons {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.floating-icon {
+  position: absolute;
+  font-size: 2rem;
+  opacity: 0.1;
+  color: var(--tec-blue);
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(10deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+/* Animaciones personalizadas */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-up {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.2s;
+}
+
+.delay-2 {
+  animation-delay: 0.4s;
+}
+
+.delay-3 {
+  animation-delay: 0.6s;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .historia-titulo {
+    font-size: 2.8rem;
+  }
+  
+  .timeline::before {
+    left: 30px;
+  }
+  
+  .timeline-item {
+    width: calc(100% - 60px);
+    margin-left: 60px !important;
+    margin-right: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .historia-container {
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+  
+  .historia-titulo {
+    font-size: 2.2rem;
+  }
+  
+  .historia-content {
+    padding: 1rem;
+  }
+  
+  .historia-destacado {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .logo-itp {
+    margin: 1.5rem 0 0 0;
+  }
+  
+  .timeline::before {
+    left: 20px;
+  }
+  
+  .timeline-item {
+    width: calc(100% - 40px);
+    margin-left: 40px !important;
+    padding: 1.5rem;
+  }
+  
+  .historia-grid {
+    grid-template-columns: 1fr;
+  }
+}

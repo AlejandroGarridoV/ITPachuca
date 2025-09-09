@@ -1,0 +1,279 @@
+/* Estilos para el Núcleo Académico - Doctorado */
+.academic-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.back-button {
+  background: var(--gradient-primary);
+  color: var(--tec-white);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background: var(--tec-blue);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-strong);
+}
+
+.academic-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.academic-title {
+  color: var(--tec-blue);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.academic-subtitle {
+  color: var(--tec-dark-gray);
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.title-divider {
+  height: 4px;
+  width: 100px;
+  background: var(--gradient-secondary);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.academic-description {
+  color: var(--tec-dark-gray);
+  max-width: 800px;
+  margin: 1.5rem auto 0;
+  line-height: 1.6;
+}
+
+/* Pestañas LGAC */
+.lgac-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.lgac-tab {
+  padding: 0.75rem 1.5rem;
+  background: var(--tec-white);
+  border: 2px solid var(--border-color);
+  border-radius: 50px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.lgac-tab:hover, .lgac-tab.active {
+  background: var(--tec-blue);
+  color: var(--tec-white);
+  border-color: var(--tec-blue);
+}
+
+/* Tabla de investigadores */
+.researchers-table {
+  background: var(--tec-white);
+  border-radius: 10px;
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+
+.researchers-list {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.researchers-list th {
+  background: var(--tec-blue);
+  color: var(--tec-white);
+  padding: 1rem;
+  text-align: left;
+}
+
+.researchers-list td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.researchers-list tr:last-child td {
+  border-bottom: none;
+}
+
+.researchers-list tr:hover {
+  background-color: rgba(0, 91, 170, 0.05);
+}
+
+/* Columnas especializadas */
+.lgac-column {
+  width: 100px;
+}
+
+.name-column {
+  width: 40%;
+}
+
+.distinction-column {
+  width: 200px;
+}
+
+.action-column {
+  width: 120px;
+}
+
+/* Badges */
+.lgac-badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.lgac-badge.TMA {
+  background-color: rgba(0, 123, 255, 0.1);
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+
+.lgac-badge.ADTSM {
+  background-color: rgba(220, 53, 69, 0.1);
+  color: #dc3545;
+  border: 1px solid #dc3545;
+}
+
+.sni-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.sni-badge.level-1 {
+  background-color: rgba(0, 123, 255, 0.1);
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+
+.sni-badge.desirable {
+  background-color: rgba(108, 117, 125, 0.1);
+  color: #6c757d;
+  border: 1px solid #6c757d;
+}
+
+/* Información del investigador */
+.researcher-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.researcher-name {
+  font-weight: 500;
+  color: var(--tec-blue);
+}
+
+.researcher-specialty {
+  font-size: 0.85rem;
+  color: var(--tec-gray);
+  margin-top: 0.25rem;
+}
+
+.cv-link {
+  color: var(--tec-blue);
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.cv-link:hover {
+  color: var(--tec-red);
+}
+
+.cv-link i {
+  font-size: 0.8rem;
+}
+
+/* Grupos de investigación */
+.research-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.research-group {
+  background: var(--gradient-tertiary);
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.group-title {
+  color: var(--tec-blue);
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.group-title i {
+  color: var(--tec-red);
+}
+
+.group-description {
+  color: var(--tec-dark-gray);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .academic-title {
+    font-size: 2rem;
+  }
+  
+  .academic-subtitle {
+    font-size: 1.25rem;
+  }
+  
+  .researchers-list {
+    display: block;
+    overflow-x: auto;
+  }
+  
+  .research-groups {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .lgac-tabs {
+    flex-direction: column;
+  }
+  
+  .lgac-tab {
+    width: 100%;
+    text-align: center;
+  }
+}

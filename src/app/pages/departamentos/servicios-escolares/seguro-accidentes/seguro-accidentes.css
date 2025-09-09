@@ -1,0 +1,276 @@
+/* Estilos para el contenedor de seguros */
+.insurance-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+  font-family: 'Roboto', Arial, sans-serif;
+  color: var(--tec-dark-gray);
+}
+
+/* Encabezado */
+.insurance-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.insurance-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.header-divider {
+  height: 4px;
+  width: 100px;
+  background: var(--gradient-primary);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+/* Contenido principal */
+.insurance-content {
+  background: var(--tec-white);
+  border-radius: 8px;
+  padding: 3rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.insurance-intro p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  color: var(--tec-dark-gray);
+}
+
+/* Secciones de cobertura */
+.coverage-section {
+  margin: 2.5rem 0;
+  padding: 2rem;
+  background-color: rgba(0, 123, 255, 0.05);
+  border-radius: 8px;
+  border-left: 4px solid var(--tec-blue);
+}
+
+.coverage-section h2 {
+  color: var(--tec-blue);
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.4rem;
+}
+
+.coverage-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.coverage-list li {
+  padding: 0.75rem 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.coverage-list li:last-child {
+  border-bottom: none;
+}
+
+.coverage-list li i {
+  color: var(--tec-blue);
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+}
+
+/* Sección importante */
+.important-section {
+  margin: 3rem 0;
+}
+
+.important-title {
+  color: var(--tec-red);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.4rem;
+}
+
+.important-list {
+  counter-reset: item;
+  list-style: none;
+  padding-left: 0;
+}
+
+.important-list li {
+  counter-increment: item;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-left: 3rem;
+}
+
+.important-list li::before {
+  content: counter(item);
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: var(--gradient-primary);
+  color: var(--tec-white);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.sub-list {
+  list-style: none;
+  padding-left: 1.5rem;
+  margin-top: 0.75rem;
+}
+
+.sub-list li {
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  border-bottom: none;
+}
+
+.sub-list li i {
+  color: var(--tec-light-blue);
+  font-size: 0.8rem;
+}
+
+/* Enlaces */
+.download-link {
+  color: var(--tec-blue);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 1px dotted currentColor;
+}
+
+.download-link:hover {
+  color: var(--tec-red);
+  text-decoration: none;
+  border-bottom-style: solid;
+}
+
+.download-link i {
+  font-size: 0.9rem;
+}
+
+/* Notas importantes */
+.note-section {
+  background-color: rgba(191, 3, 16, 0.05);
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--tec-red);
+  margin: 3rem 0;
+}
+
+.note-section h3 {
+  color: var(--tec-red);
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.3rem;
+}
+
+.highlight {
+  font-weight: 600;
+  color: var(--tec-red);
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+/* Sección de contacto */
+.contact-section {
+  margin-top: 3.5rem;
+}
+
+.contact-card {
+  background: var(--gradient-primary);
+  color: var(--tec-white);
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow-soft);
+}
+
+.contact-card h3 {
+  margin-bottom: 1.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.4rem;
+}
+
+.contact-details p {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.email-link {
+  color: var(--tec-white);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+}
+
+.email-link:hover {
+  text-decoration: none;
+  color: var(--tec-white);
+  border-bottom-color: var(--tec-white);
+  border-bottom-style: solid;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .insurance-content {
+    padding: 2rem;
+  }
+  
+  .insurance-header h1 {
+    font-size: 2rem;
+  }
+  
+  .coverage-section,
+  .note-section {
+    padding: 1.5rem;
+  }
+  
+  .important-list li {
+    padding-left: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .insurance-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .insurance-content {
+    padding: 1.5rem;
+  }
+  
+  .contact-card {
+    padding: 1.75rem;
+  }
+}

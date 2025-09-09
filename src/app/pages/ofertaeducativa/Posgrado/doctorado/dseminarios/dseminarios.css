@@ -1,0 +1,108 @@
+/* ===== ESTILOS ESPECÍFICOS DE LA SECCIÓN SEMINARIO ===== */
+.seminario-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  color: var(--tec-dark-gray);
+}
+
+.back-button {
+  background: var(--gradient-primary);
+  color: var(--tec-white);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.3s ease;
+  align-self: flex-start;
+  margin-left: 0;
+}
+
+.back-button:hover {
+  background: var(--tec-blue);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-strong);
+}
+/* Jerarquía de títulos */
+.seminario-titulo-principal {
+  font-size: 2.2rem;
+  color: var(--tec-blue);
+  margin-bottom: 0.5rem;
+}
+
+.seminario-subtitulo {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--tec-dark-gray);
+  margin-bottom: 0.3rem;
+}
+
+.seminario-titulo-evento {
+  font-size: 1.4rem;
+  color: var(--tec-red);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.seminario-lema {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--tec-gray);
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+/* Imágenes con estilo */
+.seminario-imagen {
+  max-width: 90%;
+  height: auto;
+  margin: 1rem 0;
+  border-radius: 10px;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.seminario-imagen:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-strong);
+}
+
+/* Animación de entrada */
+.seminario-titulo-principal,
+.seminario-subtitulo,
+.seminario-titulo-evento,
+.seminario-lema,
+.seminario-imagen,
+.seminario-btn-volver {
+  animation: seminario-fadeIn 0.6s ease forwards;
+  opacity: 0;
+}
+
+.seminario-btn-volver { animation-delay: 0.05s; }
+.seminario-titulo-principal { animation-delay: 0.1s; }
+.seminario-subtitulo { animation-delay: 0.2s; }
+.seminario-titulo-evento { animation-delay: 0.3s; }
+.seminario-lema { animation-delay: 0.4s; }
+.seminario-imagen:nth-of-type(1) { animation-delay: 0.5s; }
+.seminario-imagen:nth-of-type(2) { animation-delay: 0.6s; }
+
+@keyframes seminario-fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}

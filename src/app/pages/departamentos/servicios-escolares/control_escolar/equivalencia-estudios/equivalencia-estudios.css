@@ -1,0 +1,370 @@
+/* Variables del TECNM */
+:root {
+  --tec-blue: #1B396A;
+  --tec-light-blue: #4facfe;
+  --tec-white: #FFFFFF;
+  --tec-red: #BF0310;
+  --tec-yellow: #FEEE00;
+  --tec-dark-gray: #343a40;
+  --gradient-primary: linear-gradient(135deg, #005baa 0%, #007bff 100%);
+  --shadow-soft: 0 5px 15px rgba(0, 0, 0, 0.08);
+  --shadow-strong: 0 10px 25px rgba(0, 91, 170, 0.15);
+  --border-radius: 8px;
+  --transition: all 0.3s ease;
+}
+
+/* Contenedor principal */
+.equivalencia-container {
+  font-family: 'Roboto', Arial, sans-serif;
+  color: var(--tec-dark-gray);
+  line-height: 1.7;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hero section */
+.hero-section {
+  background: var(--gradient-primary);
+  color: var(--tec-white);
+  padding: 6rem 2rem 9rem;
+  text-align: center;
+  position: relative;
+  margin-bottom: 4rem;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  opacity: 0.95;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-badge {
+  color: var(--tec-white);
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  backdrop-filter: blur(5px);
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: var(--transition);
+}
+
+.hero-badge:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.hero-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.hero-wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 120px;
+}
+
+/* Contenido principal */
+.content-wrapper {
+  padding: 0 2rem;
+  margin-top: -5rem;
+  position: relative;
+  z-index: 3;
+}
+
+/* Tarjetas informativas */
+.info-card {
+  background: var(--tec-white);
+  border-radius: var(--border-radius);
+  padding: 3rem 2rem;
+  margin-bottom: 3rem;
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: var(--transition);
+  border: 1px solid var(--border-color);
+}
+
+.info-card:hover {
+  box-shadow: var(--shadow-strong);
+  transform: translateY(-5px);
+  border-color: var(--tec-light-blue);
+}
+
+.card-icon {
+  width: 80px;
+  height: 80px;
+  background: var(--tec-blue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.card-icon svg {
+  width: 36px;
+  height: 36px;
+  color: var(--tec-white);
+}
+
+.info-card h3 {
+  color: var(--tec-blue);
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+}
+
+/* Títulos de sección */
+.section-title {
+  color: var(--tec-blue);
+  text-align: center;
+  margin: 4rem 0 3rem;
+  font-size: 2.2rem;
+  position: relative;
+  padding-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 4px;
+  background: var(--tec-light-blue);
+  border-radius: 2px;
+}
+
+/* Grid de requisitos */
+.requirements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+.requirement-card {
+  background: var(--tec-white);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  transition: var(--transition);
+  border-left: 4px solid var(--tec-blue);
+  border: 1px solid var(--border-color);
+}
+
+.requirement-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-strong);
+  border-color: var(--tec-light-blue);
+}
+
+.req-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--tec-blue);
+  margin-right: 1.5rem;
+  min-width: 50px;
+  line-height: 1;
+}
+
+.req-content h4 {
+  color: var(--tec-blue);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.req-content p {
+  color: var(--tec-dark-gray);
+}
+
+/* Sección de notas */
+.notes-section {
+  background: rgba(0, 123, 255, 0.05);
+  border-radius: var(--border-radius);
+  padding: 3rem 2rem;
+  margin-bottom: 4rem;
+  border: 1px solid var(--border-color);
+}
+
+.notes-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.note-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.note-icon {
+  background: var(--tec-blue);
+  color: var(--tec-white);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 1.5rem;
+  flex-shrink: 0;
+  font-size: 0.9rem;
+  box-shadow: var(--shadow-soft);
+}
+
+/* Sección de contacto */
+.contact-section {
+  margin-bottom: 5rem;
+}
+
+.contact-card {
+  background: var(--tec-white);
+  border-radius: var(--border-radius);
+  padding: 4rem 3rem;
+  box-shadow: var(--shadow-soft);
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid var(--border-color);
+}
+
+.contact-card h3 {
+  color: var(--tec-blue);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.contact-card p {
+  margin-bottom: 2.5rem;
+  color: var(--tec-dark-gray);
+  font-size: 1.1rem;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.contact-item svg {
+  width: 24px;
+  height: 24px;
+  color: var(--tec-blue);
+}
+
+.contact-item a {
+  color: var(--tec-blue);
+  text-decoration: none;
+  transition: var(--transition);
+  border-bottom: 1px dotted currentColor;
+}
+
+.contact-item a:hover {
+  color: var(--tec-red);
+  border-bottom-style: solid;
+}
+
+.department-info {
+  font-style: italic;
+  color: var(--tec-dark-gray);
+  margin-top: 2.5rem;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 4rem 1.5rem 7rem;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .content-wrapper {
+    padding: 0 1.5rem;
+    margin-top: -4rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .requirements-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .contact-card {
+    padding: 3rem 1.5rem;
+  }
+
+  .contact-info {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .info-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .requirement-card {
+    flex-direction: column;
+  }
+
+  .req-number {
+    margin-bottom: 1rem;
+    margin-right: 0;
+  }
+}

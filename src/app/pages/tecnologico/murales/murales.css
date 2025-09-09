@@ -1,0 +1,417 @@
+  .murales-institucionales {
+    padding: 2rem;
+    background: var(--gradient-tertiary);
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .mural-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2.5rem;
+    background: var(--gradient-primary);
+    border-radius: 12px;
+    box-shadow: var(--shadow-soft);
+  }
+
+  .mural-title {
+    color: var(--tec-white);
+    margin: 0 0 0.5rem 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  .mural-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  .mural {
+    background: var(--tec-white);
+    border-radius: 16px;
+    padding: 0;
+    margin-bottom: 3rem;
+    box-shadow: var(--shadow-strong);
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+  }
+
+  .mural-hero {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+
+  .mural-imagen-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding: 2rem 0;
+  }
+
+  .mural-imagen {
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    display: block;
+  }
+
+  .mural-nombre {
+    text-align: center;
+    padding: 1.5rem 2rem;
+    background: var(--gradient-primary);
+    color: white;
+  }
+
+  .mural-nombre h2 {
+    color: var(--tec-white);
+    font-size: 2rem;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .mural-badge {
+    display: inline-block;
+    background: var(--tec-yellow);
+    color: var(--tec-dark-gray);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+
+  .mural-contenido {
+    padding: 0 2.5rem 2.5rem;
+  }
+
+  .datos-generales {
+    background: var(--gradient-tertiary);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+  }
+
+  .datos-generales h3 {
+    color: var(--tec-blue);
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--tec-light-blue);
+    padding-bottom: 0.5rem;
+  }
+
+  .datos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+
+  .dato-item {
+    display: flex;
+    margin-bottom: 0.8rem;
+    align-items: center;
+  }
+
+  .dato-etiqueta {
+    font-weight: 600;
+    color: var(--tec-blue);
+    min-width: 120px;
+  }
+
+  .dato-valor {
+    color: var(--tec-dark-gray);
+    flex: 1;
+  }
+
+  .estado-excelente {
+    color: #28a745;
+    font-weight: 600;
+  }
+
+  .estado-bueno {
+    color: #17a2b8;
+    font-weight: 600;
+  }
+
+  .descripcion-obra h3 {
+    color: var(--tec-blue);
+    font-size: 1.8rem;
+    margin: 2rem 0 1.5rem;
+  }
+
+  .descripcion-obra{
+    text-align: justify;
+  }
+
+  .descripcion-resumen {
+    background: var(--gradient-tertiary);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border-left: 4px solid var(--tec-blue);
+  }
+
+  .descripcion-resumen p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+    color: var(--tec-dark-gray);
+  }
+
+  .contenido-destacado {
+    margin: 2rem 0;
+  }
+
+  .aspectos-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 1.5rem 0;
+  }
+
+  .aspecto {
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+
+  .aspecto-negativo {
+    background: linear-gradient(135deg, rgba(191, 3, 16, 0.1) 0%, rgba(191, 3, 16, 0.05) 100%);
+    border-left: 4px solid var(--tec-red);
+  }
+
+  .aspecto-positivo {
+    background: linear-gradient(135deg, rgba(23, 162, 184, 0.1) 0%, rgba(23, 162, 184, 0.05) 100%);
+    border-left: 4px solid var(--tec-light-blue);
+  }
+
+  .aspecto h4 {
+    margin-top: 0;
+    color: var(--tec-dark-gray);
+  }
+
+  .aspecto ul {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+
+  .aspecto li {
+    margin-bottom: 0.5rem;
+  }
+
+  .elementos-obra {
+    margin: 3rem 0;
+  }
+
+  .elementos-obra h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .esferas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .esfera-item {
+    background: var(--tec-white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-soft);
+    text-align: center;
+    border-top: 4px solid var(--tec-light-blue);
+    transition: transform 0.3s ease;
+  }
+
+  .esfera-item:hover {
+    transform: translateY(-5px);
+  }
+
+  .esfera-numero {
+    width: 40px;
+    height: 40px;
+    background: var(--tec-blue);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .esfera-item h4 {
+    color: var(--tec-blue);
+    margin: 0 0 0.8rem 0;
+  }
+
+  .esfera-item p {
+    margin: 0;
+    color: var(--tec-dark-gray);
+    font-size: 0.95rem;
+  }
+
+  .simbolos-adicionales {
+    margin: 3rem 0;
+  }
+
+  .simbolos-adicionales h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .simbolos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .simbolo-item {
+    background: var(--gradient-tertiary);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--tec-yellow);
+  }
+
+  .simbolo-item h4 {
+    color: var(--tec-blue);
+    margin-top: 0;
+  }
+
+  .estructura-obra {
+    margin: 2rem 0;
+  }
+
+  .triptico-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .panel-triptico {
+    background: var(--gradient-tertiary);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .panel-central {
+    grid-column: 1 / -1;
+    background: linear-gradient(135deg, rgba(254, 238, 0, 0.1) 0%, rgba(254, 238, 0, 0.05) 100%);
+    border-left: 4px solid var(--tec-yellow);
+  }
+
+  .panel-triptico h5 {
+    color: var(--tec-blue);
+    margin-top: 0;
+  }
+
+  .temas-principales {
+    background: var(--gradient-tertiary);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+  }
+
+  .temas-principales ul {
+    columns: 2;
+    column-gap: 2rem;
+  }
+
+  .temas-principales li {
+    margin-bottom: 0.5rem;
+    break-inside: avoid;
+  }
+
+  .autor-info {
+    background: var(--gradient-secondary);
+    padding: 2.5rem;
+    border-radius: 16px;
+    color: var(--tec-white);
+    margin-top: 3rem;
+  }
+
+  .autor-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .autor-header h3 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    border-bottom: 2px solid var(--tec-yellow);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+  }
+
+  .autor-titulos {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-top: 0.5rem;
+  }
+
+  .autor-bio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  .bio-col h4 {
+    color: var(--tec-yellow);
+    margin-top: 0;
+  }
+
+  .bio-col ul {
+    padding-left: 1.2rem;
+  }
+
+  .bio-col li {
+    margin-bottom: 0.5rem;
+  }
+
+  .obra-aventura-ciencia {
+    border-top: 5px solid var(--tec-blue);
+  }
+
+  .obra-hombre-alimenta-ingenio {
+    border-top: 5px solid var(--tec-red);
+  }
+
+  .scroll-section {
+    scroll-margin-top: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .murales-institucionales {
+      padding: 1rem;
+    }
+    
+    .aspectos-container,
+    .datos-grid,
+    .esferas-grid,
+    .simbolos-grid,
+    .triptico-grid,
+    .autor-bio-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .temas-principales ul {
+      columns: 1;
+    }
+    
+    .mural-contenido {
+      padding: 0 1.5rem 1.5rem;
+    }
+    
+    .mural-nombre h2 {
+      font-size: 1.5rem;
+    }
+    
+    .mural-imagen {
+      max-height: 350px;
+    }
+  }

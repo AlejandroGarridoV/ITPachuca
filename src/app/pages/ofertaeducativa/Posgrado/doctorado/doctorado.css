@@ -1,0 +1,939 @@
+/* HERO SECTION - Keep original styles */
+.doctorado-hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+.doctorado-hero-image-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.doctorado-hero-img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.6);
+}
+
+.doctorado-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.doctorado-hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    max-width: 800px;
+    padding: 2rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.doctorado-hero-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.doctorado-hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.doctorado-hero-divider {
+    width: 100px;
+    height: 4px;
+    background: var(--gradient-accent);
+    border: none;
+    border-radius: 2px;
+    margin: 1.5rem auto;
+}
+
+/* Botón */
+.hero-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 1.5rem;
+    background: var(--gradient-accent);
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.hero-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background: var(--gradient-accent-hover);
+}
+
+.hero-button i {
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.hero-button:hover i {
+    transform: translateX(3px);
+}
+
+/* MAIN CONTENT STYLES - Simplified version */
+.mim-main-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+    position: relative;
+}
+
+.mim-content-block {
+    background: white;
+    border-radius: 12px;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.mim-content-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.mim-content-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.mim-feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.mim-feature-list li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.mim-feature-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #3498db;
+    font-size: 1.5rem;
+    top: -3px;
+}
+
+.mim-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.mim-col-md-6 {
+    flex: 1 1 45%;
+    min-width: 300px;
+}
+
+.mim-contact-info {
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    border-radius: 12px;
+    padding: 2rem;
+    color: white;
+    margin-top: 3rem;
+}
+
+.mim-contact-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 0.5rem;
+}
+
+.mim-contact-info p {
+    margin: 0.5rem 0;
+}
+
+.mim-contact-info a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Efecto hover para las tarjetas */
+.mim-content-block {
+    transition: all 0.3s ease;
+    transform: translateY(0);
+}
+
+.mim-content-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid var(--gradient-accent);
+}
+
+/* Para la tarjeta de contacto que tiene diferente fondo */
+.mim-contact-info {
+    transition: all 0.3s ease;
+    transform: translateY(0);
+}
+
+.mim-contact-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border-left: 4px solid #f1c40f;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .doctorado-hero-title {
+        font-size: 2.5rem;
+    }
+
+    .doctorado-hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .mim-main-container {
+        padding: 1.5rem;
+    }
+
+    .mim-content-block {
+        padding: 1.5rem;
+    }
+
+    .mim-content-title {
+        font-size: 1.5rem;
+    }
+
+    .mim-col-md-6 {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .doctorado-hero-title {
+        font-size: 2rem;
+    }
+
+    .doctorado-hero-content {
+        padding: 1rem;
+    }
+}
+
+/* Doctorado Section Styles */
+.doctorado-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 4rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.doctorado-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #3498db, #2c3e50);
+}
+
+.doctorado-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* Header Styles */
+.doctorado-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.doctorado-main-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.doctorado-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #3498db;
+    margin-bottom: 1.5rem;
+}
+
+.doctorado-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+
+.divider-line {
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(90deg, #3498db, #2c3e50);
+}
+
+.divider-icon {
+    margin: 0 1rem;
+    color: #3498db;
+    font-size: 1.5rem;
+}
+
+/* Content Styles */
+.doctorado-intro {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 3rem;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Research Lines Cards */
+.research-lines-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.research-line-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border-top: 4px solid #3498db;
+}
+
+.research-line-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.research-line-header {
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #f8fafc 0%, #e9ecef 100%);
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.research-line-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgba(52, 152, 219, 0.2);
+    margin-right: 1rem;
+    line-height: 1;
+}
+
+.research-line-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin: 0;
+    flex: 1;
+}
+
+.research-line-body {
+    padding: 1.5rem;
+}
+
+.research-line-code {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.research-line-description {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.research-line-impact {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.research-line-impact h4 {
+    font-size: 1rem;
+    color: #3498db;
+    margin-bottom: 0.5rem;
+}
+
+.research-line-impact p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #555;
+    margin: 0;
+}
+
+.research-line-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.7rem 1.2rem;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.research-line-btn i {
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.research-line-btn:hover {
+    background-color: #2980b9;
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
+.research-line-btn:hover i {
+    transform: translateX(3px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .doctorado-main-title {
+        font-size: 2rem;
+    }
+
+    .doctorado-subtitle {
+        font-size: 1.3rem;
+    }
+
+    .research-lines-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .doctorado-main-title {
+        font-size: 1.8rem;
+    }
+
+    .doctorado-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .doctorado-container {
+        padding: 0 1.5rem;
+    }
+
+    .research-line-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .research-line-number {
+        margin-bottom: 0.5rem;
+    }
+}
+
+
+/* Estilos generales para las secciones del doctorado */
+.doctorado-section {
+    background-color: #f8f9fa;
+    padding: 3rem 0;
+    margin-bottom: 2rem;
+}
+
+.doctorado-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Estilos para títulos */
+.doctorado-main-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.doctorado-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color: #3498db;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.doctorado-section-divider {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #3498db, #2c3e50);
+    margin: 2rem 0;
+    width: 100px;
+    margin-left: 0;
+}
+
+/* Estilos para el texto de contenido */
+.doctorado-content-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+/* Estilos específicos para el proceso de admisión */
+.doctorado-admision-pdf {
+    width: 100%;
+    height: 600px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.doctorado-download-title {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.doctorado-download-btn {
+    display: inline-block;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+}
+
+.doctorado-download-btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);
+}
+
+/* Estilos para las líneas de investigación */
+.doctorado-research-line {
+    margin-bottom: 2rem;
+}
+
+.doctorado-research-line-title {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.doctorado-research-products {
+    margin-top: 2rem;
+}
+
+/* Efectos hover para las secciones */
+.doctorado-section {
+    transition: all 0.3s ease;
+}
+
+.doctorado-section:hover {
+    background-color: #f1f5f9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .doctorado-main-title {
+        font-size: 2rem;
+    }
+
+    .doctorado-subtitle {
+        font-size: 1.3rem;
+    }
+
+    .doctorado-admision-pdf {
+        height: 400px;
+    }
+
+    .doctorado-container {
+        padding: 0 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .doctorado-main-title {
+        font-size: 1.8rem;
+    }
+
+    .doctorado-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .doctorado-admision-pdf {
+        height: 300px;
+    }
+
+    .doctorado-download-btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+    }
+}
+
+.study-plan-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.study-plan-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 1rem;
+}
+
+.study-plan-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--tec-blue);
+    margin-bottom: 0.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.study-plan-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--tec-yellow);
+    border-radius: 2px;
+}
+
+.study-plan-subtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--tec-light-blue);
+    margin-bottom: 1.5rem;
+}
+
+.study-plan-intro {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+
+.study-plan-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin: 2rem 0;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid var(--border-color);
+}
+
+/* Tablas de plan de estudios */
+.study-plan-table-container {
+    margin: 3rem 0;
+    overflow-x: auto;
+    background: var(--tec-white);
+    border-radius: 8px;
+    box-shadow: var(--shadow-soft);
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.study-plan-table-container:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-strong);
+}
+
+.table-title {
+    font-size: 1.5rem;
+    color: var(--tec-blue);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+}
+
+th,
+td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    background: var(--gradient-primary);
+    color: var(--tec-white);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+tr:hover {
+    background-color: var(--gradient-tertiary);
+}
+
+.total-row {
+    font-weight: 600;
+    background-color: rgba(0, 123, 255, 0.05) !important;
+}
+
+.total-row td {
+    border-top: 2px solid var(--tec-light-blue);
+    border-bottom: none;
+}
+
+/* Sección de actividades complementarias */
+.complementary-activities {
+    margin-top: 4rem;
+}
+
+.activity-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.activity-card {
+    background: var(--tec-white);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow-soft);
+    transition: all 0.3s ease;
+    border-top: 4px solid var(--tec-light-blue);
+}
+
+.activity-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-strong);
+}
+
+.activity-title {
+    font-size: 1.2rem;
+    color: var(--tec-blue);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.activity-hours {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--tec-gray);
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.activity-hours span {
+    display: inline-block;
+    background: var(--gradient-tertiary);
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+.activity-hours .total-hours {
+    background: var(--gradient-primary);
+    color: var(--tec-white);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .study-plan-title {
+        font-size: 2rem;
+    }
+
+    .study-plan-subtitle {
+        font-size: 1.3rem;
+    }
+
+    .study-plan-container {
+        padding: 1rem;
+    }
+
+    th,
+    td {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .activity-card-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .study-plan-title {
+        font-size: 1.8rem;
+    }
+
+    .study-plan-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .activity-hours {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Estilos optimizados para el mapa curricular */
+.curriculum-map-container {
+    margin: 3rem 0;
+    position: relative;
+}
+
+.map-wrapper {
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.map-wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-strong);
+}
+
+/* Ajustes para imagen vertical */
+@media (max-width: 992px) {
+    .map-wrapper {
+        max-height: 60vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .map-wrapper {
+        max-height: 50vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .map-wrapper {
+        max-height: 40vh;
+    }
+
+    .study-plan-intro {
+        text-align: left;
+        padding: 0 1rem;
+    }
+}
+
+
+/* Botón de scroll to top */
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--gradient-accent);
+    color: var(--tec-blue);
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+}
+
+.scroll-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-to-top:hover {
+    background: var(--gradient-accent-hover);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Actualiza el *ngIf en el template para usar la clase visible */
+.scroll-to-top {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}

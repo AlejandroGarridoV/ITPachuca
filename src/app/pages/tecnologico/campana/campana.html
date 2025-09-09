@@ -1,0 +1,67 @@
+<app-header></app-header>
+<div class="campana-container">
+  <div class="campana-header">
+    <h1 class="campana-title">Campana de Identidad Institucional</h1>
+    <div class="campana-divider"></div>
+  </div>
+
+  <div class="campana-content">
+    <section class="section-principal">
+      <div class="campana-image-container">
+        <img src="tecnologico/campana.jpg" alt="Campana de Identidad Institucional" class="campana-main-img">
+      </div>
+      <div class="protocol-section">
+        <div class="protocol-content">
+          <h3 class="protocol-title">Protocolo para el Toque de la Campana</h3>
+          <div class="protocol-clauses">
+            @for (protocolo of protocolos; track protocolo.titulo) {
+            <div class="clause-card">
+              <h4 class="clause-title">{{protocolo.titulo}}</h4>
+              <div class="clause-description">
+                <p>{{protocolo.descripcion}}</p>
+              </div>
+            </div>
+            }
+          </div>
+        </div>
+        <div class="decorative-image">
+          <img src="tecnologico/tuza-desenfocada.jpeg" alt="Tuza desenfocada" class="tuza-img">
+        </div>
+      </div>
+    </section>
+
+    <section class="section-especificaciones">
+      <h3 class="specs-title">Especificaciones</h3>
+      <div class="specs-grid">
+        <div class="specs-card alumno-card">
+          <h4 class="specs-subtitle">Para los Alumnos</h4>
+          <div class="specs-content">
+            <p>{{protocolos[0].especificaciones[0]}}</p>
+            <blockquote class="specs-quote">
+              "{{protocolos[0].mensaje}}"
+              <br><br>
+              <strong>({{protocolos[0].especificaciones[1]}})</strong>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="specs-card trabajador-card">
+          <h4 class="specs-subtitle">Para los Trabajadores de la Educación</h4>
+          <div class="specs-content">
+            <p>{{protocolos[1].especificaciones[0]}}</p>
+            <p class="highlight-text">{{protocolos[1].especificaciones[1]}}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="specs-image">
+      <img src="tecnologico/tuza-horizontal.png" alt="Tuza horizontal" class="tuza-horizontal-img">
+    </div>
+
+    <div class="protocol-footer">
+      <p>Protocolo instaurado el {{fechaProtocolo}}, en la Ceremonia Oficial del {{aniversario}}.</p>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,836 @@
+    /* Estilos para el hero section (originales) */
+    .maestria-hero {
+        position: relative;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        border-radius: var(--border-radius);
+        text-align: center;
+    }
+
+    .maestria-hero-image-wrapper {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .maestria-hero-img {
+        width: 100%;
+        height: auto;
+        max-height: 600px;
+        object-fit: cover;
+        display: block;
+        filter: brightness(0.6);
+    }
+
+    .maestria-hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+    }
+
+    .maestria-hero-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        color: white;
+        max-width: 800px;
+        padding: 2rem;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    }
+
+    .maestria-hero-title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    .maestria-hero-subtitle {
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin-bottom: 1.5rem;
+    }
+
+    .maestria-hero-divider {
+        width: 100px;
+        height: 4px;
+        background: var(--gradient-accent);
+        border: none;
+        border-radius: 2px;
+        margin: 1.5rem auto;
+    }
+
+    .hero-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.8rem 1.5rem;
+        background: var(--gradient-accent);
+        color: white;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        margin-top: 1rem;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+
+    .hero-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        background: var(--gradient-accent-hover);
+    }
+
+    .hero-button i {
+        margin-left: 0.5rem;
+        transition: transform 0.3s ease;
+    }
+
+    .hero-button:hover i {
+        transform: translateX(3px);
+    }
+
+    /* Estilos generales */
+    .mim-container {
+        font-family: 'Roboto', Arial, sans-serif;
+        color: #333;
+        line-height: 1.6;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .mim-section {
+        padding: 3rem 0;
+    }
+
+    .mim-section-accent {
+        background: rgba(0, 102, 204, 0.05);
+    }
+
+    .mim-content-block {
+        background: white;
+        border-radius: 8px;
+        padding: 2.5rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        margin-bottom: 2rem;
+    }
+
+    .mim-section-title {
+        font-size: 2rem;
+        color: var(--tec-blue);
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 3px solid var(--tec-red);
+        display: inline-block;
+    }
+
+    .mim-content-text {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.7;
+    }
+
+    .mim-content-highlight {
+        background: rgba(254, 238, 0, 0.1);
+        padding: 1.5rem;
+        border-left: 4px solid var(--tec-yellow);
+        border-radius: 0 8px 8px 0;
+    }
+
+    /* Grids y columnas */
+    .mim-feature-grid,
+    .mim-plan-estudios-grid,
+    .mim-admision-grid,
+    .mim-lineas-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin: 2rem 0;
+    }
+
+    .mim-feature-column,
+    .mim-plan-column,
+    .mim-admision-step {
+        flex: 1;
+        min-width: 300px;
+    }
+
+    /* Listas */
+    .mim-feature-list,
+    .mim-linea-list,
+    .mim-step-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .mim-feature-list li {
+        padding: 0.8rem 0;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        align-items: center;
+    }
+
+    .mim-feature-list-large li {
+        padding: 1rem 0;
+        font-size: 1.1rem;
+    }
+
+    .mim-icon {
+        color: var(--tec-red);
+        margin-right: 1rem;
+        font-size: 1.2rem;
+        width: 1.5rem;
+        text-align: center;
+    }
+
+    /* Perfiles */
+    .mim-profiles-section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .mim-profile-card {
+        flex: 1;
+        min-width: 300px;
+        background: white;
+        border-radius: 8px;
+        padding: 2rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+    }
+
+    .mim-profile-card-accent {
+        background: var(--gradient-primary);
+        color: white;
+    }
+
+    .mim-profile-card-accent .mim-profile-title,
+    .mim-profile-card-accent .mim-profile-text,
+    .mim-profile-card-accent .mim-profile-list li {
+        color: white;
+    }
+
+    .mim-profile-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .mim-profile-icon {
+        font-size: 1.8rem;
+        margin-right: 1rem;
+        color: var(--tec-red);
+    }
+
+    .mim-profile-card-accent .mim-profile-icon {
+        color: white;
+    }
+
+    .mim-profile-title {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .mim-profile-text {
+        margin-bottom: 1.5rem;
+    }
+
+    .mim-profile-list li {
+        padding: 0.5rem 0;
+        position: relative;
+        padding-left: 1.5rem;
+    }
+
+    .mim-profile-list li:before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: var(--tec-red);
+        font-weight: bold;
+    }
+
+    .mim-profile-card-accent .mim-profile-list li:before {
+        color: white;
+    }
+
+    /* Plan de estudios */
+    .mim-plan-subtitle {
+        font-size: 1.3rem;
+        color: var(--tec-blue);
+        margin-bottom: 1rem;
+        border-bottom: 2px solid var(--tec-gray-light);
+        padding-bottom: 0.5rem;
+    }
+
+    .mim-img-responsive {
+        max-width: 100%;
+        height: auto;
+        border-radius: 6px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .mim-download-section {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .mim-download-button {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.8rem 1.5rem;
+        background: var(--tec-blue);
+        color: white;
+        border-radius: 6px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .mim-download-button:hover {
+        background: var(--tec-dark-blue);
+        transform: translateY(-2px);
+    }
+
+    .mim-download-button i {
+        margin-right: 0.8rem;
+    }
+
+    /* Admisión */
+    .mim-admision-step {
+        background: white;
+        border-radius: 8px;
+        padding: 1.5rem;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .mim-step-number {
+        width: 40px;
+        height: 40px;
+        background: var(--tec-red);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    .mim-step-title {
+        color: var(--tec-blue);
+        margin-top: 0;
+    }
+
+    .mim-step-list li {
+        padding: 0.3rem 0;
+        position: relative;
+        padding-left: 1.2rem;
+    }
+
+    .mim-step-list li:before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: var(--tec-red);
+    }
+
+    .mim-admision-button {
+        width: 100%;
+        height: auto;
+        margin-top: 1.5rem;
+    }
+
+    .mim-button {
+        display: inline-block;
+        padding: 0.6rem 1.2rem;
+        background: var(--tec-red);
+        color: white;
+        border-radius: 6px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .mim-button:hover {
+        background: var(--tec-dark-red);
+        transform: translateY(-2px);
+    }
+
+    /* Líneas de investigación */
+    .mim-linea-card {
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .mim-justified-text {
+        text-align: justify;
+        font-size: 1.1rem;
+        line-height: 1.8;
+        margin-bottom: 1.5rem;
+        color: #444;
+    }
+
+    .mim-linea-card-accent {
+        background: var(--gradient-primary);
+        color: white;
+    }
+
+    .mim-linea-header {
+        padding: 1.2rem;
+        background: rgba(0, 0, 0, 0.03);
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .mim-linea-card-accent .mim-linea-header {
+        background: rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .mim-linea-icon {
+        font-size: 1.5rem;
+        margin-right: 1rem;
+        color: var(--tec-red);
+    }
+
+    .mim-linea-card-accent .mim-linea-icon {
+        color: white;
+    }
+
+    .mim-linea-title {
+        margin: 0;
+        font-size: 1.3rem;
+    }
+
+    .mim-linea-card-accent .mim-linea-title {
+        color: white;
+    }
+
+    .mim-linea-list {
+        padding: 1.2rem;
+    }
+
+    .mim-linea-list li {
+        padding: 0.5rem 0;
+        position: relative;
+        padding-left: 1.5rem;
+    }
+
+    .mim-linea-list li:before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        font-weight: bold;
+    }
+
+    .mim-linea-card-accent .mim-linea-list li:before {
+        color: white;
+    }
+
+    .mim-investigacion-cta {
+        text-align: center;
+        margin-top: 2rem;
+        padding: 1.5rem;
+        background: rgba(0, 102, 204, 0.05);
+        border-radius: 8px;
+    }
+
+    .mim-button-large {
+        padding: 0.8rem 1.8rem;
+        font-size: 1.1rem;
+        margin-top: 1rem;
+    }
+
+    /* Contacto (existente) */
+    .mim-contact-section {
+        background: var(--tec-blue);
+        color: white;
+        padding: 4rem 0;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 5rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .mim-section-title {
+            font-size: 1.6rem;
+        }
+
+        .mim-content-block {
+            padding: 1.5rem;
+        }
+
+        .mim-plan-estudios-grid,
+        .mim-admision-grid,
+        .mim-lineas-grid {
+            flex-direction: column;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .mim-section {
+            padding: 2rem 0;
+        }
+
+        .mim-profile-card {
+            min-width: 100%;
+        }
+    }
+
+    /* Estilos para la sección de contacto mejorada */
+    .mim-contact-section {
+        background: var(--tec-blue);
+        color: white;
+        padding: 4rem 0;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 5rem;
+    }
+
+    .mim-contact-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, rgba(27, 57, 106, 0.9) 0%, rgba(0, 91, 170, 0.9) 100%);
+        z-index: 0;
+    }
+
+    .mim-contact-container {
+        position: relative;
+        z-index: 1;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .mim-contact-header {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .mim-contact-main-title {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: white;
+        position: relative;
+        display: inline-block;
+    }
+
+    .mim-contact-main-title::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 4px;
+        background: var(--tec-red);
+        border-radius: 2px;
+    }
+
+    .mim-contact-intro {
+        font-size: 1.2rem;
+        max-width: 700px;
+        margin: 0 auto;
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .mim-contact-info-wrapper {
+        margin-bottom: 3rem;
+    }
+
+    .mim-contact-card {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .mim-contact-card-header {
+        background: var(--tec-red);
+        padding: 1.5rem;
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+
+    .mim-contact-card-icon {
+        font-size: 1.8rem;
+        margin-right: 1rem;
+    }
+
+    .mim-contact-title {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .mim-contact-content {
+        padding: 2rem;
+    }
+
+    .mim-contact-person {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .mim-contact-avatar {
+        width: 70px;
+        height: 70px;
+        background: var(--gradient-tertiary);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1.5rem;
+        color: var(--tec-blue);
+        font-size: 2rem;
+    }
+
+    .mim-contact-person-info {
+        flex: 1;
+    }
+
+    .mim-contact-subtitle {
+        font-size: 1.3rem;
+        margin: 0 0 0.3rem 0;
+        color: var(--tec-blue);
+    }
+
+    .mim-contact-position {
+        color: var(--tec-gray);
+        margin: 0;
+        font-size: 0.9rem;
+    }
+
+    .mim-contact-details {
+        display: grid;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .mim-contact-detail-item {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .mim-contact-detail-icon {
+        font-size: 1.2rem;
+        color: var(--tec-red);
+        margin-top: 3px;
+    }
+
+    .mim-contact-detail-label {
+        font-weight: 500;
+        color: var(--tec-blue);
+        margin: 0 0 0.2rem 0;
+        font-size: 0.9rem;
+    }
+
+    .mim-contact-detail-text {
+        margin: 0;
+        color: var(--tec-dark-gray);
+        line-height: 1.5;
+    }
+
+    .mim-contact-email {
+        color: var(--tec-blue);
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+
+    .mim-contact-email:hover {
+        color: var(--tec-red);
+        text-decoration: underline;
+    }
+
+    .mim-contact-actions {
+        text-align: center;
+    }
+
+    .mim-contact-action-button {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.8rem 1.5rem;
+        background: var(--tec-red);
+        color: white;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+
+    .mim-contact-action-button:hover {
+        background: var(--tec-dark-red);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(191, 3, 16, 0.3);
+    }
+
+    .mim-contact-action-button i {
+        margin-right: 0.5rem;
+    }
+
+    .mim-contact-schedule {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        padding: 1.5rem;
+        backdrop-filter: blur(5px);
+    }
+
+    .mim-contact-schedule-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.8rem;
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+        color: white;
+    }
+
+    .mim-schedule-times {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .mim-schedule-period {
+        text-align: center;
+    }
+
+    .mim-schedule-days {
+        display: block;
+        font-weight: 500;
+        margin-bottom: 0.3rem;
+    }
+
+    .mim-schedule-hours {
+        display: block;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .mim-contact-main-title {
+            font-size: 2rem;
+        }
+
+        .mim-contact-person {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .mim-contact-avatar {
+            margin-right: 0;
+            margin-bottom: 1rem;
+        }
+
+        .mim-schedule-times {
+            flex-direction: column;
+            gap: 1rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .mim-contact-section {
+            padding: 3rem 0;
+        }
+
+        .mim-contact-content {
+            padding: 1.5rem;
+        }
+
+        .mim-contact-details {
+            gap: 1rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .mim-section-title {
+            font-size: 1.6rem;
+        }
+
+        .mim-content-block {
+            padding: 1.5rem;
+        }
+
+        .maestria-hero-title {
+            font-size: 2.5rem;
+        }
+
+        .maestria-hero-subtitle {
+            font-size: 1.2rem;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .maestria-hero-title {
+            font-size: 2rem;
+        }
+
+        .maestria-hero-content {
+            padding: 1rem;
+        }
+    }
+
+    /* Botón de scroll to top */
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--gradient-accent);
+  color: var(--tec-blue);
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+}
+
+.scroll-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.scroll-to-top:hover {
+  background: var(--gradient-accent-hover);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Actualiza el *ngIf en el template para usar la clase visible */
+.scroll-to-top {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}

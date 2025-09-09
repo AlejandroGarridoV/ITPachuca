@@ -1,0 +1,137 @@
+<section id="oferta-educativa" class="tec-oferta-educativa">
+    <div class="container">
+        <!-- Título principal con estilo especial -->
+        <h2 class="tec-oferta-section-title">Oferta Educativa</h2>
+
+        <!-- Descripción introductoria -->
+        <p class="tec-oferta-section-subtitle">
+            Formamos profesionales de excelencia con programas educativos de vanguardia,
+            vinculados con las necesidades del sector productivo y comprometidos con el desarrollo social.
+        </p>
+
+        <div class="row">
+            <!-- Tarjeta Licenciaturas -->
+            <div class="col">
+                <div class="tec-oferta-card">
+                    <div class="tec-oferta-card-body">
+                        <div class="tec-oferta-icon-box">
+                            <i class="fas fa-graduation-cap fa-3x" style="color: var(--tec-blue);"></i>
+                        </div>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 1rem;"><strong>Licenciaturas</strong></h3>
+                        <p>Programas diseñados para formar profesionales con visión integral y competitiva.</p>
+
+                        <div class="tec-oferta-dropdown-container">
+                            <button class="tec-oferta-btn-outline tec-oferta-dropdown-trigger" 
+                                    (click)="toggleDropdown('licenciaturas')">
+                                Ver programas 
+                                <i class="fas fa-chevron-down" [class.rotate-180]="showLicenciaturas"></i>
+                            </button>
+                            <div class="tec-oferta-dropdown-menu" [class.active]="showLicenciaturas">
+                                <ul>
+                                    <li><a class="tec-oferta-dropdown-item" routerLink="/arquitectura" >Arquitectura</a></li>
+                                    <li><a class="tec-oferta-dropdown-item" routerLink="/administracion" >Administración</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta Ingenierías -->
+            <div class="col">
+                <div class="tec-oferta-card">
+                    <div class="tec-oferta-card-body">
+                        <div class="tec-oferta-icon-box">
+                            <i class="fas fa-cogs fa-3x" style="color: var(--tec-light-blue);"></i>
+                        </div>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 1rem;"><strong>Ingenierías</strong></h3>
+                        <p>Formación de ingenieros innovadores con capacidad para transformar la industria.</p>
+
+                        <div class="tec-oferta-dropdown-container">
+                            <button class="tec-oferta-btn-outline tec-oferta-dropdown-trigger" 
+                                    (click)="toggleDropdown('ingenierias')">
+                                Ver programas 
+                                <i class="fas fa-chevron-down" [class.rotate-180]="showIngenierias"></i>
+                            </button>
+                            <div class="tec-oferta-dropdown-menu" [class.active]="showIngenierias">
+                                <ul>
+                                    <li><a class="tec-oferta-dropdown-item" routerLink="/disindustrial">Diseño Industrial</a></li>
+                                    <li><a class="tec-oferta-dropdown-item" routerLink="/civil">Civil</a></li>
+                                    <li><a class="tec-oferta-dropdown-item" routerLink="/electrica">Eléctrica</a></li>
+                                    <li><a class="tec-oferta-dropdown-item" routerLink="/industrial">Industrial</a></li>
+                                    <li><a class="tec-oferta-dropdown-item" routerLink="/mecanica">Mecánica</a></li>
+                                    <li><a class="tec-oferta-dropdown-item" routerLink="/ferroviaria">Ferroviaria</a></li>
+                                    <li><a class="tec-oferta-dropdown-item" routerLink="/quimica">Química</a></li>
+                                    <li><a class="tec-oferta-dropdown-item" routerLink="/sistemas">Sistemas Computacionales</a></li>
+                                    <li><a class="tec-oferta-dropdown-item" routerLink="/itics">TIC's</a></li>
+                                    <li><a class="tec-oferta-dropdown-item" routerLink="/g.empresarial">Gestión Empresarial</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta Educación a Distancia -->
+            <div class="col">
+                <div class="tec-oferta-card">
+                    <div class="tec-oferta-card-body">
+                        <div class="tec-oferta-icon-box">
+                            <i class="fas fa-laptop fa-3x" style="color: var(--tec-blue);"></i>
+                        </div>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 1rem;"><strong>Educación a Distancia</strong></h3>
+                        <p>Flexibilidad para estudiar con la misma calidad desde cualquier lugar.</p>
+
+                        <div class="tec-oferta-dropdown-container">
+                            <button class="tec-oferta-btn-outline tec-oferta-dropdown-trigger" 
+                                    (click)="toggleDropdown('distancia')">
+                                Ver programas 
+                                <i class="fas fa-chevron-down" [class.rotate-180]="showDistancia"></i>
+                            </button>
+                            <div class="tec-oferta-dropdown-menu" [class.active]="showDistancia">
+                                <ul>
+                                    <li><a class="tec-oferta-dropdown-item" routerLink="/ead-administracion">Lic. en Administración</a></li>
+                                    <li><a class="tec-oferta-dropdown-item" routerLink="/ead-sistemas">Ing. en Sistemas</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta Posgrados -->
+            <div class="col">
+                <div class="tec-oferta-card">
+                    <div class="tec-oferta-card-body">
+                        <div class="tec-oferta-icon-box">
+                            <i class="fas fa-user-graduate fa-3x" style="color: var(--tec-light-blue);"></i>
+                        </div>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 1rem;"><strong>Posgrados</strong></h3>
+                        <p>Especialización e investigación de alto nivel para el desarrollo profesional.</p>
+
+                        <div class="tec-oferta-dropdown-container">
+                            <button class="tec-oferta-btn-outline tec-oferta-dropdown-trigger" 
+                                    (click)="toggleDropdown('posgrados')">
+                                Ver programas 
+                                <i class="fas fa-chevron-down" [class.rotate-180]="showPosgrados"></i>
+                            </button>
+                            <div class="tec-oferta-dropdown-menu" [class.active]="showPosgrados">
+                                <ul>
+                                    <li><a class="tec-oferta-dropdown-item" routerLink="/maestria">Maestría en Ing. Mecánica</a></li>
+                                    <li><a class="tec-oferta-dropdown-item" routerLink="/doctorado">Doctorado en Ciencias</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botón CTA -->
+        <div style="text-align: center; margin-top: 3rem;">
+            <a routerLink="/oferta-educativa" class="tec-oferta-btn-primary">
+                <i class="fas fa-search" style="margin-right: 0.5rem;"></i> Explorar toda la oferta educativa
+            </a>
+        </div>
+    </div>
+</section>

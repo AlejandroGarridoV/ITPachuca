@@ -1,0 +1,436 @@
+/* ===== ESTRUCTURA GALÁCTICA ===== */
+.vinculacion-container {
+  background: var(--platinum-effect);
+  border-radius: 24px;
+  box-shadow: var(--space-3d), inset 0 0 0 1px rgba(255,255,255,0.3);
+  margin: 4rem auto;
+  max-width: 1200px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.vinculacion-container::before {
+  background: var(--gold-gradient);
+  content: '';
+  height: 6px;
+  left: 24px;
+  position: absolute;
+  right: 24px;
+  top: 0;
+  width: calc(100% - 48px);
+}
+
+/* ===== CABECERA CINEMÁTICA ===== */
+.vinculacion-header {
+  padding: 5rem 5rem 3rem;
+  position: relative;
+  text-align: center;
+}
+
+.vinculacion-titulo-principal {
+  background: linear-gradient(90deg, #1B396A, #005BAA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  margin: 0 auto 1.5rem;
+  max-width: 900px;
+  position: relative;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.vinculacion-titulo-principal::after {
+  background: var(--gold-gradient);
+  bottom: -1.5rem;
+  content: '';
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 200px;
+}
+
+.vinculacion-subtitulo {
+  color: var(--tec-dark-gray);
+  font-family: 'Lora', serif;
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0 auto 3rem;
+  max-width: 800px;
+  opacity: 0.85;
+}
+
+/* ===== CONTENIDO HOLOGRÁFICO ===== */
+.vinculacion-content {
+  padding: 0 5rem 5rem;
+}
+
+.vinculacion-section {
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+/* ===== TIPOGRAFÍA DE LUJO ===== */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Lora:ital@0;1&display=swap');
+
+.vinculacion-parrafo {
+  color: #333;
+  font-family: 'Lora', serif;
+  font-size: 1.2rem;
+  line-height: 2;
+  margin-bottom: 2.5rem;
+  position: relative;
+  text-align: justify;
+}
+
+.vinculacion-parrafo:first-of-type {
+  font-size: 1.25rem;
+}
+
+.vinculacion-parrafo:first-of-type::first-letter {
+  color: var(--tec-blue);
+  float: left;
+  font-family: 'Playfair Display', serif;
+  font-size: 6rem;
+  font-weight: 800;
+  line-height: 0.7;
+  margin: 0.2em 0.15em 0 0;
+  padding-top: 0.1em;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+/* ===== TABLA FUTURISTA ===== */
+.vinculacion-tabla-container {
+  backdrop-filter: blur(8px);
+  background: rgba(255,255,255,0.7);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 91, 170, 0.1);
+  margin: 4rem 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.vinculacion-tabla {
+  border-collapse: separate;
+  border-spacing: 0;
+  font-family: 'Lora', serif;
+  width: 100%;
+}
+
+.vinculacion-tabla thead {
+  background: linear-gradient(90deg, #1B396A, #005BAA);
+}
+
+.vinculacion-tabla th {
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 1.5rem 2rem;
+  position: relative;
+  text-align: left;
+}
+
+.vinculacion-tabla th:not(:last-child)::after {
+  background: rgba(255, 255, 255, 0.3);
+  content: '';
+  height: 50%;
+  position: absolute;
+  right: 0;
+  top: 25%;
+  width: 1px;
+}
+
+.vinculacion-tabla td {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+  padding: 1.5rem 2rem;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  vertical-align: middle;
+}
+
+.vinculacion-tabla tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.vinculacion-tabla tbody tr {
+  position: relative;
+}
+
+.vinculacion-tabla tbody tr::after {
+  background: var(--gold-gradient);
+  bottom: 0;
+  content: '';
+  height: 1px;
+  left: 2rem;
+  opacity: 0;
+  position: absolute;
+  right: 2rem;
+  transition: opacity 0.3s ease;
+}
+
+.vinculacion-tabla tbody tr:hover::after {
+  opacity: 0.3;
+}
+
+.vinculacion-tabla tbody tr:nth-child(even) {
+  background-color: rgba(0, 91, 170, 0.02);
+}
+
+.vinculacion-tabla tbody tr:hover td {
+  background-color: rgba(0, 91, 170, 0.03);
+  transform: perspective(500px) translateZ(10px);
+}
+
+/* ===== LISTAS DE ALTA GAMA ===== */
+.vinculacion-lista-instituciones {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  list-style: none;
+  margin: 3rem 0;
+  padding: 0;
+}
+
+.vinculacion-lista-instituciones li {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  z-index: 1;
+}
+
+.vinculacion-lista-instituciones li::before {
+  background: var(--gold-gradient);
+  border-radius: 12px 0 0 12px;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: width 0.4s ease;
+  width: 4px;
+  z-index: -1;
+}
+
+.vinculacion-lista-instituciones li:hover {
+  box-shadow: 0 10px 25px rgba(0, 91, 170, 0.1);
+  transform: translateY(-5px);
+}
+
+.vinculacion-lista-instituciones li:hover::before {
+  width: 8px;
+}
+
+.vinculacion-noticias-titulo {
+  color: var(--tec-blue);
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 4rem 0 2rem;
+  position: relative;
+}
+
+.vinculacion-noticias-titulo::after {
+  background: var(--gold-gradient);
+  bottom: -0.75rem;
+  content: '';
+  height: 3px;
+  left: 0;
+  position: absolute;
+  width: 80px;
+}
+
+.vinculacion-lista-noticias {
+  list-style: none;
+  padding: 0;
+}
+
+.vinculacion-lista-noticias li {
+  margin-bottom: 1.5rem;
+  padding-left: 2.5rem;
+  position: relative;
+}
+
+.vinculacion-lista-noticias li::before {
+  background: var(--gold-gradient);
+  border-radius: 50%;
+  content: '';
+  height: 12px;
+  left: 0;
+  position: absolute;
+  top: 0.65em;
+  width: 12px;
+}
+
+.vinculacion-lista-noticias a {
+  color: #444;
+  display: inline-block;
+  font-family: 'Lora', serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.vinculacion-lista-noticias a:hover {
+  color: var(--tec-blue);
+}
+
+.vinculacion-lista-noticias a::after {
+  background: var(--gold-gradient);
+  bottom: -3px;
+  content: '';
+  height: 1px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  width: 100%;
+}
+
+.vinculacion-lista-noticias a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* ===== ELEMENTOS DE LUJO ===== */
+.vinculacion-divider {
+  background: linear-gradient(90deg, transparent, rgba(0, 91, 170, 0.2), transparent);
+  border: 0;
+  height: 1px;
+  margin: 4rem auto;
+  width: 70%;
+}
+
+/* ===== EFECTO 3D ===== */
+.vinculacion-3d-effect {
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1), 
+              0 10px 20px -10px rgba(0, 0, 0, 0.1),
+              inset 0 0 20px rgba(255, 255, 255, 0.3);
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.vinculacion-3d-effect:hover {
+  box-shadow: 0 30px 60px -10px rgba(0, 0, 0, 0.15), 
+              0 15px 30px -10px rgba(0, 0, 0, 0.15),
+              inset 0 0 30px rgba(255, 255, 255, 0.4);
+  transform: perspective(1000px) rotateX(1deg) translateY(-5px);
+}
+
+/* ===== RESPONSIVE DE LUJO ===== */
+@media (max-width: 1200px) {
+  .vinculacion-header, .vinculacion-content {
+    padding: 4rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .vinculacion-header, .vinculacion-content {
+    padding: 3rem;
+  }
+  
+  .vinculacion-titulo-principal {
+    font-size: 3rem;
+  }
+  
+  .vinculacion-subtitulo {
+    font-size: 1.6rem;
+  }
+  
+  .vinculacion-parrafo:first-of-type::first-letter {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .vinculacion-header, .vinculacion-content {
+    padding: 2.5rem;
+  }
+  
+  .vinculacion-titulo-principal {
+    font-size: 2.5rem;
+  }
+  
+  .vinculacion-subtitulo {
+    font-size: 1.4rem;
+  }
+  
+  .vinculacion-parrafo {
+    font-size: 1.1rem;
+  }
+  
+  .vinculacion-lista-instituciones {
+    grid-template-columns: 1fr;
+  }
+  
+  .vinculacion-tabla th, 
+  .vinculacion-tabla td {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .vinculacion-header, .vinculacion-content {
+    padding: 2rem;
+  }
+  
+  .vinculacion-titulo-principal {
+    font-size: 2.2rem;
+  }
+  
+  .vinculacion-subtitulo {
+    font-size: 1.2rem;
+  }
+  
+  .vinculacion-parrafo:first-of-type::first-letter {
+    font-size: 4rem;
+  }
+  
+  .vinculacion-tabla-container {
+    border-radius: 0;
+    margin-left: -2rem;
+    margin-right: -2rem;
+    width: calc(100% + 4rem);
+  }
+  
+  .vinculacion-tabla th, 
+  .vinculacion-tabla td {
+    padding: 1rem;
+  }
+}
+
+.back-button {
+  background: var(--gradient-primary);
+  color: var(--tec-white);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.3s ease;
+  align-self: flex-start;
+  margin-left: 0;
+}
+
+.back-button:hover {
+  background: var(--tec-blue);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-strong);
+}

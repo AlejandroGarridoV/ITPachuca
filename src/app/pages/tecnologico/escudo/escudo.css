@@ -1,0 +1,282 @@
+/* ===== HEADER SECTION ===== */
+.header-section {
+	background: linear-gradient(135deg, var(--tec-blue) 0%, var(--tec-light-blue) 100%);
+	color: white;
+	padding: 5rem 1rem;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+.header-section::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.1;
+}
+
+.header-title {
+	font-size: 3.5rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+	animation: fadeInDown 1s ease;
+}
+
+.header-subtitle {
+	font-size: 1.5rem;
+	max-width: 800px;
+	margin: 0 auto;
+	opacity: 0.9;
+	animation: fadeIn 1.5s ease;
+	font-weight: 300;
+}
+
+/* ===== INTRO CARD ===== */
+.intro-card {
+	width: 80%;
+	margin: 2rem auto;
+	padding: 2rem;
+	text-align: center;
+	background: white;
+	border-radius: var(--border-color);
+	box-shadow: var(--shadow-strong);
+}
+
+/* Contenedor del escudo y personaje */
+.shield-container {
+  background: linear-gradient(to top, #f5f7fa, rgb(216, 233, 248));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+  padding: 2rem 1rem;
+  position: relative; /* importante para posicionar la tuza */
+}
+
+/* Icono del personaje */
+.character-icon {
+  position: absolute;
+  width: 450px;   /* tamaño ajustado */
+  height: auto;  /* tamaño ajustado */
+  left: 20px;     /* lo acercamos un poco al borde izquierdo */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: drop-shadow(0 2px 5px rgba(0,0,0,0.2));
+}
+
+.character-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Escudo principal */
+.shield-main {
+  width: 400px;   /* tamaño ajustado */
+  height: 400px;  /* tamaño ajustado */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto 2rem;
+  transition: transform 0.5s ease;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.15));
+}
+
+.shield-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .shield-main { width: 300px; height: 300px; }
+  .character-icon { width: 200px; height: 200px; left: 15px; }
+}
+
+@media (max-width: 768px) {
+  .shield-main { width: 250px; height: 250px; }
+  .character-icon { width: 150px; height: 150px; left: 10px; top: 40%; }
+}
+
+
+/* ===== COMPONENTS ===== */
+.components-row {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	margin-top: 2rem;
+}
+
+.component-item {
+	flex: 1;
+	min-width: 200px;
+	max-width: 220px;
+	padding: 1rem;
+	cursor: pointer;
+	text-align: center;
+	transition: var(--gradient-tertiary);
+	border-radius: 8px;
+}
+
+.component-item:hover {
+	background: rgba(0, 0, 0, 0.03);
+}
+
+.component-img {
+	width: 100px;
+	height: 100px;
+	margin: 0 auto 1rem;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: all 0.3s ease;
+}
+
+.component-item:hover .component-img {
+	transform: scale(1.1);
+}
+
+.component-title {
+	color: var(--tec-blue);
+	font-size: 1.2rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+}
+
+.component-desc {
+	color: var(--tec-dark-grey);
+	font-size: 1rem;
+	line-height: 1.4;
+}
+
+/* ===== HISTORY SECTION ===== */
+.history-section {
+	width: 80%;
+	margin: 3rem auto;
+	padding: 2.5rem;
+	background: linear-gradient(to bottom, #f5f7fa, rgb(216, 233, 248));
+	border-radius: var(--border-color);
+	box-shadow: var(--shadow-soft);
+}
+
+.history-title {
+	color: var(--tec-blue);
+	font-size: 2rem;
+	margin-bottom: 2rem;
+	text-align: center;
+	position: relative;
+}
+
+.history-title::after {
+	content: "";
+	position: absolute;
+	bottom: -10px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 80px;
+	height: 4px;
+	background: var(--gradient-primary);
+	border-radius: 2px;
+}
+
+.history-text-card {
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	max-width: 1200px;
+	margin: 20px auto;
+}
+
+.history-text {
+	text-align: center;
+	line-height: 1.8;
+	color: rgb(22, 33, 63);
+	font-weight: 500;
+}
+
+/* ===== TIMELINE ===== */
+.timeline {
+	position: relative;
+	max-width: 800px;
+	margin: 3rem auto;
+}
+
+.timeline::after {
+	content: '';
+	position: absolute;
+	width: 4px;
+	background: linear-gradient(to bottom, var(--tec-light-blue), var(--tec-red));
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 10px;
+}
+
+.timeline-item {
+	padding: 10px 40px;
+	position: relative;
+	width: 50%;
+	box-sizing: border-box;
+}
+
+.timeline-item:nth-child(odd) { left: 0; }
+.timeline-item:nth-child(even) { left: 50%; }
+
+.timeline-item::after {
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: var(--tec-dark-red);
+	border-radius: 50%;
+	top: 15px;
+	z-index: 1;
+}
+
+.timeline-item:nth-child(odd)::after { right: -10px; }
+.timeline-item:nth-child(even)::after { left: -10px; }
+
+.timeline-content {
+	padding: 20px;
+	background: white;
+	border-radius: 8px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	position: relative;
+}
+
+.timeline-year {
+	font-weight: bold;
+	color: var(--tec-red);
+	margin-bottom: 0.5rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+	.header-title { font-size: 2.8rem; }
+	.header-subtitle { font-size: 1.2rem; }
+	.shield-main { width: 400px; height: 400px; }
+}
+
+@media (max-width: 768px) {
+	.intro-card, .history-section { width: 90%; padding: 1.5rem; }
+	.components-row { flex-direction: column; align-items: center; }
+	.component-item { max-width: 100%; width: 100%; }
+	.shield-main { width: 250px; height: 250px; }
+	.timeline::after { left: 30px; }
+	.timeline-item { width: 100%; padding-left: 70px; padding-right: 25px; left: 0 !important; }
+	.timeline-item::after { left: 21px !important; right: auto !important; }
+}

@@ -1,0 +1,190 @@
+<app-header></app-header>
+
+<div class="academic-container">
+  <button routerLink="/doctorado" class="back-button">
+    <i class="fas fa-arrow-left"></i> Volver al Doctorado
+  </button>
+
+  <div class="academic-header">
+    <h1 class="academic-title">Núcleo Académico</h1>
+    <h2 class="academic-subtitle">División de Estudios de Posgrado e Investigación</h2>
+    <div class="title-divider"></div>
+    <p class="academic-description">
+      Nuestro equipo de investigadores cuenta con reconocimientos nacionales e internacionales que avalan la calidad de nuestro programa doctoral.
+    </p>
+  </div>
+
+  <div class="lgac-tabs">
+    <button class="lgac-tab active" data-lgac="all">Todos los Investigadores</button>
+    <button class="lgac-tab" data-lgac="TMA">Tecnologías de Manufactura Avanzada (TMA)</button>
+    <button class="lgac-tab" data-lgac="ADTSM">Análisis y Diseño de Sistemas Termofluidodinámicos y Mecánicos (ADTSM)</button>
+  </div>
+
+  <div class="researchers-table">
+    <div class="table-responsive">
+      <table class="researchers-list">
+        <thead>
+          <tr>
+            <th class="lgac-column">LGAC</th>
+            <th class="name-column">Investigador</th>
+            <th class="distinction-column">Distinción</th>
+            <th class="action-column">CV</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Investigadores TMA -->
+          <tr data-lgac="TMA">
+            <td class="lgac-badge TMA">TMA</td>
+            <td>
+              <div class="researcher-info">
+                <div class="researcher-name">Dra. Marisa Moreno Ríos</div>
+                <div class="researcher-specialty">Manufactura Avanzada</div>
+              </div>
+            </td>
+            <td><span class="sni-badge level-1">SNI Nivel 1</span></td>
+            <td><a href="mmr-d.php" class="cv-link">Ver CV <i class="fas fa-external-link-alt"></i></a></td>
+          </tr>
+          
+          <tr data-lgac="TMA">
+            <td class="lgac-badge TMA">TMA</td>
+            <td>
+              <div class="researcher-info">
+                <div class="researcher-name">Dr. Edgar Vera Cárdenas</div>
+                <div class="researcher-specialty">Materiales Avanzados</div>
+              </div>
+            </td>
+            <td><span class="sni-badge level-1">SNI Nivel 1</span></td>
+            <td><a href="evc-d.php" class="cv-link">Ver CV <i class="fas fa-external-link-alt"></i></a></td>
+          </tr>
+          
+          <tr data-lgac="TMA">
+            <td class="lgac-badge TMA">TMA</td>
+            <td>
+              <div class="researcher-info">
+                <div class="researcher-name">Dra. Erika Osiris Ávila Dávila</div>
+                <div class="researcher-specialty">Manufactura Avanzada</div>
+              </div>
+            </td>
+            <td><span class="sni-badge level-1">SNI Nivel 1</span></td>
+            <td><a href="eoad-d.php" class="cv-link">Ver CV <i class="fas fa-external-link-alt"></i></a></td>
+          </tr>
+          
+          <tr data-lgac="TMA">
+            <td class="lgac-badge TMA">TMA</td>
+            <td>
+              <div class="researcher-info">
+                <div class="researcher-name">Dr. Armando Irving Martínez Pérez</div>
+                <div class="researcher-specialty">Materiales Avanzados</div>
+              </div>
+            </td>
+            <td><span class="sni-badge level-1">SNI Nivel 1</span></td>
+            <td><a href="aimp-d.php" class="cv-link">Ver CV <i class="fas fa-external-link-alt"></i></a></td>
+          </tr>
+          
+          <!-- Investigadores ADTSM -->
+          <tr data-lgac="ADTSM">
+            <td class="lgac-badge ADTSM">ADTSM</td>
+            <td>
+              <div class="researcher-info">
+                <div class="researcher-name">Dr. Luis Manuel Palacios Pineda</div>
+                <div class="researcher-specialty">Termofluidos Computacionales</div>
+              </div>
+            </td>
+            <td><span class="sni-badge level-1">SNI Nivel 1</span></td>
+            <td><a href="lmpp-d.php" class="cv-link">Ver CV <i class="fas fa-external-link-alt"></i></a></td>
+          </tr>
+          
+          <tr data-lgac="ADTSM">
+            <td class="lgac-badge ADTSM">ADTSM</td>
+            <td>
+              <div class="researcher-info">
+                <div class="researcher-name">Dr. Francisco Noé Demesa López</div>
+                <div class="researcher-specialty">Dinámica de Fluidos</div>
+              </div>
+            </td>
+            <td><span class="sni-badge level-1">SNI Nivel 1</span></td>
+            <td><a href="fndl-d.php" class="cv-link">Ver CV <i class="fas fa-external-link-alt"></i></a></td>
+          </tr>
+          
+          <tr data-lgac="ADTSM">
+            <td class="lgac-badge ADTSM">ADTSM</td>
+            <td>
+              <div class="researcher-info">
+                <div class="researcher-name">Dr. Hugo Francisco Abundis Fong</div>
+                <div class="researcher-specialty">Sistemas Mecánicos</div>
+              </div>
+            </td>
+            <td><span class="sni-badge level-1">SNI Nivel 1</span></td>
+            <td><a href="hfaf-d.php" class="cv-link">Ver CV <i class="fas fa-external-link-alt"></i></a></td>
+          </tr>
+          
+          <tr data-lgac="ADTSM">
+            <td class="lgac-badge ADTSM">ADTSM</td>
+            <td>
+              <div class="researcher-info">
+                <div class="researcher-name">Dr. Juan Serrano Arellano</div>
+                <div class="researcher-specialty">Termodinámica Aplicada</div>
+              </div>
+            </td>
+            <td><span class="sni-badge level-1">SNI Nivel 1</span></td>
+            <td><a href="jsa-d.php" class="cv-link">Ver CV <i class="fas fa-external-link-alt"></i></a></td>
+          </tr>
+          
+          <tr data-lgac="ADTSM">
+            <td class="lgac-badge ADTSM">ADTSM</td>
+            <td>
+              <div class="researcher-info">
+                <div class="researcher-name">Dr. Valente Hernández Pérez</div>
+                <div class="researcher-specialty">Transferencia de Calor</div>
+              </div>
+            </td>
+            <td><span class="sni-badge level-1">SNI Nivel 1</span></td>
+            <td><a href="vhp-d.php" class="cv-link">Ver CV <i class="fas fa-external-link-alt"></i></a></td>
+          </tr>
+          
+          <tr data-lgac="ADTSM">
+            <td class="lgac-badge ADTSM">ADTSM</td>
+            <td>
+              <div class="researcher-info">
+                <div class="researcher-name">Dr. Ignacio Ramírez Vargas</div>
+                <div class="researcher-specialty">Dinámica de Sistemas Mecánicos</div>
+              </div>
+            </td>
+            <td><span class="sni-badge desirable">Perfil Deseable</span></td>
+            <td><a href="irv-d.php" class="cv-link">Ver CV <i class="fas fa-external-link-alt"></i></a></td>
+          </tr>
+          
+          <tr data-lgac="ADTSM">
+            <td class="lgac-badge ADTSM">ADTSM</td>
+            <td>
+              <div class="researcher-info">
+                <div class="researcher-name">Dr. Mario Emigdio Rodríguez Castillo</div>
+                <div class="researcher-specialty">Sistemas Energéticos</div>
+              </div>
+            </td>
+            <td><span class="sni-badge desirable">Perfil Deseable</span></td>
+            <td><a href="merc-d.php" class="cv-link">Ver CV <i class="fas fa-external-link-alt"></i></a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="research-groups">
+    <div class="research-group">
+      <h3 class="group-title"><i class="fas fa-industry"></i> Tecnologías de Manufactura Avanzada (TMA)</h3>
+      <p class="group-description">
+        Investigación en procesos de fabricación innovadores, materiales avanzados y sistemas de automatización industrial.
+      </p>
+    </div>
+    
+    <div class="research-group">
+      <h3 class="group-title"><i class="fas fa-fire"></i> Análisis y Diseño de Sistemas Termofluidodinámicos y Mecánicos (ADTSM)</h3>
+      <p class="group-description">
+        Estudio de fenómenos termofluidodinámicos, diseño mecánico avanzado y optimización de sistemas energéticos.
+      </p>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

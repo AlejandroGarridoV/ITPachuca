@@ -1,0 +1,264 @@
+<app-header></app-header>
+
+<section id="oferta-educativa" class="tec-oferta">
+  <!-- Imagen de fondo (se movió dentro del hero) -->
+  <div class="tec-hero-oferta">
+    <img src="fotos/tecnologico.png" alt="Tecnológico" class="hero-background-img">
+    <div class="hero-overlay-oferta"></div>
+    <div class="container">
+      <div class="hero-content-oferta">
+        <h1 class="hero-title-oferta">Oferta <span>Educativa</span></h1>
+        <p class="hero-slogan-oferta">
+          Descubre nuestras carreras profesionales diseñadas para formar líderes en el ámbito tecnológico e industrial
+        </p>
+
+        <div class="hero-buttons-oferta">
+          <button (click)="scrollToSection('#carreras')" class="tec-btn-oferta">
+            <i class="fas fa-graduation-cap"></i> Carreras
+          </button>
+          <button (click)="scrollToSection('#en-linea')" class="tec-btn-oferta">
+            <i class="fas fa-laptop"></i> En Línea
+          </button>
+          <button (click)="scrollToSection('#posgrado')" class="tec-btn-oferta">
+            <i class="fas fa-user-graduate"></i> Posgrado
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+@if (isButtonVisible) {
+  <button (click)="scrollToTop()" id="btntoTop" class="to-top-button" aria-label="Volver arriba">
+    ↑
+  </button>
+  }
+
+  <!-- Main Content -->
+  <div class="main-container">
+    <div id="carreras" class="section-title">
+      <h2>Carreras Profesionales</h2>
+      <p>Programas académicos de vanguardia con enfoque práctico y vinculación con la industria</p>
+    </div>
+
+    <div class="programs-grid">
+      <!-- Carrera 1 -->
+      <div class="program-card">
+        <div class="program-image">
+          <img src="ofertaeducativa/licenciaturas/admon.png" alt="Licenciatura en Administración">
+        </div>
+        <div class="program-content">
+          <h3>Licenciatura en Administración</h3>
+          <p>Formamos profesionales capaces de dirigir organizaciones con visión estratégica y habilidades gerenciales.
+          </p>
+          <a href="administracion" class="program-link">Ver más <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Carrera 2 -->
+      <div class="program-card">
+        <div class="program-image">
+          <img src="ofertaeducativa/licenciaturas/arquitectura.png" alt="Arquitectura">
+        </div>
+        <div class="program-content">
+          <h3>Arquitectura</h3>
+          <p>Desarrolla proyectos arquitectónicos innovadores con sostenibilidad y responsabilidad social.</p>
+          <a href="arquitectura" class="program-link">Ver más <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Carrera 3 -->
+      <div class="program-card">
+        <div class="program-image">
+          <img src="ofertaeducativa/ingenierias/civil.png" alt="Ingeniería Civil">
+        </div>
+        <div class="program-content">
+          <h3>Ingeniería Civil</h3>
+          <p>Transforma el entorno con obras de infraestructura que mejoren la calidad de vida de la sociedad.</p>
+          <a href="civil" class="program-link">Ver más <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Carrera 4 -->
+      <div class="program-card">
+        <div class="program-image">
+          <img src="ofertaeducativa/ingenierias/diseño.png" alt="Diseño Industrial">
+        </div>
+        <div class="program-content">
+          <h3>Diseño Industrial</h3>
+          <p>Crea productos innovadores que combinen funcionalidad, estética y manufactura sostenible.</p>
+          <a href="disindustrial" class="program-link">Ver más <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Carrera 5 -->
+      <div class="program-card">
+        <div class="program-image">
+          <img src="ofertaeducativa/ingenierias/electrica.png" alt="Ingeniería Eléctrica">
+        </div>
+        <div class="program-content">
+          <h3>Ingeniería Eléctrica</h3>
+          <p>Especialízate en sistemas de potencia, automatización y energías renovables.</p>
+          <a href="electrica" class="program-link">Ver más <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Carrera 6 -->
+      <div class="program-card">
+        <div class="program-image">
+          <img src="ofertaeducativa/ingenierias/ferro.png" alt="Ingeniería Ferroviaria">
+        </div>
+        <div class="program-content">
+          <h3>Ingeniería Ferroviaria</h3>
+          <p>Único en su tipo, forma expertos en sistemas de transporte ferroviario modernos.</p>
+          <a href="ferroviaria" class="program-link">Ver más <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Carrera 7 -->
+      <div class="program-card">
+        <div class="program-image">
+          <img src="ofertaeducativa/ingenierias/gestion.png" alt="Ingeniería en Gestión Empresarial">
+        </div>
+        <div class="program-content">
+          <h3>Ing. en Gestión Empresarial</h3>
+          <p>Desarrolla habilidades para optimizar procesos y recursos en organizaciones competitivas.</p>
+          <a href="gestion" class="program-link">Ver más <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Carrera 8 -->
+      <div class="program-card">
+        <div class="program-image">
+          <img src="ofertaeducativa/ingenierias/industrial.png" alt="Ingeniería Industrial">
+        </div>
+        <div class="program-content">
+          <h3>Ingeniería Industrial</h3>
+          <p>Optimiza sistemas productivos con enfoque en calidad, productividad y mejora continua.</p>
+          <a href="industrial" class="program-link">Ver más <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Carrera 9 -->
+      <div class="program-card">
+        <div class="program-image">
+          <img src="ofertaeducativa/ingenierias/itics.png" alt="Ingeniería en TICS">
+        </div>
+        <div class="program-content">
+          <h3>Ingeniería en TICS</h3>
+          <p>Desarrolla soluciones tecnológicas innovadoras para la era digital.</p>
+          <a href="itics" class="program-link">Ver más <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Carrera 10 -->
+      <div class="program-card">
+        <div class="program-image">
+          <img src="ofertaeducativa/ingenierias/mecanica.png" alt="Ingeniería Mecánica">
+        </div>
+        <div class="program-content">
+          <h3>Ingeniería Mecánica</h3>
+          <p>Diseña y optimiza sistemas mecánicos con tecnología de punta.</p>
+          <a href="mecanica" class="program-link">Ver más <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Carrera 11 -->
+      <div class="program-card">
+        <div class="program-image">
+          <img src="ofertaeducativa/ingenierias/quimica.png" alt="Ingeniería Química">
+        </div>
+        <div class="program-content">
+          <h3>Ingeniería Química</h3>
+          <p>Transforma materias primas en productos de valor con procesos sostenibles.</p>
+          <a href="quimica" class="program-link">Ver más <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Carrera 12 -->
+      <div class="program-card">
+        <div class="program-image">
+          <img src="ofertaeducativa/ingenierias/sistemas.png" alt="Ingeniería en Sistemas Computacionales">
+        </div>
+        <div class="program-content">
+          <h3>Ing. en Sistemas Computacionales</h3>
+          <p>Desarrolla software y sistemas inteligentes para resolver problemas complejos.</p>
+          <a href="sistemas" class="program-link">Ver más <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección de programas en línea -->
+    <div id="en-linea" class="section-title" style="margin-top: 6rem;">
+      <h2>Programas en Línea</h2>
+      <p>Estudia con flexibilidad sin comprometer la calidad educativa</p>
+    </div>
+
+    <div class="programs-grid">
+      <!-- Programa en línea 1 -->
+      <div class="program-card">
+        <div class="program-image">
+          <img src="ofertaeducativa/edudistancia/ead.png" alt="Administración EAD">
+        </div>
+        <div class="program-content">
+          <h3>Administración (EAD)</h3>
+          <p>Licenciatura en modalidad en línea con enfoque en negocios digitales.</p>
+          <a href="ead-administracion" class="program-link">Ver más <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Programa en línea 2 -->
+      <div class="program-card">
+        <div class="program-image">
+          <img src="ofertaeducativa/edudistancia/ead.png" alt="Sistemas EAD">
+        </div>
+        <div class="program-content">
+          <h3>Sistemas Computacionales (EAD)</h3>
+          <p>Formación en desarrollo de software y tecnologías de la información en línea.</p>
+          <a href="ead-sistemas" class="program-link">Ver más <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección de posgrados -->
+    <div id="posgrado" class="section-title" style="margin-top: 6rem;">
+      <h2>Posgrados</h2>
+      <p>Especialízate y alcanza el más alto nivel académico</p>
+    </div>
+
+    <div class="programs-grid">
+      <!-- Posgrado 1 -->
+      <div class="program-card">
+        <div class="program-image">
+          <img src="ofertaeducativa/posgrado/maestria.png" alt="Maestrías">
+        </div>
+        <div class="program-content">
+          <h3>Maestría</h3>
+          <p>Programa de especialización en el área de ingeniería mecanica.</p>
+          <a href="maestria" class="program-link">Ver más <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Posgrado 2 -->
+      <div class="program-card">
+        <div class="program-image">
+          <img src="ofertaeducativa/posgrado/doctorado.png" alt="Doctorados">
+        </div>
+        <div class="program-content">
+          <h3>Doctorado</h3>
+          <p>Formación para la investigación científica y desarrollo tecnológico de alto nivel.</p>
+          <a href="doctorado" class="program-link">Ver más <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal para imágenes -->
+  <div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+      <img id="modalImage" src="" alt="Imagen ampliada">
+    </div>
+  </div>
+  
+<app-footer></app-footer>

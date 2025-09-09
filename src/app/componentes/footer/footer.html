@@ -1,0 +1,136 @@
+<div class="tec-footer">
+    <div class="footer-wave"></div>
+
+    <div class="footer-container">
+        <!-- Sección de contacto -->
+        <div class="footer-section contact-section">
+            <h3 class="footer-title"><i class="fas fa-map-marker-alt"></i> Dirección y Contacto</h3>
+            <p class="footer-text">
+                Carretera México - Pachuca Km. 87.5, C.P. 42080,<br>
+                Col. Venta Prieta, Pachuca de Soto, Hidalgo, México.
+            </p>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> <strong>Correo:</strong> <a
+                        href="mailto:web_pachuca@tecnm.mx">web_pachuca&#64;tecnm.mx</a></p>
+                <p><i class="fas fa-phone"></i> <strong>Teléfonos:</strong></p>
+                <ul class="phone-numbers">
+                    <li>771 711 3073</li>
+                    <li>771 711 3596</li>
+                    <li>771 711 3140</li>
+                    <li>771 711 5119</li>
+                    <li>771 711 3399</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Sección de enlaces -->
+        <div class="footer-section links-section">
+            <h3 class="footer-title"><i class="fas fa-link"></i> Enlaces Institucionales</h3>
+            <ul class="footer-links">
+                <li><a href="https://consultapublicamx.plataformadetransparencia.org.mx/vut-web/faces/view/consultaPublica.xhtml#inicio"
+                        class="footer-link" target="_blank"><i class="fas fa-external-link-alt"></i> Portal de
+                        Transparencia</a>
+                </li>
+                <li><a href="https://home.inai.org.mx" class="footer-link" target="_blank"><i
+                            class="fas fa-external-link-alt"></i> INAI</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScykchm3gJmiNKHd_iH9Nfvk4CA5MnkuWGTyrLF8EWbgEp7MQ/viewform"
+                        class="footer-link" target="_blank"><i class="fas fa-external-link-alt"></i> Buzón de
+                        Sugerencias</a>
+                </li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScrJrQ5i0R2QHw8dhJSjX183QKW8y-QOhHzrhhOEno5M3rRVA/viewform"
+                        class="footer-link" target="_blank"><i class="fas fa-external-link-alt"></i> Encuesta de
+                        Satisfacción</a></li>
+            </ul>
+
+            <!--CONTADOR DE VISITAS-->
+            <p class="visitas-label">Número de Visitas:</p>
+            <div class="flip-counter">
+                <div class="flip-digit" [class.flip]="flips[0]()">
+                    <div class="digit-inner">
+                        <div class="digit-front">{{ digits[0]() }}</div>
+                        <div class="digit-back">{{ digits[0]() }}</div>
+                    </div>
+                </div>
+                <div class="flip-digit" [class.flip]="flips[1]()">
+                    <div class="digit-inner">
+                        <div class="digit-front">{{ digits[1]() }}</div>
+                        <div class="digit-back">{{ digits[1]() }}</div>
+                    </div>
+                </div>
+                <div class="flip-digit" [class.flip]="flips[2]()">
+                    <div class="digit-inner">
+                        <div class="digit-front">{{ digits[2]() }}</div>
+                        <div class="digit-back">{{ digits[2]() }}</div>
+                    </div>
+                </div>
+                <div class="flip-digit" [class.flip]="flips[3]()">
+                    <div class="digit-inner">
+                        <div class="digit-front">{{ digits[3]() }}</div>
+                        <div class="digit-back">{{ digits[3]() }}</div>
+                    </div>
+                </div>
+                <div class="flip-digit" [class.flip]="flips[4]()">
+                    <div class="digit-inner">
+                        <div class="digit-front">{{ digits[4]() }}</div>
+                        <div class="digit-back">{{ digits[4]() }}</div>
+                    </div>
+                </div>
+                <div class="flip-digit" [class.flip]="flips[5]()">
+                    <div class="digit-inner">
+                        <div class="digit-front">{{ digits[5]() }}</div>
+                        <div class="digit-back">{{ digits[5]() }}</div>
+                    </div>
+                </div>
+                <div class="flip-digit" [class.flip]="flips[6]()">
+                    <div class="digit-inner">
+                        <div class="digit-front">{{ digits[6]() }}</div>
+                        <div class="digit-back">{{ digits[6]() }}</div>
+                    </div>
+                </div>
+                <div class="flip-digit" [class.flip]="flips[7]()">
+                    <div class="digit-inner">
+                        <div class="digit-front">{{ digits[7]() }}</div>
+                        <div class="digit-back">{{ digits[7]() }}</div>
+                    </div>
+                </div>
+                <div class="flip-digit" [class.flip]="flips[8]()">
+                    <div class="digit-inner">
+                        <div class="digit-front">{{ digits[8]() }}</div>
+                        <div class="digit-back">{{ digits[8]() }}</div>
+                    </div>
+                </div>
+                <div class="flip-digit" [class.flip]="flips[9]()">
+                    <div class="digit-inner">
+                        <div class="digit-front">{{ digits[9]() }}</div>
+                        <div class="digit-back">{{ digits[9]() }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de mapa -->
+        <div class="footer-section map-section">
+            <h3 class="footer-title"><i class="fas fa-map-marked-alt"></i> Ubicación</h3>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3747.2179497594534!2d-98.77531379350972!3d20.08317406609908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1a7591b14662f%3A0x4b7763f807c3d050!2sInstituto%20Tecnol%C3%B3gico%20de%20Pachuca!5e0!3m2!1ses!2smx!4v1580910167542!5m2!1ses!2smx"
+                    width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen=""
+                    loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer inferior -->
+    <div class="footer-bottom">
+        <div class="footer-bottom-content">
+            <p class="copyright">
+                © Copyright {{currentYear}} TecNM - Todos los Derechos Reservados
+            </p>
+            <div class="footer-legal">
+                <a routerLink="aviso_privacidad" class="legal-link">Políticas de Privacidad</a>
+                <span class="separator">|</span>
+                <span class="update-text">Última actualización: 03/01/2024</span>
+            </div>
+        </div>
+    </div>
+</div>

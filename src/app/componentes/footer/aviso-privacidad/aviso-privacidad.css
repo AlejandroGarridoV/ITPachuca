@@ -1,0 +1,117 @@
+
+        .privacy-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: var(--shadow-strong);
+        }
+
+        .privacy-header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 3px solid var(--tec-red);
+        }
+
+        .privacy-title {
+            color: var(--tec-blue);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+
+        .privacy-subtitle {
+            color: var(--tec-dark-gray);
+            font-size: 1.2rem;
+        }
+
+        .privacy-content {
+            font-size: 1.1rem;
+        }
+
+        .privacy-section {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: var(--gradient-tertiary);
+            border-radius: 10px;
+            border-left: 4px solid var(--tec-blue);
+        }
+
+        .privacy-section p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        .highlight {
+            background-color: rgba(254, 238, 0, 0.2);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .contact-info {
+            background-color: var(--tec-blue);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+
+        .contact-info a {
+            color: var(--tec-yellow);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .update-date {
+            text-align: right;
+            font-style: italic;
+            color: var(--tec-gray);
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px dashed var(--tec-gray);
+        }
+
+        .law-reference {
+            font-weight: 600;
+            color: var(--tec-red);
+        }
+
+        @media (max-width: 768px) {
+            .privacy-container {
+                padding: 1.5rem;
+                margin: 1rem;
+            }
+            
+            .privacy-title {
+                font-size: 2rem;
+            }
+            
+            .privacy-section {
+                padding: 1rem;
+            }
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .privacy-section {
+            animation: fadeIn 0.6s ease forwards;
+        }
+
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+        .delay-4 { animation-delay: 0.4s; }
+        .delay-5 { animation-delay: 0.5s; }
+        .delay-6 { animation-delay: 0.6s; }
+        .delay-7 { animation-delay: 0.7s; }

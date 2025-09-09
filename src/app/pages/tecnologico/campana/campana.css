@@ -1,0 +1,304 @@
+/* ===== Contenedor principal ===== */
+.campana-container {
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 0;
+  max-width: 1600px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  margin-bottom: 8rem;
+  background-color: var(--tec-white);
+  border-radius: 20px;
+  box-shadow: var(--shadow-strong);
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.campana-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(79, 172, 254, 0.05) 0%, transparent 40%);
+  opacity: 0.8;
+  z-index: 0;
+}
+
+/* ===== Encabezado ===== */
+.campana-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.campana-title {
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, var(--tec-blue), var(--tec-light-blue));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.campana-divider {
+  height: 3px;
+  width: 60%;
+  margin: 1.5rem auto;
+  border-radius: 2px;
+  background: linear-gradient(to right, transparent, var(--tec-blue), var(--tec-light-blue), transparent);
+}
+
+/* ===== Secciones ===== */
+.campana-content {
+  position: relative;
+  z-index: 1;
+}
+
+.protocol-section .decorative-image .tuza-img {
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto 0 auto;
+}
+
+/* ===== Sección Principal ===== */
+.section-principal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.campana-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.campana-main-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-strong);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.campana-main-img:hover {
+  transform: scale(1.05) rotate(-2deg);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* ===== Sección de Protocolo ===== */
+.protocol-section {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(5px);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: var(--shadow-soft);
+  position: relative;
+}
+
+.protocol-section::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  opacity: 0.15;
+  filter: grayscale(100%);
+  z-index: -1;
+}
+
+.protocol-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--tec-blue);
+  margin-bottom: 2rem;
+}
+
+.clause-card {
+  background-color: rgba(27, 57, 106, 0.05);
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  border-left: 5px solid var(--tec-blue);
+  box-shadow: var(--shadow-soft);
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.clause-card:hover {
+  transform: translateY(-5px);
+  border-left-color: var(--tec-light-blue);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.clause-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--tec-blue);
+  margin-bottom: 0.5rem;
+}
+
+.clause-description p {
+  line-height: 1.6;
+  color: var(--tec-dark-gray);
+}
+
+/* ===== Especificaciones ===== */
+.specs-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  background: linear-gradient(90deg, var(--tec-blue), var(--tec-light-blue));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.specs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.specs-card {
+  background-color: var(--gradient-tertiary);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.specs-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.alumno-card {
+  border-right: 4px solid var(--tec-red);
+}
+
+.trabajador-card {
+  border-left: 4px solid var(--tec-red);
+}
+
+.specs-subtitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--tec-blue);
+}
+
+.specs-content p {
+  line-height: 1.8;
+  color: var(--tec-dark-gray);
+}
+
+.specs-quote {
+  background-color: rgba(191, 3, 16, 0.1);
+  padding: 1.5rem;
+  border-left: 4px solid var(--tec-dark-red);
+  border-radius: 12px;
+  margin-top: 1rem;
+  font-style: italic;
+  color: var(--tec-dark-gray);
+}
+
+.highlight-text {
+  font-weight: bold;
+  color: var(--tec-dark-red);
+  margin-top: 1rem;
+}
+
+/* ===== Imagen decorativa ===== */
+.specs-image {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.tuza-horizontal-img {
+  max-width: 980px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.3));
+  transition: transform 0.3s ease;
+}
+
+.tuza-horizontal-img:hover {
+  transform: scale(1.1);
+}
+
+/* ===== Pie de página ===== */
+.protocol-footer {
+  text-align: center;
+  font-style: italic;
+  color: var(--tec-dark-gray);
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .section-principal {
+    grid-template-columns: 1fr;
+  }
+
+  .campana-image-container {
+    margin-bottom: 2rem;
+  }
+
+  .protocol-section::after {
+    display: none;
+  }
+
+  .specs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .alumno-card,
+  .trabajador-card {
+    border: none;
+    border-bottom: 4px solid var(--tec-red);
+  }
+}
+
+@media (max-width: 768px) {
+  .campana-container {
+    padding: 1.5rem;
+  }
+
+  .campana-title {
+    font-size: 2.5rem;
+  }
+
+  .protocol-title,
+  .specs-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .campana-title {
+    font-size: 2rem;
+  }
+
+  .tuza-horizontal-img {
+    max-width: 140px;
+  }
+}

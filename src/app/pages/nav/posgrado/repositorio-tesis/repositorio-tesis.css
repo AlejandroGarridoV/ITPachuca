@@ -1,0 +1,261 @@
+/* ESTILOS MEJORADOS MANTENIENDO LA PALETA ORIGINAL */
+.repositorio-container {
+  padding: 2rem 1.5rem;
+  max-width: 1300px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+}
+
+.repositorio-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2.5rem;
+  background: linear-gradient(135deg, rgba(0, 102, 204, 0.08) 0%, rgba(0, 51, 102, 0.04) 100%);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 91, 170, 0.1);
+  border: 1px solid rgba(0, 102, 204, 0.1);
+}
+
+.repositorio-header h1 {
+  color: #1B396A;
+  font-size: 2.3rem;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.repositorio-subtitle {
+  color: #495057;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.search-container {
+  position: relative;
+  margin-bottom: 2.5rem;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-container i {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #AEADB2;
+  font-size: 1.1rem;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 14px 20px 14px 48px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 50px;
+  font-size: 1rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  color: #343a40;
+}
+
+.search-container input:focus {
+  outline: none;
+  border-color: #4facfe;
+  box-shadow: 0 0 0 3px rgba(79, 172, 254, 0.2);
+}
+
+.table-container {
+  overflow-x: auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0, 91, 170, 0.12);
+  margin-bottom: 3rem;
+  border: 1px solid rgba(0, 102, 204, 0.1);
+}
+
+.thesis-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.thesis-table thead {
+  background: linear-gradient(135deg, #005baa 0%, #007bff 100%);
+  color: white;
+}
+
+.thesis-table th {
+  padding: 16px 20px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+}
+
+.thesis-table tbody tr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.thesis-table tbody tr:nth-child(even) {
+  background-color: rgba(0, 102, 204, 0.02);
+}
+
+.thesis-table tbody tr:hover {
+  background-color: rgba(79, 172, 254, 0.06);
+}
+
+.thesis-table td {
+  padding: 14px 20px;
+  vertical-align: middle;
+}
+
+.number-col {
+  width: 5%;
+  text-align: center;
+  color: #1B396A;
+  font-weight: 600;
+}
+
+.name-col {
+  width: 18%;
+  font-weight: 500;
+  color: #343a40;
+}
+
+.id-col {
+  width: 10%;
+  text-align: center;
+  color: #495057;
+  font-family: 'Courier New', monospace;
+}
+
+.date-col {
+  width: 10%;
+  text-align: center;
+  color: #6c757d;
+}
+
+.title-col a {
+  color: #1B396A;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  line-height: 1.5;
+  display: block;
+  font-weight: 500;
+}
+
+.title-col a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.download-icon {
+  margin-left: 8px;
+  color: #4facfe;
+  font-size: 0.9rem;
+}
+
+.no-results {
+  text-align: center;
+  padding: 40px;
+  color: #6c757d;
+  font-style: italic;
+  background-color: rgba(0, 102, 204, 0.03);
+}
+
+.results-count {
+  text-align: right;
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-bottom: 1rem;
+  padding-right: 12px;
+}
+
+/* Efecto de destacado para búsquedas */
+@keyframes highlight {
+  0% {
+    background-color: rgba(254, 238, 0, 0.25);
+  }
+  100% {
+    background-color: inherit;
+  }
+}
+
+.highlight-row {
+  animation: highlight 1.5s ease;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .repositorio-header h1 {
+    font-size: 2rem;
+  }
+  
+  .thesis-table {
+    font-size: 0.9rem;
+  }
+  
+  .thesis-table th, 
+  .thesis-table td {
+    padding: 12px 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .repositorio-container {
+    padding: 1.5rem 1rem;
+  }
+  
+  .repositorio-header {
+    padding: 2rem 1.5rem;
+  }
+  
+  .repositorio-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .search-container input {
+    padding: 12px 15px 12px 45px;
+  }
+  
+  .name-col, 
+  .id-col, 
+  .date-col {
+    width: auto;
+  }
+  
+  .number-col {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .repositorio-header {
+    padding: 1.5rem;
+  }
+  
+  .repositorio-header h1 {
+    font-size: 1.6rem;
+  }
+  
+  .repositorio-subtitle {
+    font-size: 1rem;
+  }
+  
+  .thesis-table {
+    font-size: 0.85rem;
+  }
+  
+  .thesis-table th, 
+  .thesis-table td {
+    padding: 10px 12px;
+  }
+  
+  .id-col, 
+  .date-col {
+    display: none;
+  }
+}

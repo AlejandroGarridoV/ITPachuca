@@ -1,0 +1,307 @@
+/* ===== ESTILOS BASE ===== */
+.cdinfo-main-container {
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  color: var(--tec-dark-gray);
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* ===== HERO BANNER ===== */
+.cdinfo-hero-banner {
+  background: linear-gradient(135deg, #1a3e72 0%, #0d6e9e 100%);
+  color: white;
+  padding: 4rem 2rem;
+  min-height: 400px;
+  overflow-x: auto; /* permite mantener la imagen grande */
+}
+
+.cdinfo-hero-content {
+  display: flex;
+  align-items: center; /* centra verticalmente */
+  justify-content: space-between;
+  gap: 25rem;
+  width: max-content; /* permite que crezca más que el contenedor */
+  max-width: none;
+  margin: 0 auto;
+  flex-wrap: nowrap;
+}
+
+/* TEXTO IZQUIERDA */
+.cdinfo-hero-text {
+  flex: 0 0 auto;
+  text-align: center;
+  width: 500px; /* ancho fijo para mantener equilibrio */
+}
+
+.cdinfo-main-title {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  white-space: nowrap; /* asegura que no haya salto */
+}
+
+.cdinfo-subtitle {
+  color: rgb(23, 165, 236);
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.cdinfo-hero-lead {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+/* IMAGEN DERECHA */
+.cdinfo-hero-image {
+  flex: 0 0 auto;
+  text-align: center;
+  width: 750px; /* imagen grande sin reducción */
+}
+
+.cdinfo-hero-image img {
+  width: 100%;
+  height: auto;
+  border: 5px solid white;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.cdinfo-hero-image img:hover {
+  transform: scale(1.02);
+}
+/* ===== DESCRIPCIÓN INSTITUCIONAL ===== */
+.cdinfo-description-section {
+  background-color: var(--tec-white);
+  padding: 4rem 2rem;
+}
+
+.cdinfo-description-content {
+  text-align: center;
+  padding: 2rem;
+}
+
+.cdinfo-icon-box {
+  background-color: var(--tec-blue);
+  color: var(--tec-white);
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-soft);
+}
+
+.cdinfo-description-text {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ===== GALERÍA DE INSTALACIONES ===== */
+.cdinfo-gallery-section {
+  padding: 4rem 2rem;
+  background: var(--gradient-tertiary);
+}
+
+.cdinfo-gallery-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cdinfo-section-title {
+  font-size: 2.2rem;
+  color: var(--tec-blue);
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.cdinfo-section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: var(--tec-light-blue);
+}
+
+.cdinfo-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.cdinfo-gallery-card {
+  background: var(--tec-white);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+.cdinfo-gallery-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-strong);
+}
+
+.cdinfo-gallery-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cdinfo-card-body {
+  padding: 1.5rem;
+}
+
+.cdinfo-card-title {
+  color: var(--tec-blue);
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.cdinfo-card-text {
+  color: var(--tec-dark-gray);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+/* ===== CONTACTO (MINIMALISTA) ===== */
+.cdinfo-contact-section {
+  background: var(--gradient-primary);
+  color: var(--tec-white);
+  padding: 3rem 1.5rem;
+}
+
+.cdinfo-contact-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cdinfo-contact-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.cdinfo-contact-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: var(--tec-yellow);
+  border-radius: 2px;
+}
+
+.cdinfo-contact-intro {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.85;
+}
+
+.cdinfo-contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.cdinfo-contact-info-item {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease;
+}
+
+.cdinfo-contact-info-item:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-3px);
+}
+
+.cdinfo-icon {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+  display: block;
+  color: var(--tec-yellow);
+}
+
+.cdinfo-contact-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.cdinfo-contact-detail {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.cdinfo-contact-link {
+  color: var(--tec-white);
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+  transition: 0.3s;
+}
+
+.cdinfo-contact-link:hover {
+  color: var(--tec-yellow);
+  border-bottom-color: var(--tec-yellow);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .cdinfo-main-title {
+    font-size: 2.8rem;
+  }
+
+  .cdinfo-subtitle {
+    font-size: 2rem;
+  }
+
+  .cdinfo-hero-lead {
+    font-size: 1.2rem;
+  }
+
+  .cdinfo-section-title {
+    font-size: 1.8rem;
+  }
+
+  .cdinfo-contact-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cdinfo-hero-banner {
+    padding: 3rem 1rem;
+  }
+
+  .cdinfo-main-title {
+    font-size: 2.2rem;
+  }
+
+  .cdinfo-subtitle {
+    font-size: 1.6rem;
+  }
+
+  .cdinfo-contact-info-item {
+    margin-bottom: 1.5rem;
+  }
+}

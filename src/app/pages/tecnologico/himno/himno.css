@@ -1,0 +1,193 @@
+/* ===== ESTILOS ESPECÍFICOS ===== */
+.himno-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 3rem;
+}
+
+.himno-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.title-container {
+  position: relative;
+  display: inline-block;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--tec-blue);
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 2;
+}
+
+.title-decoration {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: var(--gradient-primary);
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.lyrics-card {
+  text-align: center;
+  background: var(--tec-white);
+  border-radius: 12px;
+  box-shadow: var(--shadow-strong);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.lyrics-card:hover {
+  transform: translateY(-5px);
+}
+
+.lyrics-section {
+  padding: 2rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.lyrics-section:last-child {
+  border-bottom: none;
+}
+
+.chorus {
+  background: var(--gradient-tertiary);
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.section-icon {
+  font-size: 1.8rem;
+  color: var(--tec-blue);
+  margin-right: 0.8rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--tec-blue);
+  margin: 0;
+}
+
+.lyrics-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--tec-dark-gray);
+}
+
+.lyrics-text p {
+  margin: 0.8rem 0;
+}
+
+.lyrics-text p:first-child {
+  margin-top: 0;
+}
+
+.lyrics-text p:last-child {
+  margin-bottom: 0;
+}
+
+.credits {
+  background: var(--tec-blue);
+  color: var(--tec-white);
+  padding: 1.5rem 2rem;
+}
+
+.credits-content {
+  text-align: center;
+}
+
+.author {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.date {
+  margin: 0.8rem 0 0;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .himno-container {
+    padding: 0 1rem;
+  }
+
+  .main-title {
+    font-size: 2rem;
+  }
+
+  .lyrics-section {
+    padding: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+
+  .lyrics-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 1.8rem;
+  }
+
+  .lyrics-section {
+    padding: 1.2rem;
+  }
+
+  .section-header {
+    margin-bottom: 1.2rem;
+  }
+
+  .section-icon {
+    font-size: 1.5rem;
+  }
+}
+
+.himno-content {
+  display: flex;
+  padding: 0 5rem;
+}
+
+.tuza-container {
+  flex: 0 0 250px;
+}
+
+.tuza-himno {
+  position: absolute;
+  top: 50%;
+  width: 450px;
+  height: auto;
+  display: block;
+}
+
+/* Ajustes responsive */
+@media (max-width: 768px) {
+  .himno-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tuza-container {
+    flex: 0 0 auto;
+    width: 60%;
+  }
+}

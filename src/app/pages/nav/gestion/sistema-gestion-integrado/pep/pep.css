@@ -1,0 +1,136 @@
+/* Document Management Section Styles */
+.document-management-section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-header {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.section-header h1 {
+    color: var(--tec-blue);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.section-header h2 {
+    color: var(--tec-dark-gray);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.search-bar {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 50px;
+    font-size: 1rem;
+    box-shadow: var(--shadow-soft);
+}
+
+.search-bar i {
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--tec-gray);
+}
+
+.documents-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.section-header-table {
+    background-color: #3949ab;
+    color: white;
+    padding: 18px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.document-row {
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.3s;
+}
+
+.document-row:hover {
+    background-color: #f1f3ff;
+}
+
+.document-link {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 16px;
+    transition: color 0.3s;
+    font-size: 1.05rem;
+}
+
+.document-link:hover {
+    color: #1a56db;
+}
+
+.badge {
+    background-color: #e53935;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    margin-left: 10px;
+}
+
+.version-badge {
+    background-color: #43a047;
+}
+
+.footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    background-color: #1a56db;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 2.2rem;
+    }
+
+    .header-subtitle {
+        font-size: 1.3rem;
+    }
+
+    .document-link {
+        padding: 12px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-title {
+        font-size: 1.8rem;
+    }
+
+    .header-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .intro-text {
+        font-size: 1rem;
+    }
+}

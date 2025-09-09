@@ -1,0 +1,197 @@
+<app-header></app-header>
+
+<section class="arquitectura-hero">
+  <div class="arquitectura-hero-image-wrapper">
+    <img src="ofertaeducativa/licenciaturas/arquitectura2.png" alt="Imagen de Arquitectura" class="arquitectura-hero-img">
+    <div class="arquitectura-hero-overlay"></div>
+    <div class="arquitectura-hero-content">
+      <h1 class="arquitectura-hero-title">Licenciatura en Arquitectura</h1>
+      <p class="arquitectura-hero-subtitle">Innovación en Espacios: De lo Digital a lo Habitable</p>
+      <hr class="arquitectura-hero-divider">
+      <a href="oferta-educativa" class="hero-button">
+        <span>Ver Oferta Educativa Completa</span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="arquitectura-container">
+  <img src="ofertaeducativa/licenciaturas/arquitectura.png">
+
+<section class="animated-blueprints">
+  <div class="blueprints-title">
+    <h2>Planos en acción</h2>
+  </div>
+  <div class="blueprint-canvas">
+    <svg viewBox="0 0 1200 800" class="blueprint-svg">
+      <!-- Contorno principal de la casa -->
+      <path d="M200 200 H1000 V600 H200 Z" class="draw-path" />
+      
+      <!-- Muros exteriores con grosor -->
+      <path d="M200 200 L180 180 L1020 180 L1000 200" class="draw-path" />
+      <path d="M1000 200 L1020 180 L1020 620 L1000 600" class="draw-path" />
+      <path d="M1000 600 L1020 620 L180 620 L200 600" class="draw-path" />
+      <path d="M200 600 L180 620 L180 180" class="draw-path" />
+      
+      <!-- Distribución de espacios -->
+      <!-- Área social -->
+      <path d="M200 350 H600" class="draw-path" /> <!-- Separación sala-comedor -->
+      <path d="M600 200 V600" class="draw-path" /> <!-- Separación área social-dormitorios -->
+      
+      <!-- Sala de estar -->
+      <path d="M200 200 L450 200 L450 350 L200 350 Z" class="draw-path" />
+      
+      <!-- Comedor -->
+      <path d="M450 200 L600 200 L600 350 L450 350 Z" class="draw-path" />
+      
+      <!-- Cocina -->
+      <path d="M450 350 L600 350 L600 450 L450 450 Z" class="draw-path" />
+      
+      <!-- Pasillo -->
+      <path d="M600 450 V600" class="draw-path" />
+      
+      <!-- Dormitorios -->
+      <path d="M600 200 L800 200 L800 350 L600 350 Z" class="draw-path" /> <!-- Dormitorio principal -->
+      <path d="M800 200 L1000 200 L1000 350 L800 350 Z" class="draw-path" /> <!-- Dormitorio 2 -->
+      <path d="M600 350 L800 350 L800 500 L600 500 Z" class="draw-path" /> <!-- Dormitorio 3 -->
+      <path d="M800 350 L1000 350 L1000 500 L800 500 Z" class="draw-path" /> <!-- Baño -->
+      
+      <!-- Garaje -->
+      <path d="M600 500 L900 500 L900 600 L600 600 Z" class="draw-path" />
+      
+      <!-- Patio trasero -->
+      <path d="M200 450 H450 V600 H200 Z" class="draw-path" />
+      
+      <!-- Puertas -->
+      <path d="M600 325 H620" class="draw-path" /> <!-- Puerta pasillo -->
+      <path d="M450 400 H470" class="draw-path" /> <!-- Puerta cocina -->
+      <path d="M800 325 H820" class="draw-path" /> <!-- Puerta dormitorio principal -->
+      <path d="M800 425 H820" class="draw-path" /> <!-- Puerta baño -->
+      <path d="M900 550 V570" class="draw-path" /> <!-- Puerta garaje -->
+      
+      <!-- Ventanas -->
+      <path d="M250 200 V180 M275 200 V180" class="draw-path" /> <!-- Ventana sala -->
+      <path d="M525 200 V180 M550 200 V180" class="draw-path" /> <!-- Ventana comedor -->
+      <path d="M1000 250 H1020 M1000 275 H1020" class="draw-path" /> <!-- Ventana dormitorio 2 -->
+      <path d="M1000 400 H1020 M1000 425 H1020" class="draw-path" /> <!-- Ventana baño -->
+      <path d="M225 600 H245 M250 600 H270" class="draw-path" /> <!-- Ventana patio -->
+      
+      <!-- Columnas estructurales -->
+      <circle cx="600" cy="350" r="8" class="draw-circle" />
+      <circle cx="600" cy="500" r="8" class="draw-circle" />
+      <circle cx="450" cy="450" r="8" class="draw-circle" />
+      
+      <!-- Mobiliario -->
+      <!-- Sala -->
+      <rect x="250" y="250" width="150" height="60" rx="5" class="furniture-path" /> <!-- Sofá -->
+      <rect x="300" y="320" width="50" height="20" rx="3" class="furniture-path" /> <!-- Mesa centro -->
+      
+      <!-- Comedor -->
+      <rect x="475" y="250" width="100" height="60" rx="5" class="furniture-path" /> <!-- Mesa -->
+      <rect x="475" y="315" width="20" height="30" rx="2" class="furniture-path" /> <!-- Silla 1 -->
+      <rect x="555" y="315" width="20" height="30" rx="2" class="furniture-path" /> <!-- Silla 2 -->
+      
+      <!-- Cocina -->
+      <rect x="475" y="375" width="100" height="20" class="furniture-path" /> <!-- Mesón -->
+      <rect x="480" y="400" width="20" height="20" class="furniture-path" /> <!-- Estufa -->
+      <rect x="520" y="400" width="20" height="20" class="furniture-path" /> <!-- Lavadero -->
+      
+      <!-- Dormitorio principal -->
+      <rect x="650" y="250" width="100" height="60" class="furniture-path" /> <!-- Cama -->
+      <rect x="750" y="270" width="30" height="40" class="furniture-path" /> <!-- Armario -->
+      
+      <!-- Baño -->
+      <rect x="850" y="400" width="40" height="40" rx="5" class="furniture-path" /> <!-- Ducha -->
+      <rect x="810" y="400" width="30" height="20" class="furniture-path" /> <!-- Lavamanos -->
+      <rect x="810" y="425" width="30" height="15" class="furniture-path" /> <!-- Inodoro -->
+      
+      <!-- Cotas dimensionales -->
+      <path d="M180 150 H200 M180 150 V600 M180 600 H200" class="dimension-line" />
+      <text x="150" y="375" transform="rotate(-90 150,375)" class="dimension-text">12.00m</text>
+      
+      <path d="M200 620 V600 M200 620 H1000 M1000 620 V600" class="dimension-line" />
+      <text x="600" y="640" class="dimension-text">20.00m</text>
+      
+      <path d="M450 620 V600 M450 620 H600 M600 620 V600" class="dimension-line" />
+      <text x="525" y="640" class="dimension-text">4.50m</text>
+      
+      <!-- Símbolos arquitectónicos -->
+      <path d="M550 500 L570 480 L590 500 L570 520 Z" class="draw-path" /> <!-- Escalera (a sótano) -->
+      
+      <!-- Etiquetas de habitaciones -->
+      <text x="300" y="230" class="room-label">Sala</text>
+      <text x="500" y="230" class="room-label">Comedor</text>
+      <text x="500" y="400" class="room-label">Cocina</text>
+      <text x="650" y="230" class="room-label">Dorm. Principal</text>
+      <text x="850" y="230" class="room-label">Dorm. 2</text>
+      <text x="650" y="430" class="room-label">Dorm. 3</text>
+      <text x="850" y="430" class="room-label">Baño</text>
+      <text x="750" y="550" class="room-label">Garaje</text>
+      <text x="300" y="550" class="room-label">Patio</text>
+    </svg>
+  </div>
+</section>
+
+
+<section class="horizontal-cards-container">
+  <!-- Video Card -->
+  <div class="horizontal-card video-card">
+    <div class="video-wrapper">
+      <div class="video-responsive">
+        <iframe
+          src="https://www.youtube.com/embed/IIbHi994dtk?rel=0&amp;autoplay=0&amp;controls=1&amp;showinfo=0"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Objetivo General Card -->
+  <div class="horizontal-card">
+    <div class="card-content">
+      <h2 class="card-title">Objetivo General</h2>
+      <div class="card-body">
+        <p>Formar profesionistas líderes con excelencia académica y humanística capaces de diseñar y construir el
+          hábitat humano y participar en la toma de decisiones inherentes al mismo, con vocación de servicio a la
+          sociedad, dentro de un marco de sustentabilidad.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Perfil Profesional Card -->
+  <div class="horizontal-card">
+    <div class="card-content">
+      <h2 class="card-title">Perfil Profesional</h2>
+      <div class="card-body">
+        <ul class="feature-list">
+          <li>Realizar el proceso del proyecto arquitectónico y urbano, así como su construcción.</li>
+          <li>Aplicar principios de diseño universal para propiciar calidad de vida.</li>
+          <li>Generar proyectos sustentables, funcionales y estéticos.</li>
+          <li>Preservar los ámbitos natural y construido, respetando normas y cultura.</li>
+          <li>Coordinar el proceso de producción urbano-arquitectónico.</li>
+          <li>Planear, presupuestar y programar obras.</li>
+          <li>Formular estudios técnicos, económicos y de impacto ambiental.</li>
+          <li>Supervisar obras arquitectónicas y urbanas.</li>
+          <li>Actuar con ética, responsabilidad y honestidad.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Documentos Card -->
+  <div class="horizontal-card">
+    <div class="card-content">
+      <h2 class="card-title">Documentos Académicos</h2>
+      <div class="card-body">
+        <a href="ofertaeducativa/licenciaturas/Retícula Arquitectura 2010 oficial.pdf" target="_blank" class="document-link">
+          <i class="fas fa-file-pdf"></i> Descargar Retícula 2010
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,73 @@
+<button class="menu-toggle">
+  <span class="menu-line"></span>
+  <span class="menu-line"></span>
+  <span class="menu-line"></span>
+</button>
+
+<nav class="main-menu">
+  <ul class="menu-list">
+    <!-- Ítem 1: Plan de Estudios -->
+    <li class="menu-item">
+      <a (click)="scrollToSection('plan_doctorado')" class="menu-link" style="cursor: pointer;">
+        <i class="fas fa-book menu-icon"></i>
+        <span class="menu-text">Plan de Estudios</span>
+      </a>
+    </li>
+    
+    <!-- Ítem 2: Admisión -->
+    <li class="menu-item">
+      <a (click)="scrollToSection('admision_doctorado')" class="menu-link" style="cursor: pointer;">
+        <i class="fas fa-user-plus menu-icon"></i>
+        <span class="menu-text">Admisión</span>
+      </a>
+    </li>
+    
+    <!-- Ítem 3: LGAC -->
+    <li class="menu-item">
+      <a (click)="scrollToSection('LGAC_doctorado')" class="menu-link" style="cursor: pointer;">
+        <i class="fas fa-atom menu-icon"></i>
+        <span class="menu-text">LGAC</span>
+      </a>
+    </li>
+    
+    <!-- Ítem 4: Núcleo Académico -->
+    <li class="menu-item">
+      <a routerLink="/nucleo_academico" class="menu-link">
+        <i class="fas fa-users menu-icon"></i>
+        <span class="menu-text">Núcleo Académico</span>
+      </a>
+    </li>
+    
+    <!-- Ítem 5: Vinculación -->
+    <li class="menu-item">
+      <a routerLink="/d_vinculacion" class="menu-link">
+        <i class="fas fa-handshake menu-icon"></i>
+        <span class="menu-text">Vinculación</span>
+      </a>
+    </li>
+    
+    <!-- Ítem 6: Seminarios -->
+    <li class="menu-item">
+      <a routerLink="/d_seminarios" class="menu-link">
+        <i class="fas fa-chalkboard-teacher menu-icon"></i>
+        <span class="menu-text">Seminarios</span>
+      </a>
+    </li>
+
+     <!-- Ítem 6: Seminarios -->
+    <li class="menu-item">
+      <a routerLink="/siac" class="menu-link">
+        <i class="fas fa-chalkboard-teacher menu-icon"></i>
+        <span class="menu-text">SIAC</span>
+      </a>
+    </li>
+
+    <!-- Ítem 7: Contacto -->
+    <li class="menu-item">
+      <a (click)="scrollToSection('contacto_doctorado')" class="menu-link" style="cursor: pointer;">
+        <i class="fas fa-envelope menu-icon"></i>
+        <span class="menu-text">Contacto</span>
+      </a>
+    </li>
+  </ul>
+</nav>

@@ -1,0 +1,467 @@
+/* ===== CONTENEDOR PRINCIPAL ===== */
+.directivos-container {
+    max-width: 1600px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* ===== BOTÓN ===== */
+.directivos-button {
+    display: flex;
+    position: relative;
+    background: #00548F;
+    color: #FFFFFF;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 30px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.directivos-button:hover {
+    background: #C0102C;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== TÍTULO PRINCIPAL ===== */
+.directivo-main-title-container {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.directivo-main-title {
+    font-size: 2.8rem;
+    color: #00548F;
+    font-weight: 700;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.title-decoration {
+    height: 4px;
+    width: 100px;
+    background: linear-gradient(90deg, #00548F, #C0102C);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+/* ===== TARJETAS DE DIRECTORES ===== */
+.directivo-card {
+    background: #FFFFFF;
+    border-radius: 12px;
+    margin-bottom: 80px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.directivo-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* CABECERA DE LA TARJETA */
+.directivo-header {
+    position: relative;
+    padding: 30px 20px 50px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.directivo-portrait {
+    width: 280px;
+    height: 280px;
+    margin: 0 auto 20px;
+    border: 5px solid white;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.directivo-portrait:hover {
+    transform: scale(1.08);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.directivo-image-main {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.directivo-portrait:hover .directivo-image-main {
+    transform: scale(1.05);
+}
+
+.directivo-titles h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 2;
+}
+
+.directivo-titles h3 {
+    margin: 10px 0 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 2;
+}
+
+/* CONTENIDO DE LA TARJETA */
+.directivo-content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.directivo-info {
+    flex: 1;
+}
+
+.directivo-funciones h4 {
+    color: #00548F;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #FFD100;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.directivo-funciones ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.directivo-funciones li {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 30px;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+.directivo-funciones li:before {
+    content: "•";
+    color: #E31937;
+    position: absolute;
+    left: 0;
+    font-size: 28px;
+    line-height: 1;
+    top: -5px;
+}
+
+/* SECCIÓN DE CONTACTO */
+.directivo-contacto {
+    text-align: center;
+}
+
+.directivo-contacto h4 {
+    color: #00548F;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.contacto-card {
+    width: 550px;
+    margin: 0 auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.contacto-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.contacto-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* COLORES PARA CADA TARJETA */
+.director-card .directivo-header {
+    background: linear-gradient(135deg, #1a2980 0%, #26d0ce 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.director-card .directivo-header:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 80%, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 30%);
+}
+
+.subacademica-card .directivo-header {
+    background: linear-gradient(135deg, #614385 0%, #516395 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.subacademica-card .directivo-header:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 80% 20%, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 30%);
+}
+
+.subplaneacion-card .directivo-header {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.subplaneacion-card .directivo-header:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 70%, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 40%);
+}
+
+.subadmin-card .directivo-header {
+    background: linear-gradient(135deg, #f46b45 0%, #eea849 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.subadmin-card .directivo-header:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 70% 30%, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 40%);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (min-width: 768px) {
+    .directivo-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    .directivo-contacto {
+        flex: 0 0 320px;
+        margin-left: 30px;
+    }
+    
+    .directivo-main-title {
+        font-size: 3.2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .directivo-header {
+        padding: 40px 20px 60px;
+    }
+    
+    .directivo-portrait {
+        width: 500px;
+        height: 500px;
+    }
+    
+    .directivo-titles h1 {
+        font-size: 2.5rem;
+    }
+    
+    .directivo-titles h3 {
+        font-size: 1.6rem;
+    }
+    
+    .directivo-main-title {
+        font-size: 3.5rem;
+    }
+    
+    .title-decoration {
+        width: 120px;
+        height: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    .directivo-main-title {
+        font-size: 2.2rem;
+    }
+    
+    .directivo-card {
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .directivo-portrait {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .directivo-titles h1 {
+        font-size: 1.8rem;
+    }
+    
+    .directivo-titles h3 {
+        font-size: 1.2rem;
+    }
+    
+    .directivo-funciones li {
+        font-size: 1rem;
+        padding-left: 25px;
+    }
+    
+    .directivo-main-title {
+        font-size: 1.8rem;
+    }
+    
+    .directivo-content {
+        padding: 20px;
+    }
+    
+    .directivo-funciones h4, 
+    .directivo-contacto h4 {
+        font-size: 1.3rem;
+    }
+}
+/* ===== MENÚ DE BOTONES MEJORADO ===== */
+.directivos-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    min-width: 200px;
+    flex: 1 1 auto;
+}
+
+.menu-button i {
+    font-size: 1.1em;
+}
+
+.menu-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 84, 143, 0.2);
+}
+
+.menu-button.active {
+    background: #C0102C;
+    border-color: #A00D26;
+    box-shadow: 0 4px 8px rgba(192, 16, 44, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .button-group {
+        flex-direction: column;
+    }
+    
+    .menu-button {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+
+/* Animación de scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+/*-----------------------------BOTON TO TOP------------------------------*/
+.to-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  background: #007bff;
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 50px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.3s forwards;
+
+  &:hover {
+    background-color: #0069d9;
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  @media (max-width: 768px) {
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 20px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

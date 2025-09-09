@@ -1,0 +1,337 @@
+/* ===== ESTILOS ESPECÍFICOS DDA ===== */
+.dda-header-section {
+    background: var(--gradient-primary);
+    color: var(--tec-white);
+    padding: 5rem 0;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-strong);
+}
+
+.dda-header-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="rgba(255,255,255,0.05)" d="M0,0 L100,0 L100,100 L0,100 Z" /></svg>');
+    opacity: 0.1;
+}
+
+.dda-header-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    animation: dda-fadeInDown 1s ease;
+    color: var(--tec-white);
+    line-height: 1.2;
+}
+
+.dda-header-subtitle {
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    opacity: 0.9;
+    animation: dda-fadeIn 1.5s ease;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+}
+
+.dda-content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.dda-mission-section {
+    background-color: var(--tec-white);
+    border-radius: 12px;
+    padding: 2.5rem;
+    margin: -3rem auto 3rem;
+    position: relative;
+    z-index: 2;
+    box-shadow: var(--shadow-soft);
+    transform: translateY(0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid var(--tec-blue);
+}
+
+.dda-mission-section:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-strong);
+}
+
+.dda-mission-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--tec-dark-gray);
+    margin-bottom: 0;
+}
+
+.dda-section-title {
+    color: var(--tec-blue);
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.dda-section-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: var(--gradient-primary);
+    border-radius: 2px;
+}
+
+.dda-services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+/* ===== ESTILOS PARA BOTONES ALINEADOS ===== */
+.dda-service-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Mantiene igual altura para todas las tarjetas */
+}
+
+.dda-service-card-content {
+    flex-grow: 1; /* Permite que el contenido crezca y empuje el botón hacia abajo */
+}
+
+.dda-btn-primary {
+    align-self: flex-start; /* Mantiene el ancho original del botón */
+    margin-top: auto; /* Empuja el botón hacia la parte inferior */
+    width: auto; /* Conserva el ancho según contenido */
+    padding: 0.8rem 1.8rem; /* Padding original */
+}
+
+/* ===== ESTILOS COMPLETOS (solo la parte relevante) ===== */
+.dda-services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.dda-service-card {
+    background: var(--tec-white);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: var(--shadow-soft);
+    transition: all 0.3s ease;
+    border-top: 4px solid var(--tec-blue);
+    position: relative;
+    overflow: hidden;
+}
+
+.dda-service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-strong);
+}
+
+.dda-service-title {
+    color: var(--tec-blue);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.dda-service-description {
+    color: var(--tec-dark-gray);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.dda-btn-primary {
+    background: var(--gradient-primary);
+    color: var(--tec-white);
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 91, 170, 0.3);
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: inline-block;
+}
+
+.dda-btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 91, 170, 0.4);
+}
+
+.dda-category-title {
+    color: var(--tec-blue);
+    font-size: 1.8rem;
+    margin: 3rem 0 1.5rem;
+    text-align: center;
+    position: relative;
+    font-weight: 600;
+}
+
+.dda-category-title::before,
+.dda-category-title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--tec-light-blue), transparent);
+}
+
+.dda-category-title::before {
+    left: 0;
+}
+
+.dda-category-title::after {
+    right: 0;
+}
+
+.dda-floating-icons {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.dda-floating-icon {
+    position: absolute;
+    opacity: 0.1;
+    animation: dda-float 15s infinite linear;
+}
+
+.dda-cta-section {
+    text-align: center;
+    margin: 4rem auto;
+    padding: 0 1rem;
+}
+
+.dda-cta-title {
+    font-size: 2rem;
+    color: var(--tec-blue);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.dda-cta-text {
+    font-size: 1.2rem;
+    color: var(--tec-dark-gray);
+    margin: 0 auto 2rem;
+    max-width: 700px;
+    line-height: 1.6;
+}
+
+/* Animaciones */
+@keyframes dda-float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(180deg);
+    }
+    100% {
+        transform: translateY(0) rotate(360deg);
+    }
+}
+
+@keyframes dda-fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes dda-fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .dda-header-title {
+        font-size: 3rem;
+    }
+    
+    .dda-mission-section {
+        margin: -2rem auto 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .dda-header-title {
+        font-size: 2.5rem;
+    }
+
+    .dda-header-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .dda-services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .dda-category-title::before,
+    .dda-category-title::after {
+        width: 20%;
+    }
+    
+    .dda-section-title {
+        font-size: 1.8rem;
+    }
+    
+    .dda-cta-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .dda-header-title {
+        font-size: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .dda-header-section {
+        padding: 4rem 0;
+    }
+    
+    .dda-mission-section {
+        padding: 1.5rem;
+    }
+    
+    .dda-service-card {
+        padding: 1.5rem;
+    }
+    
+    .dda-cta-title {
+        font-size: 1.6rem;
+    }
+    
+    .dda-cta-text {
+        font-size: 1.1rem;
+    }
+}

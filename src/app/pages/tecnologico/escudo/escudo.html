@@ -1,0 +1,128 @@
+<app-header></app-header>
+<!-- Header Section -->
+<div class="header-section">
+  <h1 style="color: white;" class="header-title">Escudo Institucional</h1>
+  <p class="header-subtitle">El Hombre Alimenta el Ingenio en Contacto con la Ciencia ®</p>
+</div>
+
+<!-- Introducción en tarjeta -->
+<div class="intro-card">
+  <p style="text-align: center; font-size: 1.4rem;">
+    El conocimiento de los símbolos que nos identifican con la institución, permite el sentido de pertenencia, la
+    integración a nuestra comunidad, con los principios y valores que la caracterizan.
+  </p>
+
+  <p style="text-align: center; font-size: 1.4rem;">
+    El escudo de nuestro instituto que fue seleccionado mediante un concurso abierto a los artistas e interesados de la
+    comunidad hidalguense. El diseño ganador fue el presentado por "Yesenio", pseudónimo de Héctor Rubio Traspeña, en
+    ese entonces estudiante y hoy egresado de la carrera de Ingeniería Industrial Mecánica. Los elementos que integran a
+    éste símbolo tan significativo de la identidad de nuestra comunidad tecnológica son los siguientes:
+  </p>
+</div>
+
+<!-- Museo del Escudo - Versión lineal -->
+<div class="shield-container">
+  <!-- Icono personaje -->
+  <div class="character-icon">
+    <img src="tuzas/tuza-minera.png" alt="Tuza Minera">
+  </div>
+
+  <!-- Escudo principal -->
+  <div class="shield-main">
+    <img [src]="mainShield" alt="Escudo Principal">
+  </div>
+
+  <!-- Componentes -->
+  <div class="components-row">
+    <div class="component-item" (mouseenter)="changeShield('tecnologico/EscudoTec/LITP-engrane.png')"
+      (mouseleave)="resetShield()">
+      <div class="component-img" style="background-image: url('tecnologico/EscudoTec/LITP-engrane.png');"></div>
+      <h4 class="component-title">Engrane y Cremallera</h4>
+      <p class="component-desc">Representativos de ingeniería mecánica. Engrane gris y cremallera amarilla.</p>
+    </div>
+
+    <div class="component-item" (mouseenter)="changeShield('tecnologico/EscudoTec/LITP-rayo.png')"
+      (mouseleave)="resetShield()">
+      <div class="component-img" style="background-image: url('tecnologico/EscudoTec/LITP-rayo.png');"></div>
+      <h4 class="component-title">Rayo</h4>
+      <p class="component-desc">Representativo de la carrera de ingeniería industrial eléctrica en color amarillo.</p>
+    </div>
+
+    <div class="component-item" (mouseenter)="changeShield('tecnologico/EscudoTec/LITP-atomo.png')"
+      (mouseleave)="resetShield()">
+      <div class="component-img" style="background-image: url('tecnologico/EscudoTec/LITP-atomo.png');"></div>
+      <h4 class="component-title">Átomo y Matraz</h4>
+      <p class="component-desc">Representativos de la carrera de Ingeniería Química.</p>
+    </div>
+
+    <div class="component-item" (mouseenter)="changeShield('tecnologico/EscudoTec/LITP-aguila.png')"
+      (mouseleave)="resetShield()">
+      <div class="component-img" style="background-image: url('tecnologico/EscudoTec/LITP-aguila.png');"></div>
+      <h4 class="component-title">Águila</h4>
+      <p class="component-desc">Símbolo patrio en color rojo.</p>
+    </div>
+
+    <div class="component-item" (mouseenter)="changeShield('tecnologico/EscudoTec/LITP-casco.png')"
+      (mouseleave)="resetShield()">
+      <div class="component-img" style="background-image: url('tecnologico/EscudoTec/LITP-casco.png');"></div>
+      <h4 class="component-title">Casco minero</h4>
+      <p class="component-desc">Representa la actividad minera de Pachuca. Color azul eléctrico.</p>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="history-section">
+  <h2 class="history-title">Historia del Escudo</h2>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <div class="timeline-year">1972</div>
+        <p>El escudo fue seleccionado mediante concurso, ganado por Héctor Rubio Traspeña ("Yesenio"),
+          entonces estudiante de Ingeniería Industrial Mecánica.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <div class="timeline-year">Septiembre 1972</div>
+        <p>Aparición oficial del escudo con las siglas ITRH (Instituto Tecnológico Regional de Hidalgo).</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <div class="timeline-year">1973</div>
+        <p>Cambio a ITRP (Instituto Tecnológico Regional de Pachuca) con el número 20 del Sistema.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <div class="timeline-year">1975</div>
+        <p>Se elimina la llama sobre la letra T y la estructura de construcción, sustituyéndose por una
+          cremallera y agregando el casco minero.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <div class="timeline-year">1980</div>
+        <p>Cambio definitivo a ITP (Instituto Tecnológico de Pachuca), eliminando la "R" y quedando con las
+          siglas actuales.</p>
+      </div>
+    </div>
+  </div>
+  <div class="history-text-card">
+    <p class="history-text">
+      Cada elemento del escudo fue cuidadosamente diseñado para representar las carreras que se impartían en ese
+      entonces
+      y la identidad regional de Pachuca. El diseño ha mantenido su esencia a través de los años, convirtiéndose
+      en un
+      símbolo de orgullo para toda la comunidad tecnológica.
+    </p>
+  </div>
+</div>
+<app-footer></app-footer>

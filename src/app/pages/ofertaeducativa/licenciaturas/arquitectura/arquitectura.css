@@ -1,0 +1,404 @@
+/* ===== HERO ===== */
+.arquitectura-container img{
+    position: absolute;
+    display: flex;
+    z-index: -2;
+    width: 100%;
+    height: auto;
+    opacity: 0.15;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.arquitectura-hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    text-align: center;
+    z-index: 1;
+    background: transparent;
+}
+
+.arquitectura-hero-image-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.arquitectura-hero-img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.6);
+}
+
+.arquitectura-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.arquitectura-hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    max-width: 800px;
+    padding: 2rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.arquitectura-hero-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.arquitectura-hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.arquitectura-hero-divider {
+    width: 100px;
+    height: 4px;
+    background: var(--gradient-accent);
+    border: none;
+    border-radius: 2px;
+    margin: 1.5rem auto;
+}
+
+.hero-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 1.5rem;
+    background: var(--gradient-accent);
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* ===== TARJETAS HORIZONTALES ===== */
+.horizontal-cards-container {
+    max-width: 1200px;
+    margin: 2rem auto 4rem auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+}
+
+.horizontal-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    border-top: 3px solid transparent;
+    width: 100%;
+}
+
+.horizontal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border-top-color: #3498db;
+}
+
+.card-content {
+    padding: 2rem;
+}
+
+.card-title {
+    font-family: 'Poppins', sans-serif;
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.card-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: #3498db;
+    border-radius: 3px;
+}
+
+.card-body {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #34495e;
+}
+
+/* ===== VIDEO CARD ===== */
+.video-card {
+    padding: 0;
+    width: 60%;
+    margin: 0 auto 3rem auto;
+}
+
+.video-wrapper {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+}
+
+.video-responsive {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.horizontal-card:not(.video-card) {
+    width: 100%;
+}
+
+/* ===== LISTA ===== */
+.feature-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.feature-list li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.feature-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #3498db;
+    font-weight: bold;
+}
+
+/* ===== DOCUMENTO ===== */
+.document-link {
+    display: inline-flex;
+    align-items: center;
+    color: #3498db;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+}
+
+.document-link:hover {
+    color: #2980b9;
+}
+
+.document-link i {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+    .video-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .arquitectura-hero-title {
+        font-size: 2.5rem;
+    }
+
+    .arquitectura-hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .card-content {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .arquitectura-hero-title {
+        font-size: 2rem;
+    }
+
+    .card-title {
+        font-size: 1.3rem;
+    }
+
+    .card-body,
+    .feature-list li {
+        font-size: 1rem;
+    }
+}
+.animated-blueprints {
+    text-align: center;
+    color: #222;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    max-height: 450px;
+}
+
+.blueprints-title h2 {
+    font-size: 1.8rem;
+}
+
+.blueprint-canvas {
+    transform: scale(0.9) translateY(-150px);
+    transform-origin: center;
+}
+
+.blueprint-svg {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    stroke: #0066cc;
+    stroke-width: 1.5;
+    fill: none;
+}
+
+/* Animación principal: 6s para dibujar, 6s para desdibujar (12s total por ciclo) */
+.draw-path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: drawAndReverse 12s linear infinite;
+}
+
+/* Círculos (columnas) con la misma duración */
+.draw-circle {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: drawAndReverse 60s linear infinite;
+    fill: none;
+    stroke: #0066cc;
+    stroke-width: 1.5;
+}
+
+/* Mobiliario con relleno semi-transparente */
+.furniture-path {
+    stroke: #004080;
+    stroke-width: 1;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    fill: rgba(0, 64, 128, 0.08);
+    animation: drawAndReverse 12s linear infinite;
+}
+
+/* Líneas de dimensión (aparecen/desaparecen) */
+.dimension-line {
+    stroke: #0099ff;
+    stroke-width: 1;
+    stroke-dasharray: 5, 3;
+    animation: fadeInOut 12s linear infinite;
+}
+
+/* Textos (aparecen/desaparecen en sync con las líneas) */
+.dimension-text,
+.room-label,
+.scale-text {
+    font-family: 'Arial Narrow', sans-serif;
+    font-size: 11px;
+    fill: #0099ff;
+    animation: fadeInOut 12s linear infinite;
+    opacity: 0;
+}
+
+.room-label {
+    font-weight: bold;
+    fill: #333;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.scale-text {
+    font-style: italic;
+    fill: #666;
+}
+
+/* Keyframes para dibujar/desdibujar */
+@keyframes drawAndReverse {
+    0% {
+        stroke-dashoffset: 1000; /* Comienza desdibujado */
+    }
+    50% {
+        stroke-dashoffset: 0; /* Completamente dibujado a los 6s */
+    }
+    100% {
+        stroke-dashoffset: 1000; /* Vuelve a desdibujarse a los 12s */
+    }
+}
+
+/* Keyframes para fade in/out de textos y líneas discontinuas */
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0; /* Invisible al inicio/final */
+    }
+    25%, 75% {
+        opacity: 1; /* Visible durante la mitad del ciclo */
+    }
+}
+
+/* Ajustamos los delays para mantener el orden secuencial */
+.draw-path:nth-child(1) { animation-delay: 0s; }
+.draw-path:nth-child(2) { animation-delay: 0.2s; }
+.draw-path:nth-child(3) { animation-delay: 0.4s; }
+.draw-path:nth-child(4) { animation-delay: 0.6s; }
+.draw-path:nth-child(5) { animation-delay: 0.8s; }
+.draw-path:nth-child(6) { animation-delay: 1.0s; }
+.draw-path:nth-child(7) { animation-delay: 1.2s; }
+.draw-path:nth-child(8) { animation-delay: 1.4s; }
+.draw-path:nth-child(9) { animation-delay: 1.6s; }
+.draw-path:nth-child(10) { animation-delay: 1.8s; }
+.draw-path:nth-child(11) { animation-delay: 2.0s; }
+.draw-path:nth-child(12) { animation-delay: 2.2s; }
+.draw-path:nth-child(13) { animation-delay: 2.4s; }
+.draw-path:nth-child(14) { animation-delay: 2.6s; }
+.draw-path:nth-child(15) { animation-delay: 2.8s; }
+.draw-path:nth-child(16) { animation-delay: 3.0s; }
+.draw-path:nth-child(17) { animation-delay: 3.2s; }
+.draw-path:nth-child(18) { animation-delay: 3.4s; }
+.draw-path:nth-child(19) { animation-delay: 3.6s; }
+
+/* Mobiliario aparece después de las paredes */
+.furniture-path { animation-delay: 4.0s; }
+
+/* Cotas y textos aparecen al final */
+.dimension-line { animation-delay: 3.0s; }
+.dimension-text { animation-delay: 3.0s; }
+.room-label { animation-delay: 3.0s; }
+.scale-text { animation-delay: 3.0s; }

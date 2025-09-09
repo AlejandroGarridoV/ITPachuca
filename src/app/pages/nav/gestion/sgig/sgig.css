@@ -1,0 +1,13 @@
+/* Estilos específicos para el módulo SGIG con prefijo para evitar conflictos */
+.sgig-contenedor {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.sgig-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}

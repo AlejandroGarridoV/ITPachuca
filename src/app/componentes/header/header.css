@@ -1,0 +1,242 @@
+/* ===== NAVIGATION BAR ===== */
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-color: #f9f9f9;
+  padding: 1.2rem 3rem;
+  z-index: 100;
+  min-height: 130px;
+}
+
+/* ===== LOGO PILL CONTAINER ===== */
+.logo-pill-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-radius: 50px;
+  padding: 0.3rem 1.5rem;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.18);
+  transition: all 0.3s ease;
+  height: auto;
+  width: 42rem;
+  margin-right: auto;
+}
+
+.logo-pill-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.logo-pill {
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.logo-pill img {
+  height: 80%;
+  max-height: 60px;
+  width: auto;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.logo-pill:hover img {
+  transform: scale(1.1);
+}
+
+/* ===== NAV BUTTONS CONTAINER ===== */
+.nav-buttons-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 1rem;
+  flex-wrap: nowrap;
+}
+
+/* ===== NAV BUTTONS ===== */
+.nav-button {
+  position: relative;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, var(--tec-blue), #2e4d7b);
+  padding: 0.9rem 1.6rem;
+  border-radius: 16px;
+  width: 120px;
+  height: 60px;
+  color: var(--tec-white);
+  text-decoration: none;
+  text-align: center;
+  box-shadow:
+    0 6px 16px rgba(27, 57, 106, 0.4),
+    inset 0 -2px 4px rgba(0, 0, 0, 0.2);
+  transition:
+    background 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.25s ease,
+    color 0.3s ease;
+  cursor: pointer;
+  user-select: none;
+  min-width: 110px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Icono */
+.button-icon {
+  font-size: 1.3rem;
+  color: #A8CCE9;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Texto */
+.button-text {
+  font-size: 1rem;
+  color: var(--tec-white);
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+/* Barra inferior animada */
+.button-hover-effect {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 4px;
+  border-radius: 5px 5px 0 0;
+  background: linear-gradient(90deg, #4FC3F7, #1261B0);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.35s ease;
+  z-index: 2;
+}
+
+/* Hover */
+.nav-button:hover {
+  background: linear-gradient(135deg, #4FC3F7, #1261B0);
+  box-shadow:
+    0 8px 20px rgba(79, 195, 247, 0.8),
+    inset 0 -3px 10px rgba(255, 255, 255, 0.3);
+  transform: translateY(-3px) scale(1.02);
+  color: #E1F0FF;
+}
+
+.nav-button:hover .button-icon {
+  color: #D9F1FF;
+  transform: scale(1.2) rotate(8deg);
+}
+
+.nav-button:hover .button-text {
+  color: #E1F0FF;
+}
+
+.nav-button:hover .button-hover-effect,
+.nav-button.active .button-hover-effect {
+  transform: scaleX(1);
+}
+
+/* Activo */
+.nav-button.active {
+  background: #1261B0;
+  box-shadow:
+    0 0 15px 2px rgba(79, 195, 247, 0.9),
+    inset 0 -4px 10px rgba(0, 75, 140, 0.8);
+  font-weight: 700;
+  transform: scale(1.03);
+}
+
+.nav-button.active .button-icon {
+  color: #7FD2FF;
+  animation: pulse 2s infinite;
+}
+
+.nav-button.active .button-text {
+  color: #D0E7FF;
+}
+
+/* Pulse */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.1);
+    opacity: 0.9;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .nav-button {
+    width: 120px;
+    height: 45px;
+    padding: 0.6rem 0.9rem;
+  }
+
+  .button-icon {
+    font-size: 1.2rem;
+  }
+
+  .button-text {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    flex-direction: column;
+    padding: 1rem;
+    min-height: auto;
+  }
+
+  .logo-pill-container {
+    width: 75%;
+    justify-content: center;
+    margin-bottom: 0.6rem;
+    margin-right: 0;
+    height: 60px;
+    padding: 0.3rem 1rem;
+  }
+
+  .nav-buttons-container {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+
+  .nav-button {
+    width: 100px;
+    height: 42px;
+    flex-direction: column;
+    padding: 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .button-icon {
+    font-size: 1.1rem;
+  }
+
+  .button-text {
+    font-size: 0.75rem;
+  }
+
+  .button-hover-effect {
+    height: 3px;
+  }
+}

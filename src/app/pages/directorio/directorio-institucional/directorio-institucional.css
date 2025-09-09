@@ -1,0 +1,284 @@
+    /* ESTILOS PRINCIPALES */
+    .directorio-main-container {
+        background-color: var(--tec-white);
+        padding: 2rem;
+        max-width: 1600px;
+        margin: 0 auto;
+        box-shadow: var(--shadow-soft);
+        border-radius: 8px;
+        background-clip: padding-box;
+        -webkit-background-clip: padding-box;
+        -moz-background-clip: padding-box;
+    }
+
+    .directorio-title-section {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .directorio-main-title {
+        color: var(--tec-blue);
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+        background: var(--gradient-primary);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+    }
+
+    .directorio-title-divider {
+        border: 0;
+        height: 2px;
+        background: var(--gradient-primary);
+        margin: 1rem auto;
+        width: 80%;
+    }
+
+    /* TABLA DE CONTACTO */
+    .directorio-contact-info-table {
+        width: 100%;
+        margin-bottom: 2rem;
+        border-collapse: collapse;
+    }
+
+    .directorio-contact-row {
+        background: var(--gradient-tertiary);
+        background-clip: padding-box;
+        -webkit-background-clip: padding-box;
+        -moz-background-clip: padding-box;
+    }
+
+    .directorio-contact-cell {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .directorio-section-title {
+        color: var(--tec-blue);
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .directorio-phone-numbers {
+        color: var(--tec-dark-gray);
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    /* SECCIONES DEL DIRECTORIO */
+    .directorio-section {
+        background-color: var(--tec-white);
+        border-radius: 8px;
+        margin-bottom: 2rem;
+        box-shadow: var(--shadow-soft);
+        overflow: hidden;
+        background-clip: padding-box;
+        -webkit-background-clip: padding-box;
+        -moz-background-clip: padding-box;
+    }
+
+    .directorio-special-section {
+        background-color: var(--tec-white);
+        border-radius: 8px;
+        margin-bottom: 2rem;
+        box-shadow: var(--shadow-soft);
+        border: 2px solid var(--tec-yellow);
+        overflow: hidden;
+        background-clip: padding-box;
+        -webkit-background-clip: padding-box;
+        -moz-background-clip: padding-box;
+    }
+
+    .directorio-section-header {
+        display: flex;
+        background: var(--gradient-primary);
+        color: var(--tec-white);
+        font-weight: 500;
+        padding: 1rem;
+        background-clip: padding-box;
+        -webkit-background-clip: padding-box;
+        -moz-background-clip: padding-box;
+    }
+
+    .directorio-header-extension,
+    .directorio-header-whatsapp {
+        flex: 0 0 100px;
+        text-align: center;
+    }
+
+    .directorio-header-area {
+        flex: 1 1 40%;
+        padding: 0 1rem;
+    }
+
+    .directorio-header-title {
+        flex: 1 1 30%;
+        padding: 0 1rem;
+    }
+
+    .directorio-header-email {
+        flex: 1 1 30%;
+        padding: 0 1rem;
+    }
+
+    /* ENTRADAS DEL DIRECTORIO */
+    .directorio-entry {
+        display: flex;
+        padding: 1rem;
+        border-bottom: 1px solid var(--border-color);
+        transition: all 0.3s ease;
+        background-clip: padding-box;
+        -webkit-background-clip: padding-box;
+        -moz-background-clip: padding-box;
+    }
+
+    .directorio-entry:hover {
+        background-color: rgba(0, 123, 255, 0.05);
+        transform: translateY(-2px);
+    }
+
+    .directorio-extension,
+    .directorio-whatsapp-number {
+        flex: 0 0 100px;
+        text-align: center;
+        color: var(--tec-blue);
+        font-weight: 500;
+    }
+
+    .directorio-area {
+        flex: 1 1 40%;
+        padding: 0 1rem;
+        color: var(--tec-dark-gray);
+    }
+
+    .directorio-person {
+        flex: 1 1 30%;
+        padding: 0 1rem;
+        color: var(--tec-dark-gray);
+    }
+
+    .directorio-director {
+        color: var(--tec-blue);
+        font-weight: 700;
+    }
+
+    .directorio-subdirector {
+        color: var(--tec-light-blue);
+        font-weight: 600;
+    }
+
+    .directorio-email {
+        flex: 1 1 30%;
+        padding: 0 1rem;
+    }
+
+    .directorio-email a {
+        color: var(--tec-red);
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .directorio-email a:hover {
+        color: var(--tec-dark-red);
+        text-decoration: underline;
+    }
+
+    /* ESPACIADOR */
+    .directorio-spacer {
+        height: 2rem;
+        background: var(--gradient-tertiary);
+        margin: 1.5rem 0;
+        border-radius: 4px;
+        background-clip: padding-box;
+        -webkit-background-clip: padding-box;
+        -moz-background-clip: padding-box;
+    }
+
+    /* SECCIÓN DE CONTACTO FINAL */
+    .directorio-contact-section {
+        text-align: right;
+        margin-top: 3rem;
+        padding-top: 2rem;
+        border-top: 1px solid var(--border-color);
+        background-clip: padding-box;
+        -webkit-background-clip: padding-box;
+        -moz-background-clip: padding-box;
+    }
+
+    .directorio-contact-title {
+        color: var(--tec-blue);
+        margin-bottom: 1rem;
+    }
+
+    .directorio-contact-link {
+        display: inline-block;
+        transition: all 0.3s ease;
+    }
+
+    .directorio-contact-image {
+        max-width: 800px;
+        border-radius: 8px;
+        box-shadow: var(--shadow-soft);
+        transition: all 0.3s ease;
+        background-clip: padding-box;
+        -webkit-background-clip: padding-box;
+        -moz-background-clip: padding-box;
+    }
+
+    .directorio-contact-image:hover {
+        transform: scale(1.03);
+        box-shadow: var(--shadow-strong);
+    }
+
+    /* EFECTOS DE SCROLL */
+    .scroll-section:target {
+        animation: highlight 1.5s ease;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+        .directorio-main-container {
+            padding: 1rem;
+        }
+
+        .directorio-section-header,
+        .directorio-entry {
+            flex-direction: column;
+        }
+
+        .directorio-header-extension,
+        .directorio-header-area,
+        .directorio-header-title,
+        .directorio-header-email,
+        .directorio-header-whatsapp,
+        .directorio-extension,
+        .directorio-area,
+        .directorio-person,
+        .directorio-email,
+        .directorio-whatsapp-number {
+            flex: 1 1 100%;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        .directorio-main-title {
+            font-size: 1.8rem;
+        }
+
+        .directorio-contact-info-table {
+            display: block;
+        }
+
+        .directorio-contact-row {
+            display: block;
+        }
+
+        .directorio-contact-cell {
+            display: block;
+            text-align: center;
+            padding: 0.5rem;
+        }
+    }

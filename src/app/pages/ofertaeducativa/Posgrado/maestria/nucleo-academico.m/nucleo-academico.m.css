@@ -1,0 +1,164 @@
+/* Estilos para el Núcleo Académico */
+.academic-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.back-button {
+  background: var(--gradient-primary);
+  color: var(--tec-white);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background: var(--tec-blue);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-strong);
+}
+
+.academic-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.academic-title {
+  color: var(--tec-blue);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.academic-subtitle {
+  color: var(--tec-dark-gray);
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.academic-divider {
+  height: 4px;
+  width: 100px;
+  background: var(--gradient-secondary);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.professors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.professor-card {
+  width: 100%;
+  max-width: 300px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.3s ease;
+}
+
+.professor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-strong);
+}
+
+.professor-card-single {
+  grid-column: 1 / -1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.professor-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.professor-image-container {
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.professor-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.professor-card:hover .professor-image {
+  transform: scale(1.05);
+}
+
+.professor-name {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin: 0;
+  color: var(--tec-blue);
+  font-weight: 500;
+  background-color: var(--tec-white);
+}
+
+.professor-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(27, 57, 106, 0.8);
+  color: var(--tec-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.professor-card:hover .professor-overlay {
+  opacity: 1;
+}
+
+.professor-overlay i {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.professor-overlay span {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .academic-title {
+    font-size: 2rem;
+  }
+  
+  .academic-subtitle {
+    font-size: 1.25rem;
+  }
+  
+  .professors-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}

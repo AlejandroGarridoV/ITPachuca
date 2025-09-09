@@ -1,0 +1,218 @@
+<app-header></app-header>
+<div class="directivos-container">
+    <div class="directivo-main-title-container">
+        <h1 class="directivo-main-title">Directorio</h1>
+        <div class="title-decoration"></div>
+    </div>
+
+    <!-- Menú de botones mejorado -->
+    <div class="directivos-menu">
+        <button routerLink="/directorio_inst" class="directivos-button menu-button">
+            <i class="fas fa-building"></i> Directorio institucional
+        </button>
+        
+        <div class="button-group">
+            <button class="directivos-button menu-button" (click)="scrollToSection('Dirección')" 
+                    [class.active]="currentSection === 'Dirección'">
+                <i class="fas fa-user-tie"></i> Dirección
+            </button>
+            
+            <button class="directivos-button menu-button" (click)="scrollToSection('Subdirección Académica')" 
+                    [class.active]="currentSection === 'Subdirección Académica'">
+                <i class="fas fa-book"></i> Subdirección Académica
+            </button>
+            
+            <button class="directivos-button menu-button" (click)="scrollToSection('Subdirección de Planeación y Vinculación')" 
+                    [class.active]="currentSection === 'Subdirección de Planeación y Vinculación'">
+                <i class="fas fa-chart-line"></i> Planeación y Vinculación
+            </button>
+            
+            <button class="directivos-button menu-button" (click)="scrollToSection('Subdirección de Servicios Administrativos')" 
+                    [class.active]="currentSection === 'Subdirección de Servicios Administrativos'">
+                <i class="fas fa-cogs"></i> Servicios Administrativos
+            </button>
+        </div>
+    </div>
+
+    <div id="Dirección" class="directivo-card director-card">
+        <div class="directivo-header">
+            <div class="directivo-portrait">
+                <img src="directorio/director.jpg" alt="Mtro. Miguel Ángel Lee Rodríguez" class="directivo-image-main">
+            </div>
+            <div class="directivo-titles">
+                <h1>Dirección</h1>
+                <h3>Mtro. Miguel Ángel Lee Rodríguez</h3>
+            </div>
+        </div>
+
+        <div class="directivo-content">
+            <div class="directivo-info">
+                <div class="directivo-funciones">
+                    <h4>Funciones</h4>
+                    <ul>
+                        <li>Planear, dirigir, controlar y evaluar las actividades de Planeación, Vinculación, Académicas y Administrativas del Instituto Tecnológico de conformidad con los objetivos, políticas y lineamientos establecidos por la Secretaria de Educación Pública.</li>
+                        <li>Dirigir la elaboración del programa operativo anual y el anteproyecto de presupuesto del Instituto Tecnológico con base en los lineamientos establecidos para tal fin y proponerlos a la dirección general para su autorización.</li>
+                        <li>Proponer a la Dirección General de Institutos Tecnológicos, la organización del Instituto, así como modificaciones a los sistemas y procedimientos que coadyuven al cumplimiento de los objetivos del mismo.</li>
+                        <li>Dirigir y controlar la integración y administración de los recursos humanos, financieros y materiales del Instituto Tecnológico, de conformidad con la normatividad vigente.</li>
+                        <li>Dirigir y controlar la aplicación de los planes y programas de estudio, apoyos didácticos, técnicas e instrumentos para la evaluación del aprendizaje en el Instituto Tecnológico conforme a los lineamientos técnicos y metodológicos establecidos por la Dirección General de Institutos Tecnológicos.</li>
+                        <li>Dirigir y controlar el desarrollo de los proyectos de la investigación científica y tecnológica en el Instituto de acuerdo a los lineamientos técnicos y metodológicos establecidos por la Dirección General de Institutos Tecnológicos.</li>
+                        <li>Promover y dirigir el desarrollo de las actividades de vinculación del Instituto Tecnológico con el sector productivo de bienes y servicios de la región.</li>
+                        <li>Promover y dirigir el desarrollo de las actividades cívicas, sociales, culturales, deportivas y recreativas del Instituto Tecnológico, así como las de vinculación y orientación educativas.</li>
+                        <li>Dirigir y supervisar el sistema de control escolar del Instituto Tecnológico, conforme a las normas y procedimientos establecidos.</li>
+                        <li>Dirigir y controlar la prestación de los servicios asistenciales del Instituto Tecnológico de acuerdo con los lineamientos establecidos.</li>
+                        <li>Promover la difusión de las normas y lineamientos que regulen el funcionamiento del Instituto Tecnológico en las áreas del mismo y vigilar su aplicación.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="directivo-contacto">
+                <h4>Contacto</h4>
+                <div class="contacto-card">
+                    <a href="mailto:dir_pachuca@tecnm.mx">
+                        <img src="directorio/Tarjetad.jpeg" alt="Tarjeta de contacto">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Subdirección Académica" class="directivo-card subacademica-card">
+        <div class="directivo-header">
+            <div class="directivo-portrait">
+                <img src="directorio/subacad.jpg" alt="Mtro. Alfonso Ávila Pérez Tagle" class="directivo-image-main">
+            </div>
+            <div class="directivo-titles">
+                <h1>Subdirección Académica</h1>
+                <h3>Mtro. Alfonso Ávila Pérez Tagle</h3>
+            </div>
+        </div>
+
+        <div class="directivo-content">
+            <div class="directivo-info">
+                <div class="directivo-funciones">
+                    <h4>Funciones</h4>
+                    <ul>
+                        <li>Planear, organizar, dirigir, controlar y evaluar de acuerdo con las normas y lineamientos establecidos las actividades de docencia, investigación y vinculación del Instituto Tecnológico.</li>
+                        <li>Elaborar el programa operativo anual y el anteproyecto de presupuesto de la subdirección y presentarlos a la Dirección del Instituto Tecnológico para lo conducente.</li>
+                        <li>Aplicar la estructura orgánica autorizada para la subdirección y verificar el cumplimiento de los procedimientos establecidos para el desarrollo de las actividades de docencia, investigación y vinculación del instituto tecnológico.</li>
+                        <li>Dirigir y controlar la aplicación de los planes y programas de estudio de las carreras que se impartan en el instituto tecnológico, así como de los apoyos didácticos y las técnicas e instrumentos para la evaluación del aprendizaje de acuerdo con las normas y lineamientos establecidos.</li>
+                        <li>Dirigir y controlar el desarrollo de los programas y proyectos de investigación educativa, científica y tecnológica que se lleven a cabo en el instituto tecnológico de conformidad con las normas y lineamientos establecidos.</li>
+                        <li>Promover y dirigir el desarrollo de los programas de superación y actualización del personal docente que realicen en el lnstituto Tecnológico de acuerdo a los lineamientos establecidos.</li>
+                        <li>Dirigir. Controlar y desarrollar proyectos de producción académica relacionados con la vinculación del Instituto Tecnológico con el sector productivo.</li>
+                        <li>Dirigir y controlar el proceso de titulación de los egresados del Instituto.</li>
+                        <li>Supervisar y evaluar el funcionamiento de las áreas de la subdirección y con base en los resultados, proponer las medidas que mejoren su operación.</li>
+                        <li>Coordinar las actividades de la subdirección con las demás áreas para el cumplimiento de los objetivos del Instituto Tecnológico.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="directivo-contacto">
+                <h4>Contacto</h4>
+                <div class="contacto-card">
+                    <a href="mailto:acad_pachuca@tecnm.mx">
+                        <img src="directorio/Tarjetasa.jpeg" alt="Tarjeta de contacto">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Subdirección de Planeación y Vinculación" class="directivo-card subplaneacion-card">
+        <div class="directivo-header">
+            <div class="directivo-portrait">
+                <img src="directorio/subplan.jpg" alt="Mtro. José Luis Vigueras Cortés" class="directivo-image-main">
+            </div>
+            <div class="directivo-titles">
+                <h1>Subdirección de Planeación y Vinculación</h1>
+                <h3>Mtro. José Luis Vigueras Cortés</h3>
+            </div>
+        </div>
+
+        <div class="directivo-content">
+            <div class="directivo-info">
+                <div class="directivo-funciones">
+                    <h4>Funciones</h4>
+                    <ul>
+                        <li>Planear, organizar, dirigir, controlar y evaluar las actividades de planeación, programación, evaluación presupuestal, servicios escolares, extensión y vinculación con el sector productivo de conformidad con la normatividad vigente.</li>
+                        <li>Elaborar el programa operativo anual y el anteproyecto de presupuesto de la subdirección y presentarlos a la dirección del Instituto Tecnológico para lo conducente.</li>
+                        <li>Aplicar la estructura orgánica autorizada para la subdirección y verificar el cumplimiento de los procedimientos establecidos para la planeación, programación, evaluación presupuestal, servicios escolares, extensión y vinculación con el sector productivo.</li>
+                        <li>Integrar el programa operativo anual y el anteproyecto de presupuesto del Instituto Tecnológico y presentarlos a la dirección para su aprobación.</li>
+                        <li>Coordinar y supervisar la elaboración de planes de desarrollo institucional y de las estrategias a seguir para su ejecución.</li>
+                        <li>Integrar las propuestas de modificaciones orgánico-funcionales y presentarlas a la dirección del Instituto Tecnológico para su aprobación.</li>
+                        <li>Difundir las estructuras orgánicas y los manuales administrativos autorizados y verificar su cumplimiento.</li>
+                        <li>Coordinar las evaluaciones programática, presupuestal y del Instituto Tecnológico de conformidad con las normas aplicables.</li>
+                        <li>Promover las actividades de extensión educativa, gestión tecnológica y vinculación con el sector productivo.</li>
+                        <li>Coordinar las acciones de comunicación y difusión del Instituto Tecnológico de acuerdo a los procedimientos establecidos.</li>
+                        <li>Dirigir y controlar la prestación de los servicios médicos, otorgamiento de becas, régimen facultativo del seguro social, bolsa de trabajo y orientación educativa del Instituto Tecnológico.</li>
+                        <li>Dirigir y controlar las inscripciones, reinscripciones, cambios, traslados, acreditaciones, regularizaciones, certificación y titulación de los alumnos del Instituto Tecnológico.</li>
+                        <li>Coordinar y supervisar el funcionamiento del Centro de Información del Instituto Tecnológico.</li>
+                        <li>Programar, de acuerdo con los lineamientos emitidos por la Dirección General de Institutos Tecnológicos, las reuniones de planeación y vinculación del Instituto Tecnológico.</li>
+                        <li>Organizar y coordinar las reuniones de planeación y evaluación del Instituto Tecnológico.</li>
+                        <li>Supervisar y evaluar el funcionamiento de las áreas de la subdirección y, con base en los resultados, proponer a la dirección las medidas que mejoren el servicio.</li>
+                        <li>Coordinar las actividades de la subdirección con las demás áreas para el cumplimiento de los objetivos del Instituto Tecnológico.</li>
+                        <li>Informar del funcionamiento de la subdirección a la Dirección del Instituto Tecnológico en los términos y plazos establecidos.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="directivo-contacto">
+                <h4>Contacto</h4>
+                <div class="contacto-card">
+                    <a href="mailto:plan_pachuca@tecnm.mx">
+                        <img src="directorio/Tarjetasp.jpeg" alt="Tarjeta de contacto">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Subdirección de Servicios Administrativos" class="directivo-card subadmin-card">
+        <div class="directivo-header">
+            <div class="directivo-portrait">
+                <img src="directorio/subadmin.jpg" alt="Mtro. Jorge Javier Ortiz Camacho" class="directivo-image-main">
+            </div>
+            <div class="directivo-titles">
+                <h1>Subdirección de Servicios Administrativos</h1>
+                <h3>Mtro. Jorge Javier Ortiz Camacho</h3>
+            </div>
+        </div>
+
+        <div class="directivo-content">
+            <div class="directivo-info">
+                <div class="directivo-funciones">
+                    <h4>Funciones</h4>
+                    <ul>
+                        <li>Planear, organizar, dirigir, controlar y evaluar la administración de los recursos humanos, financieros, materiales y servicios generales del Instituto Tecnológico conforme a las normas y lineamientos emitidos por la Secretaría de Educación Pública.</li>
+                        <li>Planear, organizar, dirigir, controlar y evaluar la prestación de servicios de cómputo, mantenimiento de equipo y pago de remuneraciones al personal, de conformidad con las normas y lineamientos establecidos.</li>
+                        <li>Elaborar el programa operativo anual y anteproyecto de presupuesto de la subdirección y presentarlos a la dirección del Instituto Tecnológico para lo procedente.</li>
+                        <li>Aplicar la estructura orgánica autorizada para la subdirección y verificar el cumplimiento de los procedimientos establecidos para la administración de recursos humanos, financieros, materiales, servicios generales y de cómputo, pago de remuneraciones y mantenimiento de equipo.</li>
+                        <li>Dirigir y controlar la selección, contratación, desarrollo y pago de remuneraciones del personal del Instituto Tecnológico.</li>
+                        <li>Dirigir y controlar el ejercicio del presupuesto, registros contables, tesorería, fiscalización y administración de los ingresos propios del Instituto Tecnológico.</li>
+                        <li>Dirigir y controlar las adquisiciones, control de bienes muebles, almacenes, y los servicios generales del Instituto Tecnológico.</li>
+                        <li>Coordinar y supervisar el funcionamiento del Centro de Cómputo del Instituto Tecnológico.</li>
+                        <li>Participar con la Subdirección de Planeación y Vinculación en las evaluaciones del ejercicio del presupuesto asignado al Instituto Tecnológico.</li>
+                        <li>Coordinar las actividades de la subdirección con las demás áreas para el cumplimiento de los objetivos del Instituto Tecnológico.</li>
+                        <li>Informar del funcionamiento de la subdirección a la dirección del Instituto Tecnológico en los términos y plazos establecidos.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="directivo-contacto">
+                <h4>Contacto</h4>
+                <div class="contacto-card">
+                    <a href="mailto:admon_pachuca@tecnm.mx">
+                        <img src="directorio/Tarjetass.jpeg" alt="Tarjeta de contacto">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ @if (isButtonVisible) {
+  <button (click)="scrollToTop()" id="btntoTop" class="to-top-button" aria-label="Volver arriba">
+    ↑
+  </button>
+  }
+
+<app-footer></app-footer>

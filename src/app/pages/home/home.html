@@ -1,0 +1,762 @@
+<app-header></app-header>
+
+<main>
+  <!-- Botón hamburguesa visible solo en móvil -->
+  <button class="menu-toggle" (click)="menuOpen = !menuOpen" aria-label="Abrir/Cerrar menú">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <!-- Menú de navegación -->
+  <nav class="secondary-nav" [class.open]="menuOpen">
+
+    <button class="nav-button" (click)="scrollToSection('oferta-educativa')">
+      <i class="fas fa-graduation-cap"></i> Oferta Educativa
+    </button>
+
+    <button class="nav-button" (click)="scrollToSection('sitios-interes')">
+      <i class="fas fa-link"></i> Sitios de Interés
+    </button>
+
+    <button class="nav-button" (click)="scrollToSection('tecnologico')">
+      <i class="fas fa-school"></i> Tecnológico
+    </button>
+
+    <button class="nav-button" (click)="scrollToSection('departamentos')">
+      <i class="fas fa-building"></i> Departamentos
+    </button>
+
+    <button class="nav-button" (click)="scrollToSection('alumnos')">
+      <i class="fas fa-users"></i> Alumnos
+    </button>
+
+    <button class="nav-button" (click)="scrollToSection('directorio')">
+      <i class="fas fa-address-book"></i> Directorio
+    </button>
+
+    <button class="nav-button" (click)="scrollToSection('egresados')">
+      <i class="fas fa-user-graduate"></i> Egresados
+    </button>
+
+    <button class="nav-button" (click)="scrollToSection('enlaces')">
+      <i class="fas fa-external-link-alt"></i> Enlaces
+    </button>
+  </nav>
+
+  @if (isButtonVisible) {
+  <button (click)="scrollToTop()" id="btntoTop" class="to-top-button" aria-label="Volver arriba">
+    ↑
+  </button>
+  }
+
+<!---------------------------------------------------------------------CARRUSEL DE IMAGENES-------------------------------------------------------->
+  <section>
+    <div class="modern-carousel">
+      <div class="carousel-container">
+        <!-- Logos inside carousel -->
+        <img src="carrusel/TECNM-logo-solo.png" alt="Logo TecNM" class="logo-TECNM-solo" />
+        <img src="carrusel/reloj-pach.png" alt="Reloj" class="reloj-pach" />
+
+        <!-- Carousel -->
+        <div class="carousel-track">
+          @for (slide of slides; track $index) {
+          <div class="{{getSlideClass($index)}}">
+            <a [href]="slide.link" [target]="slide.external ? '_blank' : '_self'" class="slide-link">
+              <div class="slide-image">
+                <img [src]="slide.img" [alt]="slide.title" />
+              </div>
+              <div class="slide-content">
+                <h3>{{ slide.title }}</h3>
+                <p>{{ slide.subtitle }}</p>
+              </div>
+            </a>
+          </div>
+          }
+        </div>
+
+        <!-- Navigation buttons -->
+        <button class="carousel-nav prev" (click)="prevSlide()" aria-label="Anterior">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel-nav next" (click)="nextSlide()" aria-label="Siguiente">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <!-- Dots -->
+        <div class="carousel-dots">
+          @for (slide of slides; track $index) {
+          <span class="{{getDotClass($index)}}" (click)="goToSlide($index)"></span>
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- -------------------------------------------------------------INNOVATEC--------------------------------------------------------------- -->
+  <section class="innovatec-section" id="innovatec">
+    <div class="innovatec-background"></div>
+
+    <!-- Logo INNOVATEC -->
+    <img src="logos/innova-logo-2024.png" alt="Logo INNOVATEC 2024" class="innovatec-logo" />
+
+    <!-- Imagen de la tuza -->
+    <img src="tuzas/tuza_dialogo.png" alt="Tuza de Hidalgo saludando" class="innovatec-tuza" />
+
+    <div class="contenedor-innova innovatec-content">
+      <h2 class="innovatec-title">
+        ¡Descubre <span class="highlight">INNOVATEC</span>!
+      </h2>
+      <p class="innovatec-subtitle">
+        Cumbre Nacional de Desarrollo Tecnológico, Emprendimiento e Innovación.
+      </p>
+      <a href="https://itp.itpachuca.edu.mx/innovatecnm_2024/" class="innovatec-button" target="_blank"
+        rel="noopener noreferrer">
+        <span class="btn-text">Ver más sobre INNOVATEC</span>
+        <span class="btn-icon"><i class="fas fa-angle-double-right"></i></span>
+      </a>
+    </div>
+
+    <!-- Partículas decorativas -->
+    <div class="bubble bubble-purple"></div>
+    <div class="bubble bubble-indigo"></div>
+  </section>
+
+  <!---------------------------------------------------------------------OFERTA EDUCATIVA-------------------------------------------------------->
+  <app-ofertaeducativa></app-ofertaeducativa>
+  <!---------------------------------------------------------------------SITIOS DE INTERES-------------------------------------------------------->
+  <section id="sitios-interes" class="sitios-interes">
+    <div class="container">
+      <div class="sitios-header">
+        <h2 class="sitios-title">Sitios de Interes</h2>
+        <div class="decorative-line"></div>
+        <p class="section-subtitle">Accede a los materiales y servicios más relevantes del TecNM</p>
+        <div class="decorative-line-bottom"></div>
+      </div>
+
+      <div class="sitios-grid">
+        <a href="http://www.dof.gob.mx/nota_detalle.php?codigo=5353459&amp;fecha=23/07/2014" class="sitio-card"
+          target="_blank">
+          <div class="card-icon" style="--icon-color: #3498db;">
+            <i class="fas fa-file-contract"></i>
+          </div>
+          <div class="card-content">
+            <h3>Decreto de Creación</h3>
+            <p>Documento oficial publicado en el Diario Oficial de la Federación que establece el TecNM</p>
+            <span class="card-link">Ver documento <i class="fas fa-arrow-right"></i></span>
+          </div>
+          <div class="card-hover-effect"></div>
+        </a>
+
+        <a href="https://youtu.be/hdsdzWxSxko" class="sitio-card" target="_blank">
+          <div class="card-icon" style="--icon-color: #e74c3c;">
+            <i class="fas fa-video"></i>
+          </div>
+          <div class="card-content">
+            <h3>Video Institucional</h3>
+            <p>Descubre la historia, misión y valores del Tecnológico Nacional de México</p>
+            <span class="card-link">Ver video <i class="fas fa-arrow-right"></i></span>
+          </div>
+          <div class="card-hover-effect"></div>
+        </a>
+
+        <a href="https://portalautoservicios-tnm.sep.gob.mx/" class="sitio-card" target="_blank">
+          <div class="card-icon" style="--icon-color: #2ecc71;">
+            <i class="fas fa-file-invoice-dollar"></i>
+          </div>
+          <div class="card-content">
+            <h3>Talón de Pago</h3>
+            <p>Sistema de autoservicio para consulta de recibos de nómina del personal</p>
+            <span class="card-link">Acceder <i class="fas fa-arrow-right"></i></span>
+          </div>
+          <div class="card-hover-effect"></div>
+        </a>
+
+        <a href="https://www.tecnm.mx/?vista=TecNM_Virtual&amp;tecnm_virtual=Capitacion_Linea&amp;S=G"
+          class="sitio-card" target="_blank">
+          <div class="card-icon" style="--icon-color: #9b59b6;">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <div class="card-content">
+            <h3>Repositorio Educativo</h3>
+            <p>Recursos y prácticas educativas en línea de libre acceso para la comunidad</p>
+            <span class="card-link">Explorar <i class="fas fa-arrow-right"></i></span>
+          </div>
+          <div class="card-hover-effect"></div>
+        </a>
+
+        <a href="https://web.anuies.mx/aml/" class="sitio-card" target="_blank">
+          <div class="card-icon" style="--icon-color: #f39c12;">
+            <i class="fas fa-book-open"></i>
+          </div>
+          <div class="card-content">
+            <h3>Biblioteca ANUIES</h3>
+            <p>Acceso a valiosos recursos académicos de la Asociación Nacional de Universidades</p>
+            <span class="card-link">Visitar <i class="fas fa-arrow-right"></i></span>
+          </div>
+          <div class="card-hover-effect"></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!---------------------------------------------------------------------TECNOLOGICO-------------------------------------------------------->
+  <section id="tecnologico" class="tec-presentacion"
+    [style.background]="'url(/fotos/tecnologico.png) no-repeat center center / cover'"
+    style="position: relative; padding: 5rem 0;">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Conoce tu <span>Tecnológico</span></h1>
+        <p class="hero-slogan">"El Hombre Alimenta el Ingenio en Contacto con la Ciencia"</p>
+        <p class="hero-description">
+          El Instituto Tecnológico de Pachuca es una institución de educación superior comprometida con la excelencia
+          académica,
+          la innovación tecnológica y la formación integral de profesionales líderes. Con más de 50 años de historia,
+          somos parte del prestigioso Sistema Nacional de Institutos Tecnológicos.
+        </p>
+
+        <div class="hero-buttons">
+          <a routerLink="/historia" class="tec-btn"><i class="fas fa-landmark"></i> Historia</a>
+          <a routerLink="/filosofia" class="tec-btn"><i class="fas fa-award"></i> Filosofía de calidad</a>
+          <a routerLink="/escudo" class="tec-btn"><i class="fas fa-shield-alt"></i> Escudo</a>
+          <a routerLink="/campana" class="tec-btn"><i class="fas fa-bell"></i> Campana de Identidad</a>
+          <a routerLink="/murales" class="tec-btn"><i class="fas fa-paint-brush"></i> Murales</a>
+          <a routerLink="/himno" class="tec-btn"><i class="fas fa-music"></i> Himno</a>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+  <!---------------------------------------------------------------------DEPARTAMENTOS-------------------------------------------------------->
+  <section id="departamentos" class="tec-deptos-modern">
+    <div class="tec-deptos-container">
+      <!-- Encabezado moderno -->
+      <div class="tec-deptos-header">
+        <div class="tec-deptos-title-wrapper">
+          <h2 class="tec-deptos-modern-title">Departamentos Académicos</h2>
+          <div class="tec-deptos-modern-subtitle-wrapper">
+            <p class="tec-deptos-modern-subtitle">Innovación educativa que transforma</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Grid moderno de departamentos -->
+      <div class="tec-deptos-grid">
+        <!-- Tarjetas -->
+        <a href="/desarrollo_academico" class="tec-depto-modern-card" style="--depto-color: #4e54c8;">
+          <div class="card-bg"></div>
+          <div class="card-hover-effect"></div>
+          <div class="tec-depto-content">
+            <div class="tec-depto-modern-icon">
+              <i class="fas fa-book-open"></i>
+              <div class="icon-circle"></div>
+            </div>
+            <h3 class="tec-depto-modern-title">Desarrollo Académico</h3>
+            <p class="tec-depto-modern-desc">Programas educativos innovadores</p>
+            <div class="learn-more">
+              <span>Conoce más</span>
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+        </a>
+
+        <a href="/servicios_escolares" class="tec-depto-modern-card" style="--depto-color: #ff7b25;">
+          <div class="card-bg"></div>
+          <div class="card-hover-effect"></div>
+          <div class="tec-depto-content">
+            <div class="tec-depto-modern-icon">
+              <i class="fas fa-user-graduate"></i>
+              <div class="icon-circle"></div>
+            </div>
+            <h3 class="tec-depto-modern-title">Servicios Escolares</h3>
+            <p class="tec-depto-modern-desc">Gestión de trámites académicos</p>
+            <div class="learn-more">
+              <span>Conoce más</span>
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+        </a>
+
+        <a href="/estudios_prof" class="tec-depto-modern-card" style="--depto-color: #20b2aa;">
+          <div class="card-bg"></div>
+          <div class="card-hover-effect"></div>
+          <div class="tec-depto-content">
+            <div class="tec-depto-modern-icon">
+              <i class="fas fa-briefcase"></i>
+              <div class="icon-circle"></div>
+            </div>
+            <h3 class="tec-depto-modern-title">Estudios Profesionales</h3>
+            <p class="tec-depto-modern-desc">Planes de estudio actualizados</p>
+            <div class="learn-more">
+              <span>Conoce más</span>
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+        </a>
+
+        <a href="/gestion_vinculacion" class="tec-depto-modern-card" style="--depto-color: #9370db;">
+          <div class="card-bg"></div>
+          <div class="card-hover-effect"></div>
+          <div class="tec-depto-content">
+            <div class="tec-depto-modern-icon">
+              <i class="fas fa-handshake"></i>
+              <div class="icon-circle"></div>
+            </div>
+            <h3 class="tec-depto-modern-title">Gestión Tecnológica</h3>
+            <p class="tec-depto-modern-desc">Vinculación y proyectos</p>
+            <div class="learn-more">
+              <span>Conoce más</span>
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+        </a>
+
+        <a href="/centro_computo" class="tec-depto-modern-card" style="--depto-color: #3a7bd5;">
+          <div class="card-bg"></div>
+          <div class="card-hover-effect"></div>
+          <div class="tec-depto-content">
+            <div class="tec-depto-modern-icon">
+              <i class="fas fa-server"></i>
+              <div class="icon-circle"></div>
+            </div>
+            <h3 class="tec-depto-modern-title">Centro de Cómputo</h3>
+            <p class="tec-depto-modern-desc">Soporte tecnológico integral</p>
+            <div class="learn-more">
+              <span>Conoce más</span>
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+        </a>
+
+        <a href="/centro_info" class="tec-depto-modern-card" style="--depto-color: #e44d26;">
+          <div class="card-bg"></div>
+          <div class="card-hover-effect"></div>
+          <div class="tec-depto-content">
+            <div class="tec-depto-modern-icon">
+              <i class="fas fa-book"></i>
+              <div class="icon-circle"></div>
+            </div>
+            <h3 class="tec-depto-modern-title">Centro de Información</h3>
+            <p class="tec-depto-modern-desc">Biblioteca y recursos digitales</p>
+            <div class="learn-more">
+              <span>Conoce más</span>
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+        </a>
+
+        <a href="/centro_idiomas" class="tec-depto-modern-card" style="--depto-color: #00d2ff;">
+          <div class="card-bg"></div>
+          <div class="card-hover-effect"></div>
+          <div class="tec-depto-content">
+            <div class="tec-depto-modern-icon">
+              <i class="fas fa-language"></i>
+              <div class="icon-circle"></div>
+            </div>
+            <h3 class="tec-depto-modern-title">Centro de Idiomas</h3>
+            <p class="tec-depto-modern-desc">Aprende lenguas extranjeras</p>
+            <div class="learn-more">
+              <span>Conoce más</span>
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+        </a>
+
+        <a href="/extraescolares" class="tec-depto-modern-card" style="--depto-color: #ff758c;">
+          <div class="card-bg"></div>
+          <div class="card-hover-effect"></div>
+          <div class="tec-depto-content">
+            <div class="tec-depto-modern-icon">
+              <i class="fas fa-futbol"></i>
+              <div class="icon-circle"></div>
+            </div>
+            <h3 class="tec-depto-modern-title">Actividades Extraescolares</h3>
+            <p class="tec-depto-modern-desc">Cultura, arte y deporte</p>
+            <div class="learn-more">
+              <span>Conoce más</span>
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!----------------------------------------------------------ALUMNOS----------------------------------------------------------------------------->
+  <section id="alumnos" class="tec-alumnos-modern py-5">
+    <div class="container">
+      <!-- Encabezado -->
+      <div class="text-center mb-5">
+        <h2 class="tec-alumnos-modern-title mb-3">Servicios Estudiantiles</h2>
+        <div class="d-flex justify-content-center">
+          <div class="tec-alumnos-divider"></div>
+        </div>
+        <p class="tec-alumnos-modern-subtitle mt-3">
+          Accede a todas las herramientas que necesitas para tu éxito académico
+        </p>
+      </div>
+
+      <!-- Grid unificado de tarjetas -->
+      <div class="tec-alumnos-grid">
+        <a href="http://escolaresitp.itpachuca.edu.mx/" class="tec-alumnos-modern-card" target="_blank">
+          <div class="tec-alumnos-modern-icon"><i class="fas fa-laptop-code"></i></div>
+          <div>
+            <h3 class="tec-alumnos-modern-card-title">Sistema Integral</h3>
+            <p class="tec-alumnos-modern-card-desc">Acceso a tu información académica</p>
+          </div>
+          <div class="tec-alumnos-modern-hover-effect"></div>
+        </a>
+
+        <a href="pdf/Calendario ENERO - JULIO 2025 banner.pdf" class="tec-alumnos-modern-card" target="_blank">
+          <div class="tec-alumnos-modern-icon"><i class="fas fa-calendar-alt"></i></div>
+          <div>
+            <h3 class="tec-alumnos-modern-card-title">Calendario</h3>
+            <p class="tec-alumnos-modern-card-desc">Fechas clave del semestre</p>
+          </div>
+          <div class="tec-alumnos-modern-hover-effect"></div>
+        </a>
+
+        <a href="pdf/CATALOGO DE COBRO AGO-DIC 2024.pdf" class="tec-alumnos-modern-card" target="_blank">
+          <div class="tec-alumnos-modern-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+          <div>
+            <h3 class="tec-alumnos-modern-card-title">Cuotas Escolares</h3>
+            <p class="tec-alumnos-modern-card-desc">Costos y pagos académicos</p>
+          </div>
+          <div class="tec-alumnos-modern-hover-effect"></div>
+        </a>
+
+        <a href="https://accounts.google.com/signin/v2/identifier?hd=pachuca.tecnm.mx" class="tec-alumnos-modern-card"
+          target="_blank">
+          <div class="tec-alumnos-modern-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <h3 class="tec-alumnos-modern-card-title">Correo Institucional</h3>
+            <p class="tec-alumnos-modern-card-desc">Accede a tu cuenta tecnm</p>
+          </div>
+          <div class="tec-alumnos-modern-hover-effect"></div>
+        </a>
+
+        <a href="nuevo_ingreso" class="tec-alumnos-modern-card">
+          <div class="tec-alumnos-modern-icon"><i class="fas fa-user-plus"></i></div>
+          <div>
+            <h3 class="tec-alumnos-modern-card-title">Proceso de Inscripción</h3>
+            <p class="tec-alumnos-modern-card-desc">Guía para nuevos estudiantes</p>
+          </div>
+          <div class="tec-alumnos-modern-hover-effect"></div>
+        </a>
+
+        <a href="https://www.tecnm.mx/normateca/...Estudiantes/Reglamento_de_Estudiantes_del_TecNM.pdf"
+          class="tec-alumnos-modern-card" target="_blank">
+          <div class="tec-alumnos-modern-icon"><i class="fas fa-book"></i></div>
+          <div>
+            <h3 class="tec-alumnos-modern-card-title">Reglamento</h3>
+            <p class="tec-alumnos-modern-card-desc">Normativas estudiantiles</p>
+          </div>
+          <div class="tec-alumnos-modern-hover-effect"></div>
+        </a>
+
+        <a href="pdf/TECNM_SEGURO ESCOLAR VIG 2024_CONOCIENDO NUESTRO SEGURO.pdf" class="tec-alumnos-modern-card"
+          target="_blank">
+          <div class="tec-alumnos-modern-icon"><i class="fas fa-shield-alt"></i></div>
+          <div>
+            <h3 class="tec-alumnos-modern-card-title">Seguro Escolar</h3>
+            <p class="tec-alumnos-modern-card-desc">Cobertura y beneficios</p>
+          </div>
+          <div class="tec-alumnos-modern-hover-effect"></div>
+        </a>
+      </div>
+
+      <!-- CTA -->
+      <div class="text-center mt-5">
+        <a href="mailto:web_pachuca@tecnm.mx" class="btn btn-primary btn-lg px-4 py-2 rounded-pill tec-alumnos-cta">
+          <i class="fas fa-question-circle me-2"></i>¿Necesitas ayuda?
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!----------------------------------------SECCIÓN DE NOTICIAS--------------------------------------------------->
+  <app-noticias></app-noticias>
+  <a routerLink="video_promocional">Video Promocional</a>
+  <!-----------------------------------------DIRECTORIO--------------------------------------------------------->
+
+  <section id="directorio" class="dir-institucional-section">
+    <div class="dir-container">
+      <div class="dir-tuza-telefono">
+        <img src="tuzas/tuza-telefono.png" alt="Tuza TecNM Pachuca" class="dir-tuza-img">
+      </div>
+
+      <div class="dir-text-center">
+        <h2 class="dir-section-title">Directorio Institucional</h2>
+        <p class="dir-section-subtitle">
+          Conoce la estructura de nuestra institución y encuentra los contactos de las áreas clave que te ayudarán en tu
+          trayectoria académica.
+        </p>
+      </div>
+
+      <div class="dir-card-grid">
+        <!-- Directorio -->
+        <a href="/directorio" class="dir-card-btn dir-directorio-btn">
+          <div class="dir-card-icon"><i class="fas fa-address-book"></i></div>
+          <h3 class="dir-card-title">Ver Directorio</h3>
+          <p class="dir-card-text">Accede a la lista completa de contactos institucionales.</p>
+          <div class="dir-card-hover"></div>
+        </a>
+
+        <!-- Organigrama -->
+        <div routerLink="/organigrama" class="dir-card-btn dir-organigrama-btn" id="dirOrganigramaBtn">
+          <div class="dir-card-icon"><i class="fas fa-sitemap"></i></div>
+          <h3 class="dir-card-title">Ver Organigrama</h3>
+          <p class="dir-card-text">Descubre nuestra estructura organizacional.</p>
+          <div class="dir-card-hover"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!------------------------------------------REDES SOCIALES----------------------------------------->
+  <section class="tec-social-section">
+    <div class="tec-social-container">
+      <!-- Mascota decorativa - tamaño ajustado -->
+      <div class="tec-social-tuza">
+        <img src="tuzas/tuza-redes.png" alt="Tuza TecNM Pachuca" class="tec-social-tuza-img">
+      </div>
+
+      <!-- Contenido principal -->
+      <div class="tec-social-content">
+        <!-- Cabecera -->
+        <div class="tec-social-header text-center">
+          <h2 class="tec-social-title">Conéctate con Nosotros</h2>
+          <p class="tec-social-subtitle">Sigue nuestras redes sociales y mantente al día con las últimas noticias,
+            eventos y logros del TecNM Campus Pachuca</p>
+        </div>
+
+        <!-- Tarjetas de redes sociales -->
+        <div class="tec-social-cards">
+          <!-- Facebook -->
+          <div class="tec-social-card-wrapper">
+            <div class="tec-social-card tec-social-card-fb">
+              <a href="https://www.facebook.com/p/TecNM-Pachuca-61557528505129/?locale=es_LA" target="_blank"
+                class="tec-social-link">
+                <div class="tec-social-card-body">
+                  <div class="tec-social-icon-wrapper">
+                    <i class="fab fa-facebook-f"></i>
+                  </div>
+                  <h3 class="tec-social-card-title">Facebook</h3>
+                  <p class="tec-social-card-text">Únete a nuestra comunidad</p>
+                  <div class="tec-social-card-hover">
+                    <span>Explorar</span>
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- YouTube -->
+          <div class="tec-social-card-wrapper">
+            <div class="tec-social-card tec-social-card-yt">
+              <a href="https://www.youtube.com/@TecNMCampusPachuca" target="_blank" class="tec-social-link">
+                <div class="tec-social-card-body">
+                  <div class="tec-social-icon-wrapper">
+                    <i class="fab fa-youtube"></i>
+                  </div>
+                  <h3 class="tec-social-card-title">YouTube</h3>
+                  <p class="tec-social-card-text">Mira nuestros videos</p>
+                  <div class="tec-social-card-hover">
+                    <span>Ver videos</span>
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Twitter -->
+          <div class="tec-social-card-wrapper">
+            <div class="tec-social-card tec-social-card-tw">
+              <a href="https://x.com/tecnmpachuca?lang=es" target="_blank" class="tec-social-link">
+                <div class="tec-social-card-body">
+                  <div class="tec-social-icon-wrapper">
+                    <i class="fab fa-twitter"></i>
+                  </div>
+                  <h3 class="tec-social-card-title">Twitter</h3>
+                  <p class="tec-social-card-text">Sigue nuestras publicaciones</p>
+                  <div class="tec-social-card-hover">
+                    <span>Leer tweets</span>
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- LinkedIn -->
+          <div class="tec-social-card-wrapper">
+            <div class="tec-social-card tec-social-card-in">
+              <a href="https://mx.linkedin.com/in/tecnm-pachuca" target="_blank" class="tec-social-link">
+                <div class="tec-social-card-body">
+                  <div class="tec-social-icon-wrapper">
+                    <i class="fab fa-linkedin-in"></i>
+                  </div>
+                  <h3 class="tec-social-card-title">LinkedIn</h3>
+                  <p class="tec-social-card-text">Conecta profesionalmente</p>
+                  <div class="tec-social-card-hover">
+                    <span>Conectar</span>
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Instagram -->
+          <div class="tec-social-card-wrapper">
+            <div class="tec-social-card tec-social-card-ig">
+              <a href="https://www.instagram.com/tecnmpachuca/" target="_blank" class="tec-social-link">
+                <div class="tec-social-card-body">
+                  <div class="tec-social-icon-wrapper">
+                    <i class="fab fa-instagram"></i>
+                  </div>
+                  <h3 class="tec-social-card-title">Instagram</h3>
+                  <p class="tec-social-card-text">Síguenos en Instagram</p>
+                  <div class="tec-social-card-hover">
+                    <span>Ver fotos</span>
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- TikTok -->
+          <div class="tec-social-card-wrapper">
+            <div class="tec-social-card tec-social-card-tt">
+              <a href="https://www.tiktok.com/@tecnmpachuca" target="_blank" class="tec-social-link">
+                <div class="tec-social-card-body">
+                  <div class="tec-social-icon-wrapper">
+                    <i class="fab fa-tiktok"></i>
+                  </div>
+                  <h3 class="tec-social-card-title">TikTok</h3>
+                  <p class="tec-social-card-text">Disfruta nuestro contenido</p>
+                  <div class="tec-social-card-hover">
+                    <span>Ver videos</span>
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Llamado a la acción -->
+        <div class="tec-social-cta text-center">
+          <p class="tec-social-cta-text">¿Tienes preguntas? Contáctanos directamente</p>
+          <a href="mailto:web_pachuca@tecnm.mx" class="tec-social-btn">
+            <i class="fas fa-envelope"></i> Escríbenos
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--------------------------------------------------------ENLACES INSTITUCIONALES-------------------------------------->
+  <section id="enlaces" class="institutional-wrapper">
+    <div class="institutional-section">
+      <div class="il-container">
+        <!-- Encabezado -->
+        <div class="il-header">
+          <h2 class="il-main-title">
+            <span class="il-title-text">Enlaces Institucionales</span>
+          </h2>
+          <p class="il-subtitle">Accede a los servicios y recursos institucionales</p>
+        </div>
+
+        <!-- Grid de tarjetas -->
+        <div class="il-grid">
+          <!-- Tarjeta -->
+          <div class="il-card">
+            <a href="http://virtual.itpachuca.edu.mx/moodle/" target="_self" class="il-card-link">
+              <div class="il-card-content">
+                <div class="il-card-icon">
+                  <img src="enlaces/EAD.png" alt="Educación a Distancia" title="Educación a Distancia"
+                    class="il-card-img" />
+                </div>
+                <h3 class="il-card-title">Educación a Distancia</h3>
+                <p class="il-card-desc">Accede a tu plataforma virtual de aprendizaje</p>
+                <span class="il-card-cta">Acceder ahora</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="il-card">
+            <a href="contraloria_social.php" target="_self" class="il-card-link">
+              <div class="il-card-content">
+                <div class="il-card-icon">
+                  <img src="enlaces/CS.png" alt="Contraloría Social" title="Contraloría Social" class="il-card-img" />
+                </div>
+                <h3 class="il-card-title">Contraloría Social</h3>
+                <p class="il-card-desc">Participa en la transparencia institucional</p>
+                <span class="il-card-cta">Conocer más</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="il-card">
+            <a href="http://escolaresitp.itpachuca.edu.mx/" target="_self" class="il-card-link">
+              <div class="il-card-content">
+                <div class="il-card-icon">
+                  <img src="enlaces/sii.png" alt="Sistema Integral de Información"
+                    title="Sistema Integral de Información" class="il-card-img" />
+                </div>
+                <h3 class="il-card-title">SII</h3>
+                <p class="il-card-desc">Gestiona tu información académica</p>
+                <span class="il-card-cta">Ingresar</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="il-card">
+            <a href="https://www.conricyt.mx" target="_self" class="il-card-link">
+              <div class="il-card-content">
+                <div class="il-card-icon">
+                  <img src="enlaces/CONRICYT.png" alt="CONRICyT" title="CONRICyT" class="il-card-img" />
+                </div>
+                <h3 class="il-card-title">CONRICyT</h3>
+                <p class="il-card-desc">Recursos científicos y tecnológicos</p>
+                <span class="il-card-cta">Visitar sitio</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="il-card">
+            <a href="http://fese.org.mx/" target="_self" class="il-card-link">
+              <div class="il-card-content">
+                <div class="il-card-icon">
+                  <img src="enlaces/fese.png" alt="FESE" title="FESE" class="il-card-img" />
+                </div>
+                <h3 class="il-card-title">FESE</h3>
+                <p class="il-card-desc">Fondo para la educación superior</p>
+                <span class="il-card-cta">Más información</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="il-card">
+            <a href="http://www.conacyt.gob.mx" target="_self" class="il-card-link">
+              <div class="il-card-content">
+                <div class="il-card-icon">
+                  <img src="enlaces/CONACYT.png" alt="CONACyT" title="CONACyT" class="il-card-img" />
+                </div>
+                <h3 class="il-card-title">CONACyT</h3>
+                <p class="il-card-desc">Ciencia y tecnología en México</p>
+                <span class="il-card-cta">Explorar</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<app-footer></app-footer>

@@ -1,0 +1,228 @@
+/* =========================================================
+   ESTILOS GENERALES DEL CONTENEDOR PRINCIPAL
+========================================================= */
+.main-container {
+    max-width: 1200px;
+    margin: 6rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: var(--shadow-strong);
+}
+
+/* =========================================================
+   TÍTULO PRINCIPAL
+========================================================= */
+.main-title {
+    text-align: center;
+    color: var(--tec-blue);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid var(--tec-red);
+    position: relative;
+    font-weight: 700;
+}
+
+.main-title::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 3px;
+    background: var(--tec-yellow);
+}
+
+/* =========================================================
+   INFORMACIÓN DEL DEPARTAMENTO
+========================================================= */
+.dept-info {
+    background: var(--gradient-tertiary);
+    padding: 1.2rem;
+    border-radius: 10px;
+    margin-bottom: 1.2rem;
+    border-left: 4px solid var(--tec-blue);
+}
+
+.dept-info p {
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.dept-info strong {
+    color: var(--tec-blue);
+}
+
+/* =========================================================
+   CUADRÍCULA DE DOCUMENTOS
+========================================================= */
+.document-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.2rem;
+    padding: 1rem 0;
+}
+
+/* =========================================================
+   TARJETAS DE DOCUMENTOS
+========================================================= */
+.document-card {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    padding: 1.2rem;
+    box-shadow: var(--shadow-soft);
+    transition: all 0.3s ease;
+    border-left: 4px solid var(--tec-blue);
+}
+
+.document-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-strong);
+    border-left-color: var(--tec-red);
+}
+
+.doc-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+    flex-shrink: 0;
+    color: var(--tec-red);
+}
+
+.doc-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+}
+
+.doc-title {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #333;
+    line-height: 1.3;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+.doc-link {
+    font-size: 0.9rem;
+    color: var(--tec-blue);
+    text-decoration: none;
+    margin-top: 0.5rem;
+    text-align: left;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.doc-link:hover {
+    color: var(--tec-red);
+    text-decoration: underline;
+}
+
+/* =========================================================
+   SECCIONES DE CONTACTO
+========================================================= */
+.contact-card {
+    background: var(--gradient-tertiary);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    border-left: 4px solid var(--tec-red);
+}
+
+.contact-card p {
+    margin: 0.5rem 0;
+}
+
+.contact-card strong {
+    color: var(--tec-blue);
+}
+
+.contact-card a {
+    color: var(--tec-blue);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.contact-card a:hover {
+    color: var(--tec-red);
+    text-decoration: underline;
+}
+
+/* =========================================================
+   BOTÓN DIRECTORIO DE TUTORES
+========================================================= */
+.button-container {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.tutor-directory-btn {
+    display: inline-block;
+    background: var(--tec-light-blue);
+    color: white;
+    padding: 15px 35px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(47, 68, 255, 0.3);
+}
+
+.tutor-directory-btn:hover {
+    background: var(--tec-blue);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(66, 85, 253, 0.3);
+}
+
+.tutor-directory-btn i {
+    margin-left: 8px;
+}
+
+/* =========================================================
+   ANIMACIONES
+========================================================= */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-section {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* =========================================================
+   DISEÑO RESPONSIVE
+========================================================= */
+@media (max-width: 768px) {
+    .main-container {
+        padding: 1.2rem;
+        margin: 1rem;
+    }
+    
+    .main-title {
+        font-size: 2rem;
+    }
+    
+    .document-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tutor-directory-btn {
+        padding: 12px 25px;
+        font-size: 1.1rem;
+    }
+}

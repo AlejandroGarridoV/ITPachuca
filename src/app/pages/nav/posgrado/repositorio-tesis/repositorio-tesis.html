@@ -1,0 +1,60 @@
+<app-header></app-header>
+<div class="main-container">
+  <header class="repositorio-header">
+    <h1>Repositorio Institucional de Tesis</h1>
+    <p class="repositorio-subtitle">
+      Explora la colección de trabajos de investigación realizados por nuestros estudiantes. 
+      Un valioso recurso académico para tu desarrollo profesional.
+    </p>
+  </header>
+
+  <div class="search-container">
+    <i class="fas fa-search"></i>
+    <input 
+      type="text" 
+      placeholder="Buscar por nombre, matrícula o título de tesis..." 
+      [(ngModel)]="searchTerm"
+      (input)="onSearch()"
+      (keyup.enter)="onSearch()">
+  </div>
+
+  <div class="results-count" *ngIf="filteredTesis.length > 0">
+    Mostrando {{ filteredTesis.length }} tesis encontradas
+  </div>
+
+  <div class="table-container">
+    <table class="thesis-table">
+      <thead>
+        <tr>
+          <th class="number-col">#</th>
+          <th class="name-col">Estudiante</th>
+          <th class="id-col">Matrícula</th>
+          <th class="date-col">Año</th>
+          <th class="title-col">Título de la Tesis</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let tesis of filteredTesis; let i = index" 
+            [class.highlight-row]="i < 5 && searchTerm.length > 0"
+            id="tesis-row-{{i}}">
+          <td class="number-col">{{ i + 1 }}</td>
+          <td class="name-col">{{ tesis.nombre }}</td>
+          <td class="id-col">{{ tesis.matricula }}</td>
+          <td class="date-col">{{ tesis.ingreso }}</td>
+          <td class="title-col">
+            <a [href]="tesis.pdf" target="_blank">
+              {{ tesis.titulo }}
+              <i class="fas fa-download download-icon"></i>
+            </a>
+          </td>
+        </tr>
+        <tr *ngIf="filteredTesis.length === 0">
+          <td colspan="5" class="no-results">
+            No se encontraron resultados para "{{ searchTerm }}"
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<app-footer></app-footer>

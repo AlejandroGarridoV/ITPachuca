@@ -1,0 +1,377 @@
+/* Variables del TECNM */
+:root {
+  --tec-blue: #1B396A;
+  --tec-light-blue: #4facfe;
+  --tec-white: #FFFFFF;
+  --tec-red: #BF0310;
+  --tec-yellow: #FEEE00;
+  --tec-dark-gray: #343a40;
+  --gradient-primary: linear-gradient(135deg, #005baa 0%, #007bff 100%);
+  --shadow-soft: 0 5px 15px rgba(0, 0, 0, 0.08);
+  --shadow-strong: 0 10px 25px rgba(0, 91, 170, 0.15);
+  --border-color: rgba(0, 0, 0, 0.05);
+  --border-radius: 8px;
+  --transition: all 0.3s ease;
+}
+
+/* Contenedor principal */
+.tramite-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+  font-family: 'Roboto', Arial, sans-serif;
+  color: var(--tec-dark-gray);
+  line-height: 1.7;
+}
+
+/* Encabezado */
+.tramite-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 3rem 2rem;
+  background: var(--gradient-primary);
+  color: var(--tec-white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-soft);
+  position: relative;
+  overflow: hidden;
+}
+
+.tramite-header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--tec-yellow);
+}
+
+.tramite-title {
+  font-size: 2.4rem;
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tramite-periodo {
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.tramite-periodo i {
+  color: var(--tec-yellow);
+  margin-right: 0.75rem;
+}
+
+/* Secciones */
+.requisitos-section {
+  margin-bottom: 4rem;
+}
+
+.section-title {
+  color: var(--tec-blue);
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--tec-light-blue);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Tarjetas de requisitos */
+.requisito-card {
+  display: flex;
+  margin-bottom: 2rem;
+  background: var(--tec-white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+  transition: var(--transition);
+  border: 1px solid var(--border-color);
+}
+
+.requisito-card:hover {
+  box-shadow: var(--shadow-strong);
+  transform: translateY(-5px);
+  border-color: var(--tec-light-blue);
+}
+
+.requisito-number {
+  background: var(--tec-blue);
+  color: var(--tec-white);
+  font-size: 1.8rem;
+  font-weight: bold;
+  min-width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.requisito-content {
+  padding: 2rem;
+  flex: 1;
+}
+
+/* Listas de requisitos */
+.foto-requisitos {
+  margin: 1.5rem 0;
+  padding-left: 0;
+}
+
+.foto-requisitos li {
+  margin-bottom: 1rem;
+  position: relative;
+  list-style-type: none;
+  padding-left: 2rem;
+}
+
+.foto-requisitos li::before {
+  content: "•";
+  color: var(--tec-blue);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  font-size: 1.5rem;
+  top: -3px;
+}
+
+.foto-requisitos li i {
+  color: var(--tec-blue);
+  margin-right: 0.75rem;
+}
+
+.foto-nota {
+  background-color: rgba(0, 123, 255, 0.05);
+  padding: 1.5rem;
+  border-left: 4px solid var(--tec-blue);
+  margin: 1.5rem 0;
+  font-style: italic;
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+}
+
+/* Requisitos por género */
+.genero-requisitos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.genero-card {
+  background: var(--tec-white);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  border-top: 4px solid var(--tec-blue);
+  box-shadow: var(--shadow-soft);
+}
+
+.genero-card h4 {
+  color: var(--tec-blue);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.25rem;
+}
+
+.genero-card ul {
+  padding-left: 0;
+}
+
+.genero-card li {
+  margin-bottom: 0.75rem;
+  list-style-type: none;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.genero-card li::before {
+  content: "→";
+  color: var(--tec-blue);
+  position: absolute;
+  left: 0;
+}
+
+.genero-card li i {
+  color: var(--tec-blue);
+  margin-right: 0.75rem;
+}
+
+/* Enlaces */
+.doc-link {
+  color: var(--tec-blue);
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  border-bottom: 1px dotted currentColor;
+}
+
+.doc-link:hover {
+  color: var(--tec-red);
+  text-decoration: none;
+  border-bottom-style: solid;
+}
+
+.doc-link i {
+  font-size: 1.2rem;
+}
+
+/* Alertas y notificaciones */
+.advertencia {
+  background-color: rgba(254, 238, 0, 0.15);
+  color: #856404;
+  padding: 1.25rem;
+  border-radius: var(--border-radius);
+  margin: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-left: 4px solid var(--tec-yellow);
+}
+
+.advertencia i {
+  color: #856404;
+  font-size: 1.5rem;
+}
+
+.nota-importante {
+  background-color: rgba(0, 123, 255, 0.05);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  margin: 3rem 0;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--border-color);
+}
+
+.nota-header {
+  background: var(--tec-blue);
+  color: var(--tec-white);
+  padding: 1.25rem 2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nota-content {
+  padding: 2rem;
+}
+
+.nota-content p {
+  margin-bottom: 1.25rem;
+}
+
+.carta-poder-link {
+  color: var(--tec-blue);
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 1px dotted currentColor;
+}
+
+.carta-poder-link:hover {
+  color: var(--tec-red);
+  text-decoration: none;
+  border-bottom-style: solid;
+}
+
+/* Sección de contacto */
+.contacto-section {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.contacto-content {
+  display: inline-block;
+  text-align: left;
+  background: var(--tec-white);
+  padding: 2.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-soft);
+  border-top: 4px solid var(--tec-blue);
+  max-width: 600px;
+  width: 100%;
+}
+
+.contacto-content h3 {
+  color: var(--tec-blue);
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.contacto-info p {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contacto-info a {
+  color: var(--tec-blue);
+  text-decoration: none;
+  transition: var(--transition);
+  border-bottom: 1px dotted currentColor;
+}
+
+.contacto-info a:hover {
+  color: var(--tec-red);
+  border-bottom-style: solid;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tramite-title {
+    font-size: 2rem;
+  }
+
+  .tramite-periodo {
+    gap: 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  .requisito-card {
+    flex-direction: column;
+  }
+
+  .requisito-number {
+    min-height: 60px;
+    min-width: 100%;
+  }
+
+  .contacto-content {
+    padding: 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tramite-title {
+    font-size: 1.8rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .requisito-content {
+    padding: 1.5rem;
+  }
+
+  .nota-content {
+    padding: 1.5rem;
+  }
+}

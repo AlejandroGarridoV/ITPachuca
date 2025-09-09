@@ -1,0 +1,274 @@
+/* Estilos para la página de Vinculación */
+.vinculacion-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.back-button {
+  background: var(--gradient-primary);
+  color: var(--tec-white);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background: var(--tec-blue);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-strong);
+}
+
+.vinculacion-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.vinculacion-title {
+  color: var(--tec-blue);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.vinculacion-subtitle {
+  color: var(--tec-dark-gray);
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.title-divider {
+  height: 4px;
+  width: 100px;
+  background: var(--gradient-secondary);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.section-title {
+  color: var(--tec-blue);
+  font-size: 1.8rem;
+  margin: 2rem 0 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: var(--tec-light-blue);
+}
+
+.section-text {
+  color: var(--tec-dark-gray);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+/* Estilos para tablas */
+.vinculacion-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  box-shadow: var(--shadow-soft);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.vinculacion-table th {
+  background: var(--tec-blue);
+  color: var(--tec-white);
+  padding: 1rem;
+  text-align: left;
+}
+
+.vinculacion-table td {
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.vinculacion-table tr:nth-child(even) {
+  background-color: rgba(0, 91, 170, 0.05);
+}
+
+.vinculacion-table tr:hover {
+  background-color: rgba(0, 91, 170, 0.1);
+}
+
+/* Estilos para logos de empresas */
+.logos-empresas {
+  margin: 3rem 0;
+  padding: 2rem 0;
+  background: var(--gradient-tertiary);
+  border-radius: 8px;
+}
+
+/* Estilos para logos */
+.logos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.logos-container img {
+  height: 60px;
+  width: auto;
+  max-width: 150px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  padding: 0.5rem;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logos-container img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.logos-container .generic-logo {
+  padding: 1rem;
+  background: #f5f5f5;
+}
+
+/* Logos de instituciones */
+.institucion-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.institucion-logo {
+  height: 60px;
+  width: auto;
+  max-width: 200px;
+  object-fit: contain;
+}
+
+/* Responsive para logos */
+@media (max-width: 768px) {
+  .logos-container {
+    gap: 1rem;
+  }
+  
+  .logos-container img {
+    height: 40px;
+    max-width: 120px;
+  }
+  
+  .institucion-logo {
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logos-container img {
+    height: 30px;
+    max-width: 100px;
+  }
+  
+  .institucion-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .institucion-logo {
+    height: 40px;
+  }
+}
+/* Estilos para tarjetas de instituciones */
+.institucion-card {
+  background: var(--tec-white);
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.institucion-title {
+  color: var(--tec-red);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.institucion-description {
+  color: var(--tec-dark-gray);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.institucion-image {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.institucion-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: var(--shadow-strong);
+}
+
+.image-caption {
+  font-style: italic;
+  color: var(--tec-gray);
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .vinculacion-title {
+    font-size: 2rem;
+  }
+  
+  .vinculacion-subtitle {
+    font-size: 1.25rem;
+  }
+  
+  .logos-container {
+    gap: 1rem;
+  }
+  
+  .logos-container img {
+    height: 40px;
+  }
+  
+  .institucion-card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .vinculacion-table {
+    display: block;
+    overflow-x: auto;
+  }
+  
+  .logos-container img {
+    height: 30px;
+  }
+}

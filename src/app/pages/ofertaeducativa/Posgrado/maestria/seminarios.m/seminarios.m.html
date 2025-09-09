@@ -1,0 +1,93 @@
+<app-header></app-header>
+
+<div class="seminars-container">
+  <!-- Nota de ejemplo -->
+  <div class="demo-notice">
+    <i class="fas fa-info-circle"></i>
+    <p>Este es un diseño de ejemplo con información ficticia para mostrar cómo se verá la página cuando se complete con datos reales.</p>
+  </div>
+
+  <button routerLink="/maestria" class="back-button">
+    <i class="fas fa-arrow-left"></i> Volver a Maestría
+  </button>
+
+  <div class="seminars-header">
+    <h1 class="seminars-main-title">Seminarios de Investigación</h1>
+    <h2 class="seminars-subtitle">Maestría en Ingeniería Mecánica</h2>
+    <div class="title-divider"></div>
+    <p class="section-description">
+      <i class="fas fa-exclamation-circle"></i> Esta sección mostrará los seminarios reales cuando estén programados.
+    </p>
+  </div>
+
+  <div class="seminars-content">
+    <!-- Tarjeta de ejemplo 1 -->
+    <div class="seminar-card demo-card">
+      <div class="seminar-image-container">
+        <div class="demo-image-placeholder">
+          <i class="fas fa-image"></i>
+          <span>Imagen ilustrativa</span>
+        </div>
+      </div>
+      <div class="seminar-info">
+        <h3 class="seminar-title">[Nombre del seminario]</h3>
+        <div class="seminar-meta">
+          <span class="seminar-date"><i class="far fa-calendar-alt"></i> [Fecha por definir]</span>
+          <span class="seminar-location"><i class="fas fa-map-marker-alt"></i> [Lugar por definir]</span>
+        </div>
+        <p class="seminar-description">
+          Este espacio mostrará la descripción completa del seminario cuando esté disponible, incluyendo objetivos, 
+          contenido temático y perfil de los ponentes.
+        </p>
+        <div class="seminar-button disabled-button">
+          Más información <i class="fas fa-chevron-right"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta de ejemplo 2 -->
+    <div class="seminar-card demo-card">
+      <div class="seminar-image-container">
+        <div class="demo-image-placeholder">
+          <i class="fas fa-image"></i>
+          <span>Imagen ilustrativa</span>
+        </div>
+      </div>
+      <div class="seminar-info">
+        <h3 class="seminar-title">[Título del seminario]</h3>
+        <div class="seminar-meta">
+          <span class="seminar-date"><i class="far fa-calendar-alt"></i> [Fecha por confirmar]</span>
+          <span class="seminar-location"><i class="fas fa-map-marker-alt"></i> [Sede por determinar]</span>
+        </div>
+        <p class="seminar-description">
+          Aquí aparecerán los detalles específicos de cada seminario de investigación una vez que se programen 
+          las actividades académicas del semestre.
+        </p>
+        <div class="seminar-button disabled-button">
+          Más información <i class="fas fa-chevron-right"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Próximos seminarios -->
+    <div class="upcoming-seminars">
+      <h3 class="upcoming-title"><i class="fas fa-bullhorn"></i> Próximos Seminarios</h3>
+      <div class="demo-notice">
+        <i class="fas fa-clock"></i>
+        <p>Esta sección mostrará el calendario actualizado de seminarios cuando la información esté disponible.</p>
+      </div>
+      <ul class="seminar-list">
+        <li class="seminar-item">
+          <span class="item-date">[Fecha]</span>
+          <span class="item-title">[Título del evento]</span>
+        </li>
+        <li class="seminar-item">
+          <span class="item-date">[Fecha]</span>
+          <span class="item-title">[Título del evento]</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

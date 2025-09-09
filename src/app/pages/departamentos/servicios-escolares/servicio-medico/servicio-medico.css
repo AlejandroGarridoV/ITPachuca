@@ -1,0 +1,19 @@
+.service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .staff-card:hover .staff-icon {
+        transform: scale(1.1);
+        transition: all 0.3s ease;
+    }
+
+    .staff-icon {
+        transition: all 0.3s ease;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
