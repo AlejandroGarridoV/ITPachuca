@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { Header } from "../../../componentes/header/header";
-import { Footer } from "../../../componentes/footer/footer";
+
 
 @Component({
   selector: 'app-directorio-institucional',
-  imports: [Header, Footer],
+  imports: [],
   templateUrl: './directorio-institucional.html',
   styleUrl: './directorio-institucional.css'
 })

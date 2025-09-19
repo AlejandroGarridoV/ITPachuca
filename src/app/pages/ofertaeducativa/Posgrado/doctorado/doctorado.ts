@@ -1,11 +1,9 @@
 import { Component, HostListener} from '@angular/core';
-import { Header } from "../../../../componentes/header/header";
-import { Footer } from "../../../../componentes/footer/footer";
 import { MenuDoctorado } from "../../../../componentes/menus_especiales/menu-doctorado/menu-doctorado";
 
 @Component({
   selector: 'app-doctorado',
-  imports: [Header, Footer, MenuDoctorado],
+  imports: [MenuDoctorado],
   templateUrl: './doctorado.html',
   styleUrl: './doctorado.css'
 })

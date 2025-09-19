@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Header } from "../../../../componentes/header/header";
-import { Footer } from "../../../../componentes/footer/footer";
 
 @Component({
   selector: 'app-repositorio-tesis',
   standalone: true,
-  imports: [CommonModule, FormsModule, Header, Footer],
+  imports: [CommonModule, FormsModule],
   templateUrl: './repositorio-tesis.html',
   styleUrls: ['./repositorio-tesis.css']
 })

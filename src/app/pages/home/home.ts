@@ -1,13 +1,11 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { Header } from '../../componentes/header/header';
-import { Footer } from '../../componentes/footer/footer';
 import { Noticias } from "../../componentes/noticias/noticias";
 import { Ofertaeducativa } from "../../componentes/ofertaeducativa/ofertaeducativa";
 import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  imports: [Header, Footer, Noticias, Ofertaeducativa, RouterLink],
+  imports: [Noticias, Ofertaeducativa, RouterLink],
   templateUrl: './home.html',
   styleUrl: './home.css'
 })

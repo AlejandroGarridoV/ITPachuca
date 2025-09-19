@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { Footer } from "../../../../componentes/footer/footer";
-import { Header } from "../../../../componentes/header/header";
+
 
 @Component({
   selector: 'app-administracion',
-  imports: [Footer, Header],
+  imports: [],
   templateUrl: './administracion.html',
   styleUrl: './administracion.css'
 })

@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { Header } from "../../../componentes/header/header";
-import { Footer } from "../../../componentes/footer/footer";
+
 
 @Component({
   selector: 'app-organigrama',
-  imports: [Header, Footer],
+  imports: [],
   templateUrl: './organigrama.html',
   styleUrl: './organigrama.css'
 })

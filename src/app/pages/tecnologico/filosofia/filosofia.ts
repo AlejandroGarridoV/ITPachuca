@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Header } from '../../../componentes/header/header';
-import { Footer } from '../../../componentes/footer/footer';
 
 @Component({
   selector: 'app-filosofia',
-  imports: [CommonModule, Header, Footer],
+  imports: [CommonModule ],
   templateUrl: './filosofia.html',
   styleUrls: ['./filosofia.css']
 })

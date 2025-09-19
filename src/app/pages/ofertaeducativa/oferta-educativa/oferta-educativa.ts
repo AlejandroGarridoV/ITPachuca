@@ -1,11 +1,9 @@
 import { Component, HostListener, AfterViewInit } from '@angular/core';
-import { Header } from '../../../componentes/header/header';
-import { Footer } from '../../../componentes/footer/footer';
 
 @Component({
   selector: 'app-oferta-educativa',
   standalone: true,
-  imports: [Header, Footer],
+  imports: [],
   templateUrl: './oferta-educativa.html',
   styleUrls: ['./oferta-educativa.css']
 })

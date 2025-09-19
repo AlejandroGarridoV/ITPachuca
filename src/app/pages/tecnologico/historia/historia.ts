@@ -1,12 +1,11 @@
 import { Component, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Footer } from '../../../componentes/footer/footer';
-import { Header } from '../../../componentes/header/header';
+
 
 @Component({
   selector: 'app-historia',
   standalone: true,
-  imports: [CommonModule, Footer, Header],
+  imports: [CommonModule],
   templateUrl: './historia.html',
   styleUrls: ['./historia.css']
 })

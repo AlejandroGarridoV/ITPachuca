@@ -1,11 +1,10 @@
 import { Component, AfterViewInit } from '@angular/core';
-import { Header } from '../../../componentes/header/header';
-import { Footer } from '../../../componentes/footer/footer';
+
 
 @Component({
   selector: 'app-publicaciones',
   standalone: true,
-  imports: [Header, Footer],
+  imports: [],
   templateUrl: './publicaciones.html',
   styleUrl: './publicaciones.css'
 })

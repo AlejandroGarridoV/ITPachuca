@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { Header } from "../../../../componentes/header/header";
-import { Footer } from "../../../../componentes/footer/footer";
+
 
 @Component({
   selector: 'app-acto-recepcional-maestria',
-  imports: [Header, Footer],
+  imports: [],
   templateUrl: './acto-recepcional-maestria.html',
   styleUrl: './acto-recepcional-maestria.css'
 })

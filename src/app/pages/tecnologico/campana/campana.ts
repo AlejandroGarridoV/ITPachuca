@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Header } from '../../../componentes/header/header';
-import { Footer } from '../../../componentes/footer/footer';
 
 @Component({
   selector: 'app-campana',
   standalone: true,
-  imports: [CommonModule, Header, Footer],
+  imports: [CommonModule],
   templateUrl: './campana.html',
   styleUrls: ['./campana.css']
 })

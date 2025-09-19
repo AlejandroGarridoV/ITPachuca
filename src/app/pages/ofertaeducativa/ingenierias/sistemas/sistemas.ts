@@ -1,11 +1,10 @@
 import { Component, AfterViewInit, ElementRef, ViewChild, OnDestroy } from '@angular/core';
-import { Header } from "../../../../componentes/header/header";
-import { Footer } from "../../../../componentes/footer/footer";
+
 
 @Component({
   selector: 'app-sistemas',
   standalone: true,
-  imports: [Header, Footer],
+  imports: [],
   templateUrl: './sistemas.html',
   styleUrls: ['./sistemas.css']
 })
