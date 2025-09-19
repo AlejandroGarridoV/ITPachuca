@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /
+
+# No reescribir index.html directamente
+RewriteRule ^index\.html$ - [L]
+
+# Si no existe archivo o directorio, redirigir a index.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]

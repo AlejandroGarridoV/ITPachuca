@@ -108,6 +108,7 @@ import { DirectorioTutores } from './pages/departamentos/desarrollo-academico/co
 
 
 
+
 export const routes: Routes = [
   // Barra de navegación
   { path: '', component: Home },
@@ -121,7 +122,7 @@ export const routes: Routes = [
   { path: 'directorio_inst', component: DirectorioInstitucional },
   { path: 'organigrama', component: Organigrama },
   { path: 'aviso_privacidad', component: AvisoPrivacidad },
-  
+
 
   // Subpáginas de Gestión
   { path: 'sgig', component: Sgig },
@@ -169,6 +170,7 @@ export const routes: Routes = [
   { path: 'nucleo_academico.m', component: NucleoAcademicoM },
   { path: 'd_vinculacion', component: Dvinculacion },
   { path: 'd_seminarios', component: Dseminarios },
+  
 
   // Posgrado
   { path: 'repo_institu', component: RepositorioTesis },
