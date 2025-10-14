@@ -1,0 +1,166 @@
+<?php
+include("src/header.html");
+menua();
+menudoc();
+?>
+<!-- contenido de pagina -->
+<div style="margin: auto; text-align: center; width: 80%; padding: 5%;">
+
+	<h1 class="align-center  display-2 style= margin-bottom: 15px;">Dr. Marisa Moreno Rios</h1>
+	<hr>
+	<!-- <img class="dir w3-circle w3-card-4" style="width:20%" src="images/imagenes_vinculacion/MMR1.jpg" alt="Dra. Marisa Moreno Rios"> -->
+	<img class="dir w3-circle w3-card-4" style="width:20%" src="images/imagenes_vinculacion/MMR2.jpg" alt="Dra. Marisa Moreno Rios">
+
+	<p style="text-align: justify; font-family: Book Antiqua;font-size:2rem;">
+	<h4 align="left">Área de Interés:</h4>
+	<ul align="left">
+		<li>Tribología</li>
+		<li>Caracterización de Materiales</li>
+		<li>Diseño Mecánico</li>
+	</ul>
+	<br>
+
+	<div class="w3-bar w3-teal">
+		<button class="w3-bar-item w3-button" onclick="openCity('formacion')">Formación Académica</button>
+		<button class="w3-bar-item w3-button" onclick="openCity('distinciones')">Distinciones</button>
+		<button class="w3-bar-item w3-button" onclick="openCity('productividad')">Productividad Académica</button>
+		<button class="w3-bar-item w3-button" onclick="openCity('proyectos')">Proyectos de Investigación</button>
+		<button class="w3-bar-item w3-button" onclick="openCity('tesis_dirigidas')">Tesis dirigidas</button>
+		<button class="w3-bar-item w3-button" onclick="openCity('colaboraciones')">Colaboraciones</button>
+	</div>
+
+	<div id="formacion" class="w3-container city">
+		<h2>Formación Académica</h2>
+		<p align="justify">
+			<b>Doctorado en Ciencias en Ingeniería Mecánica.</b><br>
+			Sección de Estudios de Posgrado e Investigación.<br>
+			ESIME-Zacatenco, Instituto Politécnico Nacional. 2015
+		</p>
+		<p align="justify">
+			<b>Maestría en Ciencias en Ingeniería Mecánica</b><br>
+			Sección de Estudios de Posgrado e Investigación<br>
+			ESIME-Zacatenco, Instituto Politécnico Nacional. 2011
+		</p>
+		<p align="justify">
+			<b>Licenciatura en Ingeniería Electromecánica</b><br>
+			Facultad de Ingeniería, Universidad Autónoma de Querétaro. 1996
+		</p>
+	</div>
+
+	<div id="distinciones" class="w3-container city" style="display:none">
+		<h2>Distinciones</h2>
+		<p align="justify">
+			Sistema Nacional de Investigadores Nivel 1 (2021-2026)<br>
+			Perfil Deseable (2022-2025)<br>
+			Mención Honorífica en examen para obtener grado de Doctor, 2015<br>
+			Premio de Ingeniería de la Ciudad de México en la categoría de Ingeniería Mecánica, 2012
+		</p>
+	</div>
+
+	<div id="productividad" class="w3-container city" style="display:none">
+		<h2>Publicaciones en revistas</h2>
+		<!-- <p align="justify">
+					  <ul>
+						<li align="justify">(2020) Influence of surface roughness and contact temperature on the performance of a
+railway lubricant grease, Materials Letters Volume 285, 15 February 2021, 129040</li>
+						<li align="justify">(2020) A crevice corrosion assessment method for joints of mechanical components
+sealed with composite structure gaskets – The case of the engine cylinder head/mono-block joint</li>
+					  	<li align="justify">(2019) Evaluation of surface modification in a steel track for the rubber tyred Metro, Journal WEAR, Volumes 426–427, Part B, 30 April 2019, 2019, <a href="https://doi.org/10.1016/jwear.2018.12.021">https://doi.org/10.1016/jwear.2018.12.021</a></li>
+						<li align="justify">(2019) Microscopy Analysis in CFRP and GFRP Composites Manufactured by LCM and Autoclave Techniques, Microscopy and Microanalysis, 25 (Suppl 2), 2019. <a href="https://doi.org/10.1017/S143192761900477X">https://doi.org/10.1017/S143192761900477X</a></li>
+						<li align="justify">(2018) The SEM-electron-mirror effect in human tooth and synthetic hydroxyapatite samples”, Microscopy Research and Technique, Vol. 81, ISSUE 12, 2018.<a href="https://doi.org/10.1002/jemt.23092"> https://doi.org/10.1002/jemt.23092</a></li>
+						<li align="justify">(2018) Role of the substrate on the growth of silicon quantum dots embedded in silicon nitride thin films”, Materials Chemistry and Physics, Vol. 208 (2018).<a href="https://doi.org/10.1016/j.matchemphys.2018.01.032"> https://doi.org/10.1016/j.matchemphys.2018.01.032.</a></li>
+					  </ul>  
+					</p> -->
+
+		<ul>
+			<li style="text-align: justify;">(2022) Tuning HAuCl4/sodium citrate stoichiometry to fabricate chitosan-Au nanocomposites. Polymers, 14(4), 788.</li>
+			<li style="text-align: justify;">(2022) Sand as a friction coefficient improver on asphalt ice layers. Proceedings of the Institution of Mechanical Engineers, Part J: Journal of Engineering Tribology, 236(9), 1752-1760.</li>
+			<li style="text-align: justify;">(2022) Study of cavitation erosion phenomenon at stainless steel AISI 304 base and with SiC coating. Applied Engineering Letters, Vol.7, No.2, pp.67-73.</li>
+			<li style="text-align: justify;">(2021) Relaxation phenomena in chitosan-Au nanoparticle thin films. Polymers, 13(19), 3214.</li>
+			<li style="text-align: justify;">(2021) Influence of surface roughness and contact temperature on the performance of a railway lubricant grease. Materials Letters, 285, 129040.</li>
+			<li style="text-align: justify;">(2021) A crevice corrosion assessment method for joints of mechanical components sealed with composite structure gaskets–The case of the engine cylinder head/mono-block joint. Engineering Failure Analysis, 119, 104981.</li>
+			<li style="text-align: justify;">(2019) Evaluation of surface modification in a steel track for the rubber tyred Metro. Wear, 426, 1265-1271.</li>
+		</ul>
+	</div>
+	<div id="proyectos" class="w3-container city" style="display:none">
+		<h2>Proyectos de investigación </h2>
+		<ul>
+			<li align="justify">(2019) Estudio experimental del efecto de nanopartículas en las propiedades tribológicas de un biolubricante. Proyecto TecNM.</li>
+			<li align="justify">(2021) Evaluación experimental de las propiedades tribológicas del biolubricante Jatropha C. Proyecto TecNM.</li>
+			<li align="justify">(2022) Diseño y construcción de un equipo para medir coeficiente de fricción en vías ferroviarias. Proyecto TecNM.</li>
+		</ul>
+	</div>
+	<div id="tesis_dirigidas" class="w3-container city" style="display:none">
+		<h2>Tesis dirigidas</h2>
+		<ul>
+			<li style="text-align: justify;">(2021) Diseño y construcción del sistema de lubricación para una máquina tribológica. Tesis de Maestría. Estatus: Finalizada.</li>
+			<li style="text-align: justify;">(2022) Estudio de las propiedades tribológicas de nanopartículas de Al2O3 para su aplicación como aditivos en lubricantes. Tesis de Maestría. Estatus: Finalizada.</li>
+			<li style="text-align: justify;">(2022) Diseño de un simulador para evaluar prótesis de rodilla. Tesis de Maestría. Estatus: Finalizada.</li>
+			<li style="text-align: justify;">(2023) Diseño de un equipo para medir coeficientes de fricción en vías ferroviarias. Tesis de Maestría. Estatus: Finalizada.</li>
+			<li style="text-align: justify;">(2024) Estudio tribológico de nanolubricantes base vegetal para su aplicación en herramientas de corte. Tesis de Maestría. Estatus: En desarrollo.</li>
+		</ul>
+	</div>
+	<div id="colaboraciones" class="w3-container city" style="display:none">
+		<h2>Colaboraciones </h2>
+		<ul>
+			<li style="text-align: justify;">Cuerpo académico en consolidación PRODEP: Ciencias aplicadas al desarrollo de tecnologías sustentables.</li>
+			<li style="text-align: justify;">Laboratorio nacional de innovación y desarrollo de materiales ligeros para la industria automotriz LANIAUTO.</li>
+			<li style="text-align: justify;">Laboratorio nacional del TecNM para impulsar la I+D+I en Ingeniería.</li>
+			<li style="text-align: justify;">Centro de Ingeniería y Desarrollo Industrial CIDESI-Querétaro, a través del convenio con el IT de Pachuca.</li>
+			<li style="text-align: justify;">Centro de Investigación en química aplicada CIQA-Saltillo, a través de convenio con el IT de Pachuca.</li>
+			<li style="text-align: justify;">Grupo de Tribología, Sección de Estudios de Posgrado e Investigación en la ESIME-Zacatenco del IPN.</li>
+			<li style="text-align: justify;">Laboratorio de Nuevos Materiales, del departamento de materia condensada del Instituto de Física, Ciudad Universitaria, UNAM.</li>
+		</ul>
+	</div>
+
+	<!-- <h6 align="justify">Capítulos de libros</h6>
+					<p align="justify">
+					  <ul>
+					  	<li align="justify">(2019) “Abrasive Wear Performance of Fe2B Layers Applied on Steel Substrates¨, In book: Friction, Lubrication and Wear (April 2019). doi: 10.5772/intechopen.83814</li>
+					  </ul>  
+					</p>
+		  
+		</div>
+		<div id="proyectos" class="w3-container city" style="display:none">
+		  <h2>Proyectos de Investigación</h2>
+		  <ol>
+				<li align="justify">(Junio 2018/Julio 2019) Estudio experimental del efecto de nanopartículas en las propiedades tribológicas de un biolubricante. No. de Registro: Clave 6787.18-P. <br>Participación: Responsable Técnico</li>
+			  
+			  	<li align="justify">(Agosto/2018 - Actual) Proyecto de tesis Nivel Maestría: Diseño y construcción del sistema de lubricación para una máquina tribológica. <br>Participación: Director de tesis.</li>
+			  
+			  	<li align="justify">Agosto/2018 - Actual) Proyecto de tesis Nivel Maestría: Caracterización tribológica para un sistema de engranajes modificados en un diferencial de transporte de carga. <br>Participación: Director de tesis.</li>
+	 	 </ol>
+		</div> -->
+
+	<script>
+		function openCity(cityName) {
+			var i;
+			var x = document.getElementsByClassName("city");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			document.getElementById(cityName).style.display = "block";
+		}
+	</script>
+
+	<!-- <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:160px;">
+		  contenido
+    	</div> -->
+
+
+	<br>
+	<h4 align="right">Dra. Marisa Moreno Rios</h4>
+	<h6 align="right">Profesor - Investigador</h6>
+	<address align="right">
+		correo: <a href="mailto:marisa.mr@pachuca.tecnm.mx" class="w3-text-grey">marisa.mr@pachuca.tecnm.mx</a><br>
+		<!-- Teléfono: 771 710 5251 | Ext. 139 -->
+	</address>
+
+</div>
+
+
+<!-- Termina contenido de pagina -->
+
+﻿<?php
+	include("src/footer.html");
+	?>

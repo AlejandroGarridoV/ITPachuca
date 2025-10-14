@@ -1,0 +1,112 @@
+/* contraloria.component.css */
+.prodep-container {
+  font-family: 'Arial', sans-serif;
+  margin: 20px auto;
+  max-width: 1200px;
+  width: 95%;
+}
+
+.logo-image {
+  width: 20%;
+  max-width: 200px;
+}
+
+/* Estilos para las pestañas principales */
+.nav-tabs {
+  border-bottom: 1px solid #dee2e6;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-tabs .nav-item {
+  margin-bottom: -1px;
+}
+
+.nav-tabs .nav-link {
+  color: #495057;
+  border: 1px solid transparent;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.nav-tabs .nav-link:hover {
+  border-color: #e9ecef #e9ecef #dee2e6;
+  color: #0056b3;
+}
+
+.nav-tabs .nav-link.active {
+  color: #0056b3;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
+  font-weight: 600;
+}
+
+/* Estilos para selectores de programas y secciones */
+.program-selector, .section-selector {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0 5px 5px 0;
+}
+
+.program-selector:hover, .section-selector:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.program-selector.active-program, .section-selector.active-section {
+  background-color: #4FA746 !important;
+  color: #fff;
+}
+
+/* Colores de tema */
+.bg-tecnm {
+  background-color: #1B396A;
+}
+
+.bg-secundario {
+  background-color: #6576B4;
+}
+
+.text-tecnm {
+  color: #1B396A;
+}
+
+/* Estilos para el contenido */
+.content-container {
+  margin-top: 20px;
+}
+
+.program-content {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.collapse-content {
+  transition: all 0.3s ease;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .nav-tabs {
+    flex-direction: column;
+  }
+  
+  .nav-tabs .nav-item {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  
+  .program-selector, .section-selector {
+    margin-bottom: 10px;
+  }
+  
+  .logo-image {
+    width: 40%;
+  }
+}

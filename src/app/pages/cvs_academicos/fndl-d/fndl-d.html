@@ -1,0 +1,198 @@
+<?php
+include("src/header.html");
+menua();
+menudoc();
+?>
+<!-- contenido de pagina -->
+<div style="margin: auto; text-align: center; width: 80%; padding: 5%;">
+
+	<h1 class="align-center  display-2 style= margin-bottom: 15px;">Dr. Francisco Noé Demesa López</h1>
+	<hr>
+	<img class="dir w3-circle w3-card-4" style="width:20%" src="images/imagenes_vinculacion/fnld.jpg" alt="Dr.Francisco Noé Demesa López">
+
+	<p style="text-align: justify; font-family: Book Antiqua;font-size:2rem;">
+	<h4 align="left">Área de Interés:</h4>
+	<ul align="left">
+		<li>Máquinas térmicas y bombas de calor.</li>
+		<li>Integración de procesos energéticos (poligeneración).</li>
+		<li>Modelado y simulación de procesos térmicos</li>
+		<li>Evaluación teórica/experimental de termofluidos</li>
+	</ul>
+	<br>
+
+	<div class="w3-bar w3-teal">
+		<button class="w3-bar-item w3-button" onclick="openCity('formacion')">Formación Académica</button>
+		<button class="w3-bar-item w3-button" onclick="openCity('distinciones')">Distinciones</button>
+		<button class="w3-bar-item w3-button" onclick="openCity('productividad')">Productividad Académica</button>
+		<button class="w3-bar-item w3-button" onclick="openCity('proyectos')">Proyectos de Investigación</button>
+	</div>
+
+	<div id="formacion" class="w3-container city">
+		<h2>Formación Académica</h2>
+		<p align="justify">
+			<b>Doctorado en Ingeniería y Ciencias Aplicadas.</b>
+			<br>Centro de Investigación en Ingeniería y Ciencias Aplicadas (UAEM). 2017.
+		</p>
+
+		<p align="justify">
+			<b>Maestría en Ingeniería y Ciencias Aplicadas.</b>
+			<br>Centro de Investigación en Ingeniería y Ciencias Aplicadas (UAEM). 2012.
+		</p>
+		<p align="justify">
+			<b>Licenciatura en Ingeniería Química.</b>
+			<br>Universidad Autónoma del Estado de Morelos (FCQeI). 2010.
+		</p>
+	</div>
+
+	<div id="distinciones" class="w3-container city" style="display:none">
+		<h2>Distinciones</h2>
+		<p>
+		<!-- <ul>
+
+			<li align="justify">Investigador Nacional Nivel 1 por el Sistema Nacional de Investigadores (Vigencia: 2022-2025).</li>
+			<li align="justify">Coordinador del Programa "Maestría en Energías Renovables y Eficiencia Energética" de la Universidad Autónoma de Campeche (Diciembre-2019/marzo-2022).</li>
+			<li align="justify">Presidente del Comité Académico de la "Maestría en Energías Renovables y Eficiencia Energética" de la Universidad Autónoma de Campeche (Diciembre-2019/marzo-2022).</li>
+			<li align="justify">Evaluador de las Estancias Posdoctorales por México del CONACyT desde el 2020.</li>
+			<li align="justify">Colaborador activo en revistas internacionales como revisor de artículos: Energy, Applied Thermal Engineering, International Journal of Mechanical Sciences, entre otras.</li>
+
+		</ul> -->
+		<ul>
+			<li align="justify">Investigador Nacional Nivel 1 por el Sistema Nacional de Investigadores (Vigencia: 2022-2026).</li>
+			<li align="justify">Perfil Deseable PRODEP (Vigencia: 2024-2026).</li>
+			<li align="justify">Coordinador del Programa “Maestría en Ingeniería (en proceso de apertura)” del Instituto Tecnológico de Pachuca (Mayo 2023-Actualidad).</li>
+			<li align="justify">Evaluador de las Estancias Posdoctorales por México del CONAHCyT desde el 2020.</li>
+			<li align="justify">Evaluador de proyectos de Ciencia de Frontera del CONAHCyT desde el 2024.</li>
+			<li align="justify">Evaluador de apertura de nuevos programas de posgrado del TecNM desde el 2022.</li>
+			<li align="justify">Revisor activo en revistas internacionales como: Energy, Applied Thermal Engineering, International Journal of Mechanical Sciences, entre otras.</li>
+		</ul>
+		
+
+	</div>
+
+	<div id="productividad" class="w3-container city" style="display:none">
+		<h2>Productividad Académica</h2>
+		<h6 align="justify">Publicaciones en revistas</h6>
+		<p>
+		<ul>
+			<li style="text-align: justify;">(2023) Proceso de desorción dentro de un transformador de calor por absorción. Revista Internacional de Investigación e Innovación Tecnológica. ISSN: 2007-9753. <a href="https://riiit.com.mx/apps/site/files_v2450/transf_calor_uaem._3_riiit_div_mar-abr_2023.pdf" target="_blank">https://riiit.com.mx/apps/site/files_v2450/transf_calor_uaem._3_riiit_div_mar-abr_2023.pdf</a></li>
+
+			<li style="text-align: justify;">(2023) Energy analysis of the envelope of a historic building for its conservation and protection. Journal Architecture and Design. <a href="https://www.ecorfan.org/spain/researchjournals/Arquitectura_y_Diseno/vol7num18/Journal_Architecture_and_Design_V7_N18_3.pdf" target="_blank">https://www.ecorfan.org/spain/researchjournals/Arquitectura_y_Diseno/vol7num18/Journal_Architecture_and_Design_V7_N18_3.pdf</a></li>
+
+			<li style="text-align: justify;">(2023) Habitabilidad en vivienda de interés social en Campeche bajo condiciones de cambio climático implementando un sistema pasivo. Revista de la Facultad de Ingeniería de la Universidad Autónoma de Yucatán. ISSN: 2448-8364. <a href="https://www.revista.ingenieria.uady.mx/ojs/index.php/ingenieria/article/view/372" target="_blank">https://www.revista.ingenieria.uady.mx/ojs/index.php/ingenieria/article/view/372</a></li>
+
+			<li style="text-align: justify;">(2023) Energy analysis of lighting in high-impact buildings with transparent envelopes. Journal of Technology and Innovation. <a href="https://www.ecorfan.org/bolivia/researchjournals/Tecnologia_e_innovacion/vol10num27/Journal_of_Technology_and_Innovation_V10_N27_4.pdf" target="_blank">https://www.ecorfan.org/bolivia/researchjournals/Tecnologia_e_innovacion/vol10num27/Journal_of_Technology_and_Innovation_V10_N27_4.pdf</a></li>
+
+			<li style="text-align: justify;">(2022) Modeling the effect of roof coatings materials on the building thermal temperature variations based on an artificial intelligence. Journal of Physics. <a href="https://doi.org/10.1088/1742-6596/2180/1/012014" target="_blank">https://doi.org/10.1088/1742-6596/2180/1/012014</a></li>
+
+			<li style="text-align: justify;">(2021) Potential of energy saving in the fish and seafood cold storage in San Francisco de Campeche. Journal of Technologies in Industrial Processes. <a href="https://doi.org/10.35429/JTIP.2021.12.5.24.32" target="_blank">https://doi.org/10.35429/JTIP.2021.12.5.24.32</a></li>
+
+			<li style="text-align: justify;">(2021) Correlation between Raman spectra and color of tungsten trioxide (WO3) thermally evaporated from a tungsten filament. AIP Advances. <a href="https://doi.org/10.1063/5.0045190" target="_blank">https://doi.org/10.1063/5.0045190</a></li>
+
+			<li style="text-align: justify;">(2020) Experimental assessment of heat exchangers with nested helical coils for an absorption heat transformer. Experimental Heat Transfer de Taylor & Francis. <a href="https://doi.org/10.1080/08916152.2020.1725181" target="_blank">https://doi.org/10.1080/08916152.2020.1725181</a></li>
+		</ul>
+		
+		<h6 align="justify">Capítulos de libros:</h6>
+		<p>
+
+			<!-- <ul>
+						<li align="justify">(2021) Potencial de ahorro energético en cámara de refrigeración de pescados y mariscos en san Francisco de Campeche. Congreso Internacional Interdisciplinario de Energías Renovables, Mantenimiento Industrial, Mecatrónica e Informática (CIERMMI), Querétaro, México/formato virtual. </li> <br>
+						<li align="justify">(2021) Análisis numérico de las pérdidas de calor en un colector solar plano: comparación con ecuaciones empíricas. Congreso internacional de Ciencias de la Ingeniería y Tecnología (CICITEC), Baja California, México/formato virtual.</li> 						
+					  </ul>   -->
+		<ul>
+			<li style="text-align: justify;">(2023) Cluster Analysis as a Tool for the Territorial Categorization of Energy Consumption in Buildings Based on Weather Patterns. In <i>Machine Intelligence for Smart Applications: Opportunities and Risks</i> (pp. 73-91). Cham: Springer Nature Switzerland. <a href="https://doi.org/10.1007/978-3-031-37454-8_4" target="_blank">https://doi.org/10.1007/978-3-031-37454-8_4</a></li>
+		</ul>
+		
+
+		<h6 align="justify">Memorias de congresos internacionales</h6>
+		<p>
+		<ul>
+			<li style="text-align: justify;">(2023) Análisis termodinámico y económico de un refrigerador por absorción de sales de litio a partir de energía térmica. Segundo Congreso Transnacional de Sostenibilidad y Desarrollo Local. Yucatán, México.</li>
+			<li style="text-align: justify;">(2023) Aprovechamiento de calor residual mediante sistema de refrigeración compresión-absorción. XXIX Congreso Internacional Anual de la SOMIM. Chihuahua, México. ISSN 2954-4734. DOI: <a href="https://doi.org/10.59920/HCPN3124" target="_blank">10.59920/HCPN3124</a>.</li>
+			<li style="text-align: justify;">(2022) Evaluación económica y ambiental a través de inteligencia artificial sobre el consumo energético aplicada a hoteles de la Península de Yucatán. Primer Congreso Transnacional de Sostenibilidad y Desarrollo Local. Yucatán, México.</li>
+			<li style="text-align: justify;">(2021) Potencial de ahorro energético en cámara de refrigeración de pescados y mariscos en San Francisco de Campeche. Congreso Internacional Interdisciplinario de Energías Renovables, Mantenimiento Industrial, Mecatrónica e Informática (CIERMMI), Querétaro, México.</li>
+			<li style="text-align: justify;">(2021) Análisis numérico de las pérdidas de calor en un colector solar plano: comparación con ecuaciones empíricas. Congreso Internacional de Ciencias de la Ingeniería y Tecnología (CICITEC), Baja California, México.</li>
+		</ul>
+
+
+		
+
+
+	</div>
+	<!--	<h6 align="justify">Libros</h6>
+					<p align="justify">
+					  <ul>
+					  	<li align="justify">(2018) Eficiencia energética en edificaciones sustentables: Iluminación, SERRANO-ARELLANO, Juan, ISBN: 978-607-8534-76-0, ECORFAN MX. </li>
+					  </ul>  
+					</p>
+		
+			<h6 align="justify">Capítulos de libros</h6>
+					<p align="justify">
+					  <ul>
+					  	<li align="justify">(2018) Estudio de iluminación en un aula de educación superior para la eficiencia
+energética, Perspectivas de la Ingeniería para el Desarrollo Sustentable. ISBN 978-607-606-458-0. COLECCIÓN JOSÉ N. ROVIROSA, Universidad Juárez Autónoma de Tabasco.</li>
+						<li align="justify">(2015) An analytical retrospective of Mexico for a sustainable future, Mexico in
+Focus: Political, Environmental and Social Issues, Edited by José Galindo, ISBN: 978-1-63463-197-6. Nova Science Publishers, Inc.</li>
+					</ul>  
+					</p>
+			<h6 align="justify">Memorias de congresos internacionales</h6>
+					<p align="justify">
+					  <ul>
+					  	<li align="justify">(2015) Thermal comfort and air quality analysis of a ventilated cavity: a single or
+multiple air outlets. Proceedings of the 1st Thermal and Fluid Engineering Summer Conference, TFESC, August 9-12, New York City, USA.</li>
+					  </ul>  
+					</p>
+		</div>-->
+	<div id="proyectos" class="w3-container city" style="display:none">
+		<h2>Proyectos de Investigación</h2>
+		<p>
+			<!-- <ul>
+				<li align="justify">(Vigencia: aprobado) Banco de pruebas para el análisis térmico de sistemas de refrigeración y aire acondicionado para disminuir su consumo energético en la región sureste de México. Registro: UNACAM-PTC-084 de la convocatoria Apoyo a la Incorporación de NPTC del PRODEP (proyecto aprobado). <br>Rol: Responsable técnico.</li>
+				<li align="justify">(Vigencia: Agosto-2021/noviembre-2021) Desarrollo, integración e implementación de eficiencia energética y energías renovables para la operación sustentable de las NaMiPyMES del sureste mexicano (proyecto semilla). Registro: 315045 de la convocatoria FOP04-2020-01 (PRONACES). <br>Rol: Colaborador.</li>
+				<li align="justify">(Vigencia: Agosto-2021/noviembre-2021) Planta comunitaria para el secado de productos pesqueros operada con energía termosolar para su integración en comunidades rurales (proyecto semilla). Registro: 314994 de la convocatoria FOP04-2020-01 (PRONACES).<br> Rol: Colaborador.</li>
+				<li align="justify">(Agosto-2019/marzo 2022) Diseño, integración y puesta en marcha de una plataforma digital en línea para realizar autodiagnósticos energéticos de primer nivel en PyME de manufactura. Registro: Proyecto 249322 del Fondo Sectorial de Sustentabilidad Energética SENER- CONACyT. <br>Rol: Colaborador.</li>
+				<li align="justify">(Vigencia: Agosto-2019/marzo-2020) Estudio técnico-histórico de la climatología en el Estado de Campeche y su relación con las tarifas eléctricas. Registro: 005/UAC/2019 (interno). <br>Rol: Colaborador.</li>
+				<li align="justify">(Enero-2018/diciembre-2020) Doble iniciativa de eficiencia energética para las MiPyMEs Campechanas. Registro: 099/UAC/2018 (interno).  <br>Rol: Colaborador.</li>
+			</ul> -->
+		<ul>
+			<li style="text-align: justify;">(Vigencia: Enero 2023/diciembre 2023) Aprovechamiento de energía solar térmica para purificación de agua por evaporación para fortalecer el derecho al agua potable. Registro: 17961-23-P de la convocatoria de proyectos financiados por el TecNM. <br> Rol: Responsable técnico.</li>
+			<li style="text-align: justify;">(Vigencia: Agosto-2021/noviembre-2021) Desarrollo, integración e implementación de eficiencia energética y energías renovables para la operación sustentable de las NaMiPyMES del sureste mexicano (proyecto semilla). Registro: 315045 de la convocatoria FOP04-2020-01 (PRONACES). <br> Rol: Colaborador.</li>
+			<li style="text-align: justify;">(Vigencia: Agosto-2021/noviembre-2021) Planta comunitaria para el secado de productos pesqueros operada con energía termosolar para su integración en comunidades rurales (proyecto semilla). Registro: 314994 de la convocatoria FOP04-2020-01 (PRONACES). <br> Rol: Colaborador.</li>
+			<li style="text-align: justify;">(Agosto-2019/marzo 2022) Diseño, integración y puesta en marcha de una plataforma digital en línea para realizar autodiagnósticos energéticos de primer nivel en PyME de manufactura. Registro: Proyecto 249322 del Fondo Sectorial de Sustentabilidad Energética SENER- CONACyT. <br> Rol: Colaborador.</li>
+			<li style="text-align: justify;">(Vigencia: Agosto-2019/marzo-2020) Estudio técnico-histórico de la climatología en el Estado de Campeche y su relación con las tarifas eléctricas. Registro: 005/UAC/2019 (interno). <br> Rol: Colaborador.</li>
+			<li style="text-align: justify;">(Enero-2018/diciembre-2020) Doble iniciativa de eficiencia energética para las MiPyMEs Campechanas. Registro: 099/UAC/2018 (interno). <br> Rol: Colaborador.</li>
+		</ul>
+
+		
+	</div>
+
+	<script>
+		function openCity(cityName) {
+			var i;
+			var x = document.getElementsByClassName("city");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			document.getElementById(cityName).style.display = "block";
+		}
+	</script>
+
+	<!-- <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:160px;">
+		  contenido
+    	</div> -->
+
+
+	<br>
+	<h4 align="right">Dr. Francisco Noé Demesa López</h4>
+	<h6 align="right">Profesor - Investigador</h6>
+	<address align="right">
+		correo: <a href="mailto: francisco.dl@pachuca.tecnm.mx" class="w3-text-grey"> francisco.dl@pachuca.tecnm.mx</a><br>
+		Teléfono: 771 711 3140 | Ext. 4007
+	</address>
+
+</div>
+
+
+<!-- Termina contenido de pagina -->
+﻿<?php
+	include("src/footer.html");
+	?>

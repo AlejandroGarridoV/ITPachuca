@@ -1,0 +1,118 @@
+<?php
+	include("src/header.html");
+	menua();
+	menumae();
+?>	
+<!-- contenido de pagina -->
+	<div style="margin: auto; text-align: center; width: 80%; padding: 5%;">
+      
+	  <h1 class="align-center  display-2 style= margin-bottom: 15px;">Dr. Celerino Reséndiz Rosas</h1>
+	  <hr>		
+      <img class="dir w3-circle w3-card-4" style="width:20%" src="images/imagenes_vinculacion/CRR.jpg" alt="Dr. Celerino Reséndiz Rosas">
+        
+		<p style="text-align: justify; font-family: Book Antiqua;font-size:2rem;">
+            <h4 align="left">Área de Interés:</h4>
+			<ul align="left">
+				<li>Dinámica de Fluidos Computacional</li>
+				<li>Termofluidos</li>
+				<li>Métodos Numéricos</li>
+			</ul>
+		<br>
+				
+		<div class="w3-bar w3-teal">
+		  <button class="w3-bar-item w3-button" onclick="openCity('formacion')">Formación Académica</button>
+		  <button class="w3-bar-item w3-button" onclick="openCity('distinciones')">Distinciones</button>
+		  <button class="w3-bar-item w3-button" onclick="openCity('productividad')">Productividad Académica</button>
+		  <button class="w3-bar-item w3-button" onclick="openCity('proyectos')">Proyectos de Investigación</button>
+		</div>
+
+		<div id="formacion" class="w3-container city">
+		  <h2>Formación Académica</h2>
+		  <p align="justify">
+			Doctorado en Ingeniería Aeroespacial
+			  <br>Universidad Texas A&M. EE.UU.AA. 2005.
+		  </p>
+		
+		  <p align="justify">
+			Maestría en Ciencias con Especialidad en Ingeniería Mecánica
+			  <br>Instituto Politécnico Nacional. 1995.
+		  </p>
+			
+		  <p align="justify">
+			Licenciatura en Ingeniería Mecánica.
+			  <br>Instituto Politécnico Nacional. 1994
+		  </p>
+		</div>
+
+		<div id="distinciones" class="w3-container city" style="display:none">
+		  <h2>Distinciones</h2>
+		  <p align="justify">
+		  	▪	Perfil Deseable, Vigencia: 2018 - 2020<br>
+			▪	Mención Honorífica a Tesis de Maestría, 1995.<br>
+			▪	Estímulo al Desempeño Docente, Nivel 4, 2019.
+		  </p> 
+		</div>
+
+		<div id="productividad" class="w3-container city" style="display:none">
+		  <h2>Productividad Académica</h2>
+		  <h6 align="justify">Publicaciones en revistas</h6>
+					<p align="justify">
+					  <ul>
+					  	<li align="justify">(2018) Obtención de la fuerza de empuje de una hélice y el control de su posición. Revista de Tecnología e Innovación. https://bit.ly/3a5CA4F.</li>
+						<li align="justify">(2018) Sistema de control de propiedades en un invernadero de uso doméstico. Revista de Simulación Computacional.</li>
+						<li align="justify">(2017) Análisis de un generador horizontal de un sistema de refrigeración solar por absorción. Revista en Ingeniería Mecánica. goo.gl/yWgsNH</li>
+						<li align="justify">(2017) Análisis termo-estático de una biela de un motor de combustión interna encendido por chispa. Revista de Ingeniería Mecánica.</li>
+						<li align="justify">(2017) Análisis termo-hidráulico del sistema de refrigeración tipo ONAN para un transformador de 5MVA utilizando CFD. Revista de Ingeniería Mecánica. https://goo.gl/fh1R1p.</li>
+						<li align="justify">(2016) Mejoramiento de la eficiencia térmica de un horno convencional para fabricar ladrillo artesanal. Revista Tecnología e Innovación. </li>
+					  </ul>  
+					
+		
+			<h6 align="justify">Memorias de congresos nacionales</h6>
+					<p align="justify">
+					  <ul>
+					  	<li align="justify">(2019) Diseño experimental y numérico de un túnel de viento subsónico G18-T1AD. Memorias del XL Encuentro Nacional de la AMIDIC.</li>
+						
+					  </ul>  
+					
+		</div>
+		<div id="proyectos" class="w3-container city" style="display:none">
+		  <h2>Proyectos de Investigación</h2>
+		  <p>
+			<ul>
+				<li align="justify">2015 / Diseño y fabricación de un depósito microfluídico, para la separación de microorganismos y células de interés biotecnológico de tamaño entre 10 a 100 micras. PCH – PYR – 2015 – 0137. <br>Rol: Responsable.</li>
+			</ul>
+		  
+		</div>
+
+		<script>
+		function openCity(cityName) {
+		  var i;
+		  var x = document.getElementsByClassName("city");
+		  for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		  }
+		  document.getElementById(cityName).style.display = "block";  
+		}
+		</script>
+		
+		<!-- <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:160px;">
+		  contenido
+    	</div> -->
+	
+		
+			<br>
+			<h4 align="right">Dr. Celerino Reséndiz Rosas</h4>
+			<h6 align="right">Profesor - Investigador</h6>
+			<address align="right">
+				correo: <a href="mailto:celerino.rr@pachuca.tecnm.mx" class="w3-text-grey">celerino.rr@pachuca.tecnm.mx</a><br>
+				Teléfono: 771 711 3140 | Ext. 139
+			</address>
+      <hr>
+		
+        </div>
+    
+	
+	<!-- Termina contenido de pagina -->
+	﻿<?php
+	include("src/footer.html");
+?>

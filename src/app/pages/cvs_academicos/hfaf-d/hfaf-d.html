@@ -1,0 +1,165 @@
+<?php
+	include("src/header.html");
+	menua();
+	menudoc();
+?>	
+<!-- contenido de pagina -->
+	<div style="margin: auto; text-align: center; width: 80%; padding: 5%;">
+      
+	  <h1 class="align-center  display-2 style= margin-bottom: 15px;">Dr. Hugo Francisco Abundis Fong</h1>
+	  <hr>		
+      <img class="dir w3-circle w3-card-4" style="width:20%" src="images/imagenes_vinculacion/HFAF.jpg" alt="Dr. Hugo Francisco Abundis Fong">
+        
+		<p style="text-align: justify; font-family: Book Antiqua;font-size:2rem;">
+            <h4 align="left">Área de Interés:</h4>
+			<ul align="left">
+				<li>Control pasivo/activo de vibraciones mecánicas</li>
+				<li>Dinámica estructural</li>
+				<li>Sistemas mecatrónicos</li>
+			</ul>
+		<br>
+				
+		<div class="w3-bar w3-teal">
+		  <button class="w3-bar-item w3-button" onclick="openCity('formacion')">Formación Académica</button>
+		  <button class="w3-bar-item w3-button" onclick="openCity('distinciones')">Distinciones</button>
+		  <button class="w3-bar-item w3-button" onclick="openCity('productividad')">Productividad Académica</button>
+		  <button class="w3-bar-item w3-button" onclick="openCity('proyectos')">Proyectos de Investigación</button>
+		</div>
+
+		<div id="formacion" class="w3-container city">
+		  <h2>Formación Académica</h2>
+		  <p align="justify">
+				<b>Doctorado en Ciencias en Ingeniería Eléctrica con Especialidad en Mecatrónica</b><br>
+				CINVESTAV. 2015.
+		</p>
+		<p align="justify"><b>Maestría en Ciencias en Ingeniería Eléctrica con Especialidad en Mecatrónica</b> <br>
+				CINVESTAV. 2011.</p>
+		<p align="justify"><b>Licenciatura en Ingeniería Mecánica</b> <br>
+				TecNM/Instituto Tecnológico de La Laguna. 2009.			
+		  </p>
+		</div>
+
+		<div id="distinciones" class="w3-container city" style="display:none">
+		  <h2>Distinciones</h2>
+		  <p align="justify">
+			Sistema Nacional de Investigadores Nivel I (Vigencia: 2020/2024) <br>
+			Perfil deseable (2022-2025)
+		  </p> 
+		</div>
+
+		<div id="productividad" class="w3-container city" style="display:none">
+		  <h2>Productividad Académica</h2>
+		  <h6 align="justify">Publicaciones en revistas</h6>
+					<p align="justify">
+					  <!-- <ul>
+						<li align="justify">(2021) Single Output and Algebraic Modal Parameters Identification of a Wind
+Turbine Blade: Experimental Results. Applied Sciences. Accepted for Publication.</li>
+						<li align="justify">(2021) Mathematical Modeling and Fuzzy Proportional-Integral-Derivative Scheme to
+Control the Yaw Motion of a Wind Turbine. Wind Energy. doi:<a href="https://doi.org/10.1002/we.2579"> 10.1002/we.2579 </a></li>
+						<li align="justify">(2020) On-Line Modal Parameter Identification Applied to Linear and Nonlinear Vibration Absorbers. actuators. doi: <a href="https://doi.org/10.3390/act9040119">10.3390/act9040119</a></li>
+						<li align="justify">(2019) Passive Vibration Control in a Civil Structure: Experimental Results. Measurement and Control. doi:<a href="https://doi.org/10.1177/0020294019847715"> 10.1177/0020294019847715</a></li>
+						<li align="justify">(2019) On the Boundary Conditions in a Non-Linear Dissipative Observer for Tubular Reactors. Processes. doi:<a href=" https://doi.org/10.3390/pr7010008"> 10.3390/pr7010008</a></li>
+					 	<li align="justify">(2019) A nonlinear controller based on saturation functions with variable parameters to stabilize an AUV. International Journal of Naval Architecture and Ocean Engineering. doi: <a href="https://doi.org/10.1016/j.ijnaoe.2018.04.002"> 10.1016/j.ijnaoe.2018.04.002</a></li>
+					 	<li align="justify">(2018) Optimum Design of a Nonlinear Vibration Absorber Coupled to a Resonant Oscillator: A Case Study. Shock and Vibration. doi:<a href="https://doi.org/10.1155/2018/2107607"> 10.1155/2018/2107607</a></li>
+						<li align="justify">(2016) Active vibration suppression through positive acceleration feedback on a building-like structure: An experimental study. Mechanical Systems and Signal Processing. doi: <a href="https://doi.org/10.1016/j.ymssp.2015.11.015"> 10.1016/j.ymssp.2015.11.015</a></li>
+					  </ul>   -->
+
+					  <ul>
+						<li align="justify">(2024) An Open Source Data Acquisition Platform for Teaching Vibration Analysis. Computer Applications in Engineering Education. DOI: <a href="https://doi.org/10.1002/cae.22753">10.1002/cae.22753</a></li>
+						<li align="justify">(2023) Large Eddy Simulation and Experimental Study of the Turbulence on Wind Turbines. Energy. DOI: <a href="https://doi.org/10.1016/j.energy.2023.127234">10.1016/j.energy.2023.127234</a></li>
+						<li align="justify">(2022) Online Frequency Estimation on a Building-like Structure Using a Nonlinear Flexible Dynamic Vibration Absorber. Mathematics. DOI: <a href="https://doi.org/10.3390/math10050708">10.3390/math10050708</a></li>
+						<li align="justify">(2022) Oscillation Attenuation in a Building-like Structure by Using a Flexible Vibration Absorber. Mathematics. DOI: <a href="https://doi.org/10.3390/math10030289">10.3390/math10030289</a></li>
+						<li align="justify">(2021) Single Output and Algebraic Modal Parameters Identification of a Wind Turbine Blade: Experimental Results. Applied Sciences. DOI: <a href="https://doi.org/10.3390/app11073016">10.3390/app11073016</a></li>
+						<li align="justify">(2021) Mathematical Modeling and Fuzzy Proportional–Integral–Derivative Scheme to Control the Yaw Motion of a Wind Turbine. Wind Energy. DOI: <a href="https://doi.org/10.1002/we.2579">10.1002/we.2579</a></li>
+						<li align="justify">(2020) On-Line Modal Parameter Identification Applied to Linear and Nonlinear Vibration Absorbers. Actuators. DOI: <a href="https://doi.org/10.3390/act9040119">10.3390/act9040119</a></li>
+						<li align="justify">(2019) Passive Vibration Control in a Civil Structure: Experimental Results. Measurement and Control. DOI: <a href="https://doi.org/10.1177/0020294019847715">10.1177/0020294019847715</a></li>
+						<li align="justify">(2019) On the Boundary Conditions in a Non-Linear Dissipative Observer for Tubular Reactors. Processes. DOI: <a href="https://doi.org/10.3390/pr7010008">10.3390/pr7010008</a></li>
+						<li align="justify">(2019) A Nonlinear Controller Based on Saturation Functions with Variable Parameters to Stabilize an AUV. International Journal of Naval Architecture and Ocean Engineering. DOI: <a href="https://doi.org/10.1016/j.ijnaoe.2018.04.002">10.1016/j.ijnaoe.2018.04.002</a></li>
+					</ul>
+
+
+					
+	
+			<!-- <h6 align="justify">Capítulos de libros</h6>
+					<p align="justify">
+					  <ul>
+					  	<li align="justify">(2020) Attenuation of the Amplitude Vibration Level by Using Nonlinear Active Control Techniques Applied to a Hybrid Short Journal Bearing Using a Particular Rotor-Bearing System Configuration. Industrial and Robotic Systems. Mechanisms and Machine Science, Springer, Cham. ISBN: 978-3-030-45401-2.</li>
+						<li align="justify">(2017) Evaluation of Autoparametric Vibration Absorbers on N-Story Building-Like Structures. Nonlinear Dynamics, Volume 1. Society for Experimental Mechanics Series. Springer, Cham. ISBN: 978-3-319-54403-8.</li>
+					  </ul>  
+					</p> -->
+	
+			<h6 align="justify">Memorias de congresos internacionales</h6>
+					<p align="justify">
+					  <!-- <ul>
+					  	<li align="justify">(2020) Modal Analysis on a Wind Turbine Blade Based on Wind Tunnel Experiments. International Modal Analysis Conference (IMAC-XXXVIII), Houston, TX, USA. doi: 10.1007/978-3-030-47717-2_1</li>
+						<li align="justify">(2020) Attenuation of Vibrations in a Mechanical Oscillator by Implementing Two Types of Vibration Absorbers: Experimental Results. International Conference on Mechatronics, Electronics and Automotive Engineering (ICMEAE), Cuernavaca, Mexico. doi: 10.1109/ICMEAE51770.2020.00025 </li>
+						<li align="justify">(2020) Instrumentation of an Educational Prototype for Vibration and Signal Analysis. International Conference on Mechatronics, Electronics and Automotive Engineering (ICMEAE), Cuernavaca, Mexico. doi: 10.1109/ICMEAE51770.2020.00044</li>
+ 
+					  </ul>   -->
+					  <ul>
+						<li align="justify">(2024) Vibration Control of a Mechanical System Using a Passive/Semiactive Flexible Inverted Pendulum Vibration Absorber. International Conference on Noise and Vibration Engineering (ISMA). <a href="https://www.isma-isaac.be/isma2024/accepted-papers/">https://www.isma-isaac.be/isma2024/accepted-papers/</a></li>
+						<li align="justify">(2022) On the Evaluation of Free-Decay and Impulse-Response Modal Testing Techniques. 19th International Conference on Electrical Engineering, Computing Science and Automatic Control (CCE). DOI: <a href="https://doi.org/10.1109/CCE56709.2022.9975976">10.1109/CCE56709.2022.9975976</a></li>
+						<li align="justify">(2022) On-Line Multiple Frequency Estimation in a Controlled Duffing Nonlinear Vibrating Mechanical System. 28th International Congress on Sound and Vibration (ICSV). <a href="https://www.iiav.org/icsv28/">https://www.iiav.org/icsv28/</a></li>
+						<li align="justify">(2021) Application of a Flexible Vibration Absorber for Passive Vibration Control in a Civil Structure. International Conference on Mechatronics, Electronics and Automotive Engineering (ICMEAE). DOI: <a href="https://doi.org/10.1109/ICMEAE55138.2021.00032">10.1109/ICMEAE55138.2021.00032</a></li>
+						<li align="justify">(2020) Attenuation of Vibrations in a Mechanical Oscillator by Implementing Two Types of Vibration Absorbers: Experimental Results. International Conference on Mechatronics, Electronics and Automotive Engineering (ICMEAE). DOI: <a href="https://doi.org/10.1109/ICMEAE51770.2020.00025">10.1109/ICMEAE51770.2020.00025</a></li>
+						<li align="justify">(2020) Instrumentation of an Educational Prototype for Vibration and Signal Analysis. International Conference on Mechatronics, Electronics and Automotive Engineering (ICMEAE). DOI: <a href="https://doi.org/10.1109/ICMEAE51770.2020.00044">10.1109/ICMEAE51770.2020.00044</a></li>
+						<li align="justify">(2020) Attenuation of the Amplitude Vibration Level by Using Nonlinear Active Control Techniques Applied to a Hybrid Short Journal Bearing Using a Particular Rotor-Bearing System Configuration. Latin American Symposium on Industrial and Robotic Systems. DOI: <a href="https://doi.org/10.1007/978-3-030-45402-9_18">10.1007/978-3-030-45402-9_18</a></li>
+						<li align="justify">(2020) Modal Analysis on a Wind Turbine Blade Based on Wind Tunnel Experiments. International Modal Analysis Conference (IMAC-XXXVIII). DOI: <a href="https://doi.org/10.1007/978-3-030-47717-2_1">10.1007/978-3-030-47717-2_1</a></li>
+					</ul>
+
+
+					
+		</div>
+	
+		
+		
+	<div id="proyectos" class="w3-container city" style="display:none">
+		  <h2>Proyectos de Investigación</h2>
+		  <!-- <ul>
+			<li align="justify">(Vigencia: Enero 2019/Diciembre 2019) Diseño de Absorbedores No Lineales de Vibraciones para Estructuras Flexibles Tipo Edificio ante Excitaciones Sísmicas. No. de Registro: PACH-PYR-2019-7044. <br>Rol: Responsable Técnico.</li>
+			<li align="justify">(Vigencia: Enero 2019/Diciembre 2019) Análisis Aeroelástico de un Aerogenerador de Pequeña Potencia para el Diseño Mecánico de Componentes. No. de Registro: PACH-PYR-2019-6794. <br>Rol: Colaborador.</li>
+			<li align="justify">(Vigencia: Octubre 2016/Agosto 2017) Diseño y Fabricación de Aerogeneradores de Baja Potencia para uso en el Istmo de Tehuantepec.<br>Rol: Catedrático Conacyt.</li>
+		 </ul> -->
+		 <ul>
+			<li align="justify">(Vigencia: Enero 2022/Diciembre 2022) Nuevas Técnicas de Control Robusto Aplicadas a Seguimiento de Trayectorias y Estabilización en Robots Móviles. Clave del proyecto: 14207.22-P. <br> Rol: Colaborador.</li>
+			<li align="justify">(Vigencia: Septiembre 2021/Agosto 2022) Control Pasivo/Activo de Vibraciones en Sistemas Mecánicos con Múltiples Grados de Libertad. Clave del proyecto: 13451.21-P. <br> Rol: Responsable Técnico.</li>
+			<li align="justify">(Vigencia: Enero 2021/Diciembre 2021) Pruebas Dinámicas con Control de Temperatura para la Evaluación de Materiales Aplicados en Palas de Generadores Eólicos. Clave del proyecto: 10470.21-P. <br> Rol: Colaborador.</li>
+			<li align="justify">(Vigencia: Enero 2019/Diciembre 2019) Diseño de Absorbedores No Lineales de Vibraciones para Estructuras Flexibles Tipo Edificio ante Excitaciones Sísmicas. Clave del proyecto: PACH-PYR-2019-7044. <br> Rol: Responsable Técnico.</li>
+		</ul>
+
+
+		</div>
+
+		<script>
+		function openCity(cityName) {
+		  var i;
+		  var x = document.getElementsByClassName("city");
+		  for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		  }
+		  document.getElementById(cityName).style.display = "block";  
+		}
+		</script>
+		
+		<!-- <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:160px;">
+		  contenido
+    	</div> -->
+	
+		
+			<br>
+			<h4 align="right">Dr. Hugo Francisco Abundis Fong</h4>
+			<h6 align="right">Profesor - Investigador</h6>
+			<address align="right">
+				correo: <a href="mailto:hugo.af@pachuca.tecnm.mx" class="w3-text-grey">hugo.af@pachuca.tecnm.mx</a><br>
+				<!-- Teléfono: 771 710 5251| Ext. 139 -->
+				Teléfono: (771) 711 3140 Ext. 139
+			</address>
+      
+        </div>
+    
+	
+	<!-- Termina contenido de pagina -->
+
+	﻿<?php
+	include("src/footer.html");
+?>

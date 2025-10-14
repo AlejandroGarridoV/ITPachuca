@@ -1,0 +1,119 @@
+<?php
+	include("src/header.html");
+	menua();
+	menumae();
+?>	
+<!-- contenido de pagina -->	
+	<div style="margin: auto; text-align: center; width: 80%; padding: 5%;">
+      
+	  <h1 class="align-center  display-2 style= margin-bottom: 15px;">Dr. Marisa Moreno Rios</h1>
+	  <hr>		
+      <img class="dir w3-circle w3-card-4" style="width:20%" src="images/imagenes_vinculacion/MMR.jpg" alt="Dra. Marisa Moreno Rios">
+        
+		<p style="text-align: justify; font-family: Book Antiqua;font-size:2rem;">
+            <h4 align="left">Área de Interés:</h4>
+			<ul align="left">
+				<li>Tribología</li>
+				<li>Caracterización de Materiales</li>
+				<li>Diseño Mecánico</li>
+			</ul>
+		<br>
+				
+		<div class="w3-bar w3-teal">
+		  <button class="w3-bar-item w3-button" onclick="openCity('formacion')">Formación Académica</button>
+		  <button class="w3-bar-item w3-button" onclick="openCity('distinciones')">Distinciones</button>
+		  <button class="w3-bar-item w3-button" onclick="openCity('productividad')">Productividad Académica</button>
+		  <button class="w3-bar-item w3-button" onclick="openCity('proyectos')">Proyectos de Investigación</button>
+		</div>
+
+		<div id="formacion" class="w3-container city">
+		  <h2>Formación Académica</h2>
+		  	<p align="justify">
+			Doctorado en Ciencias en Ingeniería Mecánica.<br>
+			Sección de Estudios de Posgrado e Investigación.<br>
+			ESIME-Zacatenco, Instituto Politécnico Nacional. 2015
+		  </p>
+		  <p align="justify">
+			Maestría en Ciencias en Ingeniería Mecánica<br>
+			Sección de Estudios de Posgrado e Investigación<br>
+			ESIME-Zacatenco, Instituto Politécnico Nacional. 2011
+		  </p>
+		  <p align="justify">
+			Licenciatura en Ingeniería Electromecánica<br>
+			Facultad de Ingeniería, Universidad Autónoma de Querétaro. 1996
+		  </p>
+		</div>
+
+		<div id="distinciones" class="w3-container city" style="display:none">
+		  <h2>Distinciones</h2>
+		  <p align="justify">
+		  	Sistema Nacional de Investigadores Nivel C (2019-2021)<br>
+			Perfil Deseable (2019-2022)<br>
+			Mención Honorífica en examen para obtener grado de Doctor, 2015<br>
+			Premio de Ingeniería de la Ciudad de México en la categoría de Ingeniería Mecánica, 2012
+		  </p> 
+		</div>
+
+		<div id="productividad" class="w3-container city" style="display:none">
+		  <h6 align="justify">Publicaciones en revistas</h6>
+					<p align="justify">
+					  <ul>
+					  	<li align="justify">(2019) Evaluation of surface modification in a steel track for the rubber tyred Metro, Journal WEAR, Volumes 426–427, Part B, 30 April 2019, 2019, https://doi.org/10.1016/jwear.2018.12.021</li>
+						<li align="justify">(2019) Microscopy Analysis in CFRP and GFRP Composites Manufactured by LCM and Autoclave Techniques, Microscopy and Microanalysis, 25 (Suppl 2), 2019. https://doi.org/10.1017/S143192761900477X</li>
+						<li align="justify">(2018) The SEM-electron-mirror effect in human tooth and synthetic hydroxyapatite samples”, Microscopy Research and Technique, Vol. 81, ISSUE 12, 2018. https://doi.org/10.1002/jemt.23092</li>
+						<li align="justify">(2018) Role of the substrate on the growth of silicon quantum dots embedded in silicon nitride thin films”, Materials Chemistry and Physics, Vol. 208 (2018). https://doi.org/10.1016/j.matchemphys.2018.01.032.</li>
+					  </ul>  
+					
+		
+		  <h6 align="justify">Capítulos de libros</h6>
+					<p align="justify">
+					  <ul>
+					  	<li align="justify">(2019) “Abrasive Wear Performance of Fe2B Layers Applied on Steel Substrates¨, In book: Friction, Lubrication and Wear (April 2019). doi: 10.5772/intechopen.83814</li>
+					  </ul>  
+					
+		  
+		</div>
+		<div id="proyectos" class="w3-container city" style="display:none">
+		  <h2>Proyectos de Investigación</h2>
+		  <ol>
+				<li align="justify">(Junio 2018/Julio 2019) Estudio experimental del efecto de nanopartículas en las propiedades tribológicas de un biolubricante. No. de Registro: Clave 6787.18-P. <br>Participación: Responsable Técnico</li>
+			  
+			  	<li align="justify">(Agosto/2018 - Actual) Proyecto de tesis Nivel Maestría: Diseño y construcción del sistema de lubricación para una máquina tribológica. <br>Participación: Director de tesis.</li>
+			  
+			  	<li align="justify">Agosto/2018 - Actual) Proyecto de tesis Nivel Maestría: Caracterización tribológica para un sistema de engranajes modificados en un diferencial de transporte de carga. <br>Participación: Director de tesis.</li>
+	 	 </ol>
+		</div>
+
+		<script>
+		function openCity(cityName) {
+		  var i;
+		  var x = document.getElementsByClassName("city");
+		  for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		  }
+		  document.getElementById(cityName).style.display = "block";  
+		}
+		</script>
+		
+		<!-- <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:160px;">
+		  contenido
+    	</div> -->
+	
+		
+			<br>
+			<h4 align="right">Dra. Marisa Moreno Rios</h4>
+			<h6 align="right">Profesora - Investigadora</h6>
+			<address align="right">
+				correo: <a href="mailto:marisa.mr@pachuca.tecnm.mx" class="w3-text-grey">marisa.mr@pachuca.tecnm.mx</a><br>
+				Teléfono: 771 711 3140 | Ext. 139
+			</address>
+      <hr>
+		
+        </div>
+    
+	
+	<!-- Termina contenido de pagina -->
+
+	﻿<?php
+	include("src/footer.html");
+?>

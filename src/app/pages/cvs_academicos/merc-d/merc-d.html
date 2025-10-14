@@ -1,0 +1,121 @@
+<?php
+	include("src/header.html");
+	menua();
+	menudoc();
+?>	
+<!-- contenido de pagina -->
+	<div style="margin: auto; text-align: center; width: 80%; padding: 5%;">
+      
+	  <h1 class="align-center  display-2 style= margin-bottom: 15px;">Dr. Mario Emigdio Rodríguez Castillo</h1>
+	  <hr>		
+      <img class="dir w3-circle w3-card-4" style="width:20%" src="images/imagenes_vinculacion/MERC.jpg" alt="Dr. Mario Emigdio Rodríguez Castillo">
+        
+		<p style="text-align: justify; font-family: Book Antiqua;font-size:2rem;">
+            <h4 align="left">Área de Interés:</h4>
+			<ul align="left">
+				<li>Transformaciones de fase en Materiales</li>
+				<li>Diseño mecánico de elementos de máquinas</li>
+				<li>Diseño de máquinas para fuentes alternas de energía</li>
+			</ul>
+		<br>
+				
+		<div class="w3-bar w3-teal">
+		  <button class="w3-bar-item w3-button" onclick="openCity('formacion')">Formación Académica</button>
+		  <button class="w3-bar-item w3-button" onclick="openCity('distinciones')">Distinciones</button>
+		  <button class="w3-bar-item w3-button" onclick="openCity('productividad')">Productividad Académica</button>
+		  <!-- <button class="w3-bar-item w3-button" onclick="openCity('proyectos')">Proyectos de Investigación</button>-->
+		</div>
+
+		<div id="formacion" class="w3-container city">
+		  <h2>Formación Académica</h2>
+		  <p align="justify">
+			<b>Doctorado en Ciencias con especialidad en Metalurgia y Materiales.</b>
+			  <br>Instituto Politécnico Nacional. 2005.</p>
+		<p align="justify"><b>	Maestría en Ingeniería Metal-Mecánica </b>
+			<br>Universidad Nacional Autónoma de México. 2000.</p>
+		<p align="justify"><b>	Licenciatura en Ingeniería Industrial Mecánica</b>
+			<br>Instituto Tecnológico de Pachuca. 1982.
+		  </p>
+		</div>
+
+		<div id="distinciones" class="w3-container city" style="display:none">
+		  <h2>Distinciones</h2>
+		  <p align="justify">
+		  	Perfil Deseable (Vigencia:  2014/2020)<br>
+			Aprobado con Mención Honorífica en examen de grado de Maestría en Ingeniería Metal-Mecánica de fecha 27 de junio de 2000.
+		  </p> 
+		</div>
+
+		<div id="productividad" class="w3-container city" style="display:none">
+		  <h2>Productividad Académica</h2>
+		  <h6 align="justify">Publicaciones en revistas</h6>
+					<p align="justify">
+					  <ul>
+					  	<li align="justify">(2018) “Diseño de un rotor para una turbina eólica de eje horizontal de 500 W”. Research Journal. 2018. Vol. 1, No.1, 1-15.</li>
+						<li align="justify">(2018) Alfabetización científica de las habilidades fomentadas que la propician en alumnos de secundarias públicas”, Journal-Health, educational and welfare. December 2018 vol2, No.3, 23-28.</li>
+						<li align="justify">(2017) “Determinación de los campos de temperatura en el Aluminio 5083 H321 durante el proceso GMAW”. Revista de ingeniería mecánica 2017; Publicado: Marzo 2017 Vol No.1 pp.51-57). ISSN: 2531-2189</li>
+						<li align="justify">(2017) “Diseño de un rotor eólico tipo darrieus Helicoidal. Revista de ingeniería mecánica 2017; Publicado: Junio 2017 Vol No.2 pp.34-41). ISSN: 2531-2189</li>
+						<li align="justify">(2016) Aplicación del Software Thermo-calc Prisma en el Análisis de la Precipitación de un Acero Ferrítico; II Congreso CONAMTEC del Instituto Tecnológico de Pachuca, 18-21 Octubre 2016, Revista de Tecnología e Innovación, Volume 3, Number 9, pages 20-27. 2016. ISSN: 2410-3993.</li>
+					  </ul>  
+					
+	
+			<h6 align="justify">Libros</h6>
+					<p align="justify">
+					  <ul>
+					  	<li align="justify">ESTÁTICA PARA INGENIERÍA <br>1° Ed. Cultural Patria. 2016 <br>Nota de Editorial: 1840 ejemplres vendidos hasta el 2020.</li>
+					  </ul>  
+					
+	
+			<h6 align="justify">Memorias de congresos internacionales</h6>
+					<p align="justify">
+					  <ul>
+					  	<li align="justify">(2018) “Obtención de la capacidad de choque en componentes automotrices”. Memorias del XXIV Congreso Internacional de la SOMIM, 19-21 Septiembre de 2018, Campeche, México.</li>
+						<li align="justify">(2017) “Análisis de un generador horizontal de un sistema de refrigeración solar por absorción”. Congreso Nacional Multidisciplinario de Educación, Ciencia y Tecnología, del 15 al 17 de Noviembre, Pachuca Hgo.</li>
+						<li align="justify">(2017) “Análsis termohidráulico de bobinas en capas en transformadores eléctricos de distribución mediante CFD”. Congreso Nacional Multidisciplinario de Educación, Ciencia y Tecnología, del 15 al 17 de Noviembre, Pachuca Hgo.</li>
+					  </ul>  
+					
+		</div>
+
+		<!--<div id="proyectos" class="w3-container city" style="display:none">
+		  <h2>Proyectos de Investigación</h2>
+		  <p>
+			<ol>
+				<li align="justify">Desarrollo de aglutinantes para obtener aditivos de compactación, inyección y extrusión en plásticos. No. 221829 Proinnova- Conacyt 2015</li><br>
+				<li align="justify">Desarrollo de la tecnología de un prototipo multifuncional del concentrado de un modificador de impacto, color y aditivos de un homopolipropileno. No. 221823 Proinnova- Conacyt 2015.</li><br>
+				<li align="justify">Análisis aeroelástico de un aerogenerador de pequeña potencia para el diseño mecánico de componentes. Proyecto autorizado por TecNM-SES-SEP.</li><br>
+			</ol>
+		  </p>
+		</div>-->
+
+		<script>
+		function openCity(cityName) {
+		  var i;
+		  var x = document.getElementsByClassName("city");
+		  for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		  }
+		  document.getElementById(cityName).style.display = "block";  
+		}
+		</script>
+		
+		<!-- <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:160px;">
+		  contenido
+    	</div> -->
+	
+		
+			<br>
+			<h4 align="right">Dr. Mario Emigdio Rodríguez Castillo</h4>
+			<h6 align="right">Profesor - Investigador</h6>
+			<address align="right">
+				correo: <a href="mailto:mario.rc@pachuca.tecnm.mx " class="w3-text-grey">mario.rc@pachuca.tecnm.mx </a><br>
+				Teléfono: 771 710 5251 | Ext. 139
+			</address>
+    
+        </div>
+    
+	
+	<!-- Termina contenido de pagina -->
+
+	﻿<?php
+	include("src/footer.html");
+?>

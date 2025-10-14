@@ -104,6 +104,32 @@ import { AvisoPrivacidad } from './componentes/footer/aviso-privacidad/aviso-pri
 import { CoordinacionTutorias } from './pages/departamentos/desarrollo-academico/coordinacion-tutorias/coordinacion-tutorias';
 import { Becas } from './pages/becas/becas';
 import { DirectorioTutores } from './pages/departamentos/desarrollo-academico/coordinacion-tutorias/directorio-tutores/directorio-tutores';
+import { Contraloria } from './pages/contraloria/contraloria';
+import { Donacion } from './pages/departamentos/centro-de-informacion/donacion/donacion';
+import { TrabajoTitulacion } from './pages/departamentos/centro-de-informacion/trabajo-titulacion/trabajo-titulacion';
+import { CirculoLectura } from './pages/departamentos/centro-de-informacion/circulo-lectura/circulo-lectura';
+import { Agm } from './pages/cvs_academicos/agm/agm';
+import { Aimp } from './pages/cvs_academicos/aimp/aimp';
+import { AimpD } from './pages/cvs_academicos/aimp-d/aimp-d';
+import { Crr } from './pages/cvs_academicos/crr/crr';
+import { Eoad } from './pages/cvs_academicos/eoad/eoad';
+import { EoadD } from './pages/cvs_academicos/eoad-d/eoad-d';
+import { Evc } from './pages/cvs_academicos/evc/evc';
+import { EvcD } from './pages/cvs_academicos/evc-d/evc-d';
+import { FndlD } from './pages/cvs_academicos/fndl-d/fndl-d';
+import { Hfaf } from './pages/cvs_academicos/hfaf/hfaf';
+import { HfafD } from './pages/cvs_academicos/hfaf-d/hfaf-d';
+import { Irv } from './pages/cvs_academicos/irv/irv';
+import { IrvD } from './pages/cvs_academicos/irv-d/irv-d';
+import { JsaD } from './pages/cvs_academicos/jsa-d/jsa-d';
+import { Merc } from './pages/cvs_academicos/merc/merc';
+import { MercD } from './pages/cvs_academicos/merc-d/merc-d';
+import { Mmr } from './pages/cvs_academicos/mmr/mmr';
+import { MmrD } from './pages/cvs_academicos/mmr-d/mmr-d';
+import { VhpD } from './pages/cvs_academicos/vhp-d/vhp-d';
+import { Impp } from './pages/cvs_academicos/impp/impp';
+import { ImppD } from './pages/cvs_academicos/impp-d/impp-d';
+
 
 
 
@@ -170,7 +196,7 @@ export const routes: Routes = [
   { path: 'nucleo_academico.m', component: NucleoAcademicoM },
   { path: 'd_vinculacion', component: Dvinculacion },
   { path: 'd_seminarios', component: Dseminarios },
-  
+
 
   // Posgrado
   { path: 'repo_institu', component: RepositorioTesis },
@@ -200,6 +226,10 @@ export const routes: Routes = [
   { path: 'gestion_vinculacion', component: GestionYVinculacion },
   { path: 'servicios_escolares', component: ServiciosEscolares },
   { path: 'coordinacion_tutorias', component: CoordinacionTutorias },
+  { path: 'donacion', component: Donacion },
+  { path: 'revision_trabajo', component: TrabajoTitulacion },
+  { path: 'circulo_lectura', component: CirculoLectura },
+
 
   // SERVICIOS ESCOLARES
   { path: 'servicio_medico', component: ServicioMedico },
@@ -217,6 +247,30 @@ export const routes: Routes = [
   { path: 'equivalencia_estudios', component: EquivalenciaEstudios },
   { path: 'proximos_egresar', component: ProximosEgresar },
   { path: 'becas', component: Becas },
-  { path: 'directorio-tutores', component: DirectorioTutores }
+  { path: 'directorio-tutores', component: DirectorioTutores },
+  { path: 'contraloria', component: Contraloria },
+
+  //CURRICULUMS ACADEMICOS
+  { path: 'agm', component: Agm },
+  { path: 'aimp', component: Aimp },
+  { path: 'aimp-d', component: AimpD },
+  { path: 'crr', component: Crr },
+  { path: 'eoad', component: Eoad },
+  { path: 'eoad-d', component: EoadD },
+  { path: 'evc', component: Evc },
+  { path: 'evc-d', component: EvcD },
+  { path: 'fndl-d', component: FndlD },
+  { path: 'hfaf', component: Hfaf },
+  { path: 'hfaf-d', component: HfafD },
+  { path: 'irv', component: Irv },
+  { path: 'irv-d', component: IrvD },
+  { path: 'jsa-d', component: JsaD },
+  { path: 'impp', component: Impp },
+  { path: 'impp-d', component: ImppD },
+  { path: 'merc', component: Merc },
+  { path: 'merc-d', component: MercD },
+  { path: 'mmr', component: Mmr },
+  { path: 'mmr-d', component: MmrD },
+  { path: 'vhp-d', component: VhpD }
 
 ];

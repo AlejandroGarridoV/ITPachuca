@@ -1,0 +1,117 @@
+<?php
+	include("src/header.html");
+	menua();
+	menumae();
+?>	
+<!-- contenido de pagina -->
+	<div style="margin: auto; text-align: center; width: 80%; padding: 5%;">
+      
+	  <h1 class="align-center  display-2 style= margin-bottom: 15px;">Dr. Hugo Francisco Abundis Fong</h1>
+	  <hr>		
+      <img class="dir w3-circle w3-card-4" style="width:20%" src="images/imagenes_vinculacion/HFAF.jpg" alt="Dr. Hugo Francisco Abundis Fong">
+        
+		<p style="text-align: justify; font-family: Book Antiqua;font-size:2rem;">
+            <h4 align="left">Área de Interés:</h4>
+			<ul align="left">
+				<li>Control pasivo/activo de vibraciones en sistemas mecánicos</li>
+				<li>Dinámica estructural</li>
+				<li>Sistemas mecatrónicos</li>
+			</ul>
+		<br>
+				
+		<div class="w3-bar w3-teal">
+		  <button class="w3-bar-item w3-button" onclick="openCity('formacion')">Formación Académica</button>
+		  <button class="w3-bar-item w3-button" onclick="openCity('distinciones')">Distinciones</button>
+		  <button class="w3-bar-item w3-button" onclick="openCity('productividad')">Productividad Académica</button>
+		  <button class="w3-bar-item w3-button" onclick="openCity('proyectos')">Proyectos de Investigación</button>
+		</div>
+
+		<div id="formacion" class="w3-container city">
+		  <h2>Formación Académica</h2>
+		  <p align="justify">
+			<p align="justify">Doctorado en Ciencias en Ingeniería Eléctrica con Especialidad en Mecatrónica. CINVESTAV. 2015.
+			</p>
+			<p align="justify">Maestría en Ciencias en Ingeniería Eléctrica con Especialidad en Mecatrónica. CINVESTAV. 2011.
+			</p>
+			<p align="justify">Licenciatura en Ingeniería Mecánica. TecNM/Instituto Tecnológico de La Laguna. 2009.
+			</p>
+		  
+		</div>
+
+		<div id="distinciones" class="w3-container city" style="display:none">
+		  <h2>Distinciones</h2>
+		  <p align="justify">
+			Sistema Nacional de Investigadores Nivel I (Vigencia: 2020/2022)
+		  </p> 
+		</div>
+
+		<div id="productividad" class="w3-container city" style="display:none">
+		  <h2>Productividad Académica</h2>
+		  <h6 align="justify">Publicaciones en revistas</h6>
+					<p align="justify">
+					  <ul>
+					  	<li align="justify">(2019) Passive Vibration Control in a Civil Structure: Experimental Results. Measurement and Control. doi: 10.1177/0020294019847715</li>
+						<li align="justify">(2019) On the Boundary Conditions in a Non-Linear Dissipative Observer for Tubular Reactors. Processes. doi: 10.3390/pr7010008</li>
+						<li align="justify">(2019) A nonlinear controller based on saturation functions with variable parameters to stabilize an AUV. International Journal of Naval Architecture and Ocean Engineering. doi: 10.1016/j.ijnaoe.2018.04.002</li>
+						<li align="justify">(2018) Optimum Design of a Nonlinear Vibration Absorber Coupled to a Resonant Oscillator: A Case Study. Shock and Vibration. doi: 10.1155/2018/2107607</li>
+					  </ul>  
+					
+	
+			<h6 align="justify">Capítulos de libros</h6>
+					<p align="justify">
+					  <ul>
+					  	<li align="justify">(2020) Attenuation of the Amplitude Vibration Level by Using Nonlinear Active Control Techniques Applied to a Hybrid Short Journal Bearing Using a Particular Rotor-Bearing System Configuration. Industrial and Robotic Systems. Mechanisms and Machine Science, Springer, Cham. ISBN: 978-3-030-45401-2.</li>
+						<li align="justify">(2017) Evaluation of Autoparametric Vibration Absorbers on N-Story Building-Like Structures. Nonlinear Dynamics, Volume 1. Society for Experimental Mechanics Series. Springer, Cham. ISBN: 978-3-319-54403-8.</li>
+					  </ul>  
+					
+	
+			<h6 align="justify">Memorias de congresos internacionales</h6>
+					<p align="justify">
+					  <ul>
+					  	<li align="justify">(2020) Modal Analysis on a Wind Turbine Blade Based on Wind Tunnel Experiments. International Modal Analysis Conference (IMAC-XXXVIII), Houston, TX, USA.</li>
+					  </ul>  
+					
+		</div>
+	
+		
+		
+	<div id="proyectos" class="w3-container city" style="display:none">
+		  <h2>Proyectos de Investigación</h2>
+		  <ul>
+			<li align="justify">(Vigencia: Enero 2019/Diciembre 2019) Diseño de Absorbedores No Lineales de Vibraciones para Estructuras Flexibles Tipo Edificio ante Excitaciones Sísmicas. No. de Registro: PACH-PYR-2019-7044. <br>Rol: Responsable Técnico.</li>
+			<li align="justify">(Vigencia: Enero 2019/Diciembre 2019) Análisis Aeroelástico de un Aerogenerador de Pequeña Potencia para el Diseño Mecánico de Componentes. No. de Registro: PACH-PYR-2019-6794. <br>Rol: Colaborador.</li>
+		 </ul>
+		</div>
+
+		<script>
+		function openCity(cityName) {
+		  var i;
+		  var x = document.getElementsByClassName("city");
+		  for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		  }
+		  document.getElementById(cityName).style.display = "block";  
+		}
+		</script>
+		
+		<!-- <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:160px;">
+		  contenido
+    	</div> -->
+	
+		
+			<br>
+			<h4 align="right">Dr. Hugo Francisco Abundis Fong</h4>
+			<h6 align="right">Profesor - Investigador</h6>
+			<address align="right">
+				correo: <a href="mailto:hugo.af@pachuca.tecnm.mx" class="w3-text-grey">hugo.af@pachuca.tecnm.mx</a><br>
+				Teléfono: 771 711 3140 | Ext. 139
+			</address>
+      <hr>
+		
+        </div>
+    
+	
+	<!-- Termina contenido de pagina -->
+	﻿<?php
+	include("src/footer.html");
+?>
