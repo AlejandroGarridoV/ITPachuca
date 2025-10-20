@@ -104,7 +104,7 @@ import { AvisoPrivacidad } from './componentes/footer/aviso-privacidad/aviso-pri
 import { CoordinacionTutorias } from './pages/departamentos/desarrollo-academico/coordinacion-tutorias/coordinacion-tutorias';
 import { Becas } from './pages/becas/becas';
 import { DirectorioTutores } from './pages/departamentos/desarrollo-academico/coordinacion-tutorias/directorio-tutores/directorio-tutores';
-import { Contraloria } from './pages/contraloria/contraloria';
+
 import { Donacion } from './pages/departamentos/centro-de-informacion/donacion/donacion';
 import { TrabajoTitulacion } from './pages/departamentos/centro-de-informacion/trabajo-titulacion/trabajo-titulacion';
 import { CirculoLectura } from './pages/departamentos/centro-de-informacion/circulo-lectura/circulo-lectura';
@@ -129,6 +129,7 @@ import { MmrD } from './pages/cvs_academicos/mmr-d/mmr-d';
 import { VhpD } from './pages/cvs_academicos/vhp-d/vhp-d';
 import { Impp } from './pages/cvs_academicos/impp/impp';
 import { ImppD } from './pages/cvs_academicos/impp-d/impp-d';
+import { ContraloriaComponent } from './pages/contraloria/contraloria';
 
 
 
@@ -248,7 +249,7 @@ export const routes: Routes = [
   { path: 'proximos_egresar', component: ProximosEgresar },
   { path: 'becas', component: Becas },
   { path: 'directorio-tutores', component: DirectorioTutores },
-  { path: 'contraloria', component: Contraloria },
+  { path: 'contraloria', component: ContraloriaComponent },
 
   //CURRICULUMS ACADEMICOS
   { path: 'agm', component: Agm },

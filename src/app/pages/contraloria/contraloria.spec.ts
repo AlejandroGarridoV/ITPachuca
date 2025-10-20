@@ -1,18 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Contraloria } from './contraloria';
+import { ContraloriaComponent } from './contraloria';
+
 
 describe('Contraloria', () => {
-  let component: Contraloria;
-  let fixture: ComponentFixture<Contraloria>;
+  let component: ContraloriaComponent;
+  let fixture: ComponentFixture<ContraloriaComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Contraloria]
+      imports: [ContraloriaComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Contraloria);
+    fixture = TestBed.createComponent(ContraloriaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
